@@ -18,6 +18,11 @@ export default {
 			}
 		},
 		extend: {
+			fontFamily: {
+				'gotham': ['Gotham', 'Avenir Next', 'Avenir', 'system-ui', '-apple-system', 'Segoe UI', 'Roboto', 'sans-serif'],
+				'gotham-bold': ['Gotham Bold', 'Avenir Next Demi', 'Avenir Heavy', 'system-ui', '-apple-system', 'Segoe UI', 'Roboto', 'sans-serif'],
+				'gotham-medium': ['Gotham Medium', 'Avenir Next Medium', 'Avenir Medium', 'system-ui', '-apple-system', 'Segoe UI', 'Roboto', 'sans-serif'],
+			},
 			colors: {
 				border: 'hsl(var(--border))',
 				input: 'hsl(var(--input))',
