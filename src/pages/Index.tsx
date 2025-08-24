@@ -14,7 +14,7 @@ const Index = () => {
       <section className="relative min-h-screen flex items-center justify-center bg-black">
         <div 
           className="absolute inset-0 bg-cover bg-center bg-no-repeat"
-          style={{ backgroundImage: `url(${heroImage})` }}
+          style={{ backgroundImage: `url(/lovable-uploads/cb3c982f-e343-40f2-9a7a-15e13adf68d0.png)` }}
         >
           <div className="absolute inset-0 bg-black/50"></div>
         </div>
