@@ -161,6 +161,24 @@ const AlMahaIsland = () => {
                   <div className="h-20 bg-muted border border-border flex items-center justify-center">
                     <span className="text-xs font-gotham text-muted-foreground">Restaurant 4</span>
                   </div>
+                  <div className="h-20 bg-muted border border-border flex items-center justify-center">
+                    <span className="text-xs font-gotham text-muted-foreground">Restaurant 5</span>
+                  </div>
+                  <div className="h-20 bg-muted border border-border flex items-center justify-center">
+                    <span className="text-xs font-gotham text-muted-foreground">Restaurant 6</span>
+                  </div>
+                  <div className="h-20 bg-muted border border-border flex items-center justify-center">
+                    <span className="text-xs font-gotham text-muted-foreground">Restaurant 7</span>
+                  </div>
+                  <div className="h-20 bg-muted border border-border flex items-center justify-center">
+                    <span className="text-xs font-gotham text-muted-foreground">Restaurant 8</span>
+                  </div>
+                  <div className="h-20 bg-muted border border-border flex items-center justify-center">
+                    <span className="text-xs font-gotham text-muted-foreground">Restaurant 9</span>
+                  </div>
+                  <div className="h-20 bg-muted border border-border flex items-center justify-center">
+                    <span className="text-xs font-gotham text-muted-foreground">Restaurant 10</span>
+                  </div>
                 </div>
               </div>
             </div>
@@ -188,6 +206,24 @@ const AlMahaIsland = () => {
                   <div className="h-20 bg-muted border border-border flex items-center justify-center">
                     <span className="text-xs font-gotham text-muted-foreground">Program 4</span>
                   </div>
+                  <div className="h-20 bg-muted border border-border flex items-center justify-center">
+                    <span className="text-xs font-gotham text-muted-foreground">Program 5</span>
+                  </div>
+                  <div className="h-20 bg-muted border border-border flex items-center justify-center">
+                    <span className="text-xs font-gotham text-muted-foreground">Program 6</span>
+                  </div>
+                  <div className="h-20 bg-muted border border-border flex items-center justify-center">
+                    <span className="text-xs font-gotham text-muted-foreground">Program 7</span>
+                  </div>
+                  <div className="h-20 bg-muted border border-border flex items-center justify-center">
+                    <span className="text-xs font-gotham text-muted-foreground">Program 8</span>
+                  </div>
+                  <div className="h-20 bg-muted border border-border flex items-center justify-center">
+                    <span className="text-xs font-gotham text-muted-foreground">Program 9</span>
+                  </div>
+                  <div className="h-20 bg-muted border border-border flex items-center justify-center">
+                    <span className="text-xs font-gotham text-muted-foreground">Program 10</span>
+                  </div>
                 </div>
               </div>
             </div>
@@ -214,6 +250,24 @@ const AlMahaIsland = () => {
                   </div>
                   <div className="h-20 bg-muted border border-border flex items-center justify-center">
                     <span className="text-xs font-gotham text-muted-foreground">Venue 4</span>
+                  </div>
+                  <div className="h-20 bg-muted border border-border flex items-center justify-center">
+                    <span className="text-xs font-gotham text-muted-foreground">Venue 5</span>
+                  </div>
+                  <div className="h-20 bg-muted border border-border flex items-center justify-center">
+                    <span className="text-xs font-gotham text-muted-foreground">Venue 6</span>
+                  </div>
+                  <div className="h-20 bg-muted border border-border flex items-center justify-center">
+                    <span className="text-xs font-gotham text-muted-foreground">Venue 7</span>
+                  </div>
+                  <div className="h-20 bg-muted border border-border flex items-center justify-center">
+                    <span className="text-xs font-gotham text-muted-foreground">Venue 8</span>
+                  </div>
+                  <div className="h-20 bg-muted border border-border flex items-center justify-center">
+                    <span className="text-xs font-gotham text-muted-foreground">Venue 9</span>
+                  </div>
+                  <div className="h-20 bg-muted border border-border flex items-center justify-center">
+                    <span className="text-xs font-gotham text-muted-foreground">Venue 10</span>
                   </div>
                 </div>
               </div>
