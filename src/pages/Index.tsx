@@ -114,81 +114,116 @@ const Index = () => {
           
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             <Link to="/destinations/al-maha-island" className="group">
-              <div className="bg-card border border-border overflow-hidden corporate-transition group-hover:shadow-lg">
-                <img 
-                  src={alMahaImage} 
-                  alt="Al Maha Island"
-                  className="w-full h-48 object-cover"
-                />
-                <div className="p-6">
-                  <h3 className="text-xl font-gotham-bold text-foreground mb-2">Al Maha Island</h3>
+              <div className="bg-card border border-border overflow-hidden corporate-transition group-hover:shadow-xl group-hover:-translate-y-1 relative">
+                <div className="relative overflow-hidden">
+                  <img 
+                    src={alMahaImage} 
+                    alt="Al Maha Island"
+                    className="w-full h-64 object-cover group-hover:scale-105 corporate-transition"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent opacity-0 group-hover:opacity-100 corporate-transition"></div>
+                  <div className="absolute bottom-4 left-4 text-white opacity-0 group-hover:opacity-100 corporate-transition">
+                    <span className="text-sm font-gotham-medium">Explore →</span>
+                  </div>
+                </div>
+                <div className="p-8">
+                  <h3 className="text-xl font-gotham-bold text-foreground mb-3 group-hover:text-primary corporate-transition">Al Maha Island</h3>
                   <p className="font-gotham text-muted-foreground text-sm leading-relaxed">
                     Qatar's premier leisure hub—dining, entertainment, and signature events at scale.
                   </p>
+                  <div className="mt-4 w-12 h-0.5 bg-primary transform scale-x-0 group-hover:scale-x-100 corporate-transition origin-left"></div>
                 </div>
               </div>
             </Link>
 
             <Link to="/destinations/katara-hills-lxr" className="group">
-              <div className="bg-card border border-border overflow-hidden corporate-transition group-hover:shadow-lg">
-                <img 
-                  src={kataraHillsImage} 
-                  alt="Katara Hills LXR"
-                  className="w-full h-48 object-cover"
-                />
-                <div className="p-6">
-                  <h3 className="text-xl font-gotham-bold text-foreground mb-2">Katara Hills LXR</h3>
+              <div className="bg-card border border-border overflow-hidden corporate-transition group-hover:shadow-xl group-hover:-translate-y-1 relative">
+                <div className="relative overflow-hidden">
+                  <img 
+                    src={kataraHillsImage} 
+                    alt="Katara Hills LXR"
+                    className="w-full h-64 object-cover group-hover:scale-105 corporate-transition"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent opacity-0 group-hover:opacity-100 corporate-transition"></div>
+                  <div className="absolute bottom-4 left-4 text-white opacity-0 group-hover:opacity-100 corporate-transition">
+                    <span className="text-sm font-gotham-medium">Explore →</span>
+                  </div>
+                </div>
+                <div className="p-8">
+                  <h3 className="text-xl font-gotham-bold text-foreground mb-3 group-hover:text-primary corporate-transition">Katara Hills LXR</h3>
                   <p className="font-gotham text-muted-foreground text-sm leading-relaxed">
                     Elevated villa living overlooking Doha's cultural heart.
                   </p>
+                  <div className="mt-4 w-12 h-0.5 bg-primary transform scale-x-0 group-hover:scale-x-100 corporate-transition origin-left"></div>
                 </div>
               </div>
             </Link>
 
             <Link to="/destinations/maysan-doha-lxr" className="group">
-              <div className="bg-card border border-border overflow-hidden corporate-transition group-hover:shadow-lg">
-                <img 
-                  src={maysanDohaImage} 
-                  alt="Maysan Doha LXR"
-                  className="w-full h-48 object-cover"
-                />
-                <div className="p-6">
-                  <h3 className="text-xl font-gotham-bold text-foreground mb-2">Maysan Doha LXR</h3>
+              <div className="bg-card border border-border overflow-hidden corporate-transition group-hover:shadow-xl group-hover:-translate-y-1 relative">
+                <div className="relative overflow-hidden">
+                  <img 
+                    src={maysanDohaImage} 
+                    alt="Maysan Doha LXR"
+                    className="w-full h-64 object-cover group-hover:scale-105 corporate-transition"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent opacity-0 group-hover:opacity-100 corporate-transition"></div>
+                  <div className="absolute bottom-4 left-4 text-white opacity-0 group-hover:opacity-100 corporate-transition">
+                    <span className="text-sm font-gotham-medium">Explore →</span>
+                  </div>
+                </div>
+                <div className="p-8">
+                  <h3 className="text-xl font-gotham-bold text-foreground mb-3 group-hover:text-primary corporate-transition">Maysan Doha LXR</h3>
                   <p className="font-gotham text-muted-foreground text-sm leading-relaxed">
                     A private sanctuary where Arabian heritage meets modern well-being.
                   </p>
+                  <div className="mt-4 w-12 h-0.5 bg-primary transform scale-x-0 group-hover:scale-x-100 corporate-transition origin-left"></div>
                 </div>
               </div>
             </Link>
 
             <Link to="/destinations/rosewood-maldives" className="group">
-              <div className="bg-card border border-border overflow-hidden corporate-transition group-hover:shadow-lg">
-                <img 
-                  src={rosewoodMaldivesImage} 
-                  alt="Rosewood Maldives"
-                  className="w-full h-48 object-cover"
-                />
-                <div className="p-6">
-                  <h3 className="text-xl font-gotham-bold text-foreground mb-2">Rosewood Maldives</h3>
+              <div className="bg-card border border-border overflow-hidden corporate-transition group-hover:shadow-xl group-hover:-translate-y-1 relative">
+                <div className="relative overflow-hidden">
+                  <img 
+                    src={rosewoodMaldivesImage} 
+                    alt="Rosewood Maldives"
+                    className="w-full h-64 object-cover group-hover:scale-105 corporate-transition"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent opacity-0 group-hover:opacity-100 corporate-transition"></div>
+                  <div className="absolute bottom-4 left-4 text-white opacity-0 group-hover:opacity-100 corporate-transition">
+                    <span className="text-sm font-gotham-medium">Explore →</span>
+                  </div>
+                </div>
+                <div className="p-8">
+                  <h3 className="text-xl font-gotham-bold text-foreground mb-3 group-hover:text-primary corporate-transition">Rosewood Maldives</h3>
                   <p className="font-gotham text-muted-foreground text-sm leading-relaxed">
                     Ultra-luxury island living, reimagined.
                   </p>
+                  <div className="mt-4 w-12 h-0.5 bg-primary transform scale-x-0 group-hover:scale-x-100 corporate-transition origin-left"></div>
                 </div>
               </div>
             </Link>
 
             <Link to="/destinations/rixos-baghdad" className="group">
-              <div className="bg-card border border-border overflow-hidden corporate-transition group-hover:shadow-lg">
-                <img 
-                  src={rixosBaghdadImage} 
-                  alt="Rixos Baghdad"
-                  className="w-full h-48 object-cover"
-                />
-                <div className="p-6">
-                  <h3 className="text-xl font-gotham-bold text-foreground mb-2">Rixos Baghdad</h3>
+              <div className="bg-card border border-border overflow-hidden corporate-transition group-hover:shadow-xl group-hover:-translate-y-1 relative">
+                <div className="relative overflow-hidden">
+                  <img 
+                    src={rixosBaghdadImage} 
+                    alt="Rixos Baghdad"
+                    className="w-full h-64 object-cover group-hover:scale-105 corporate-transition"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent opacity-0 group-hover:opacity-100 corporate-transition"></div>
+                  <div className="absolute bottom-4 left-4 text-white opacity-0 group-hover:opacity-100 corporate-transition">
+                    <span className="text-sm font-gotham-medium">Explore →</span>
+                  </div>
+                </div>
+                <div className="p-8">
+                  <h3 className="text-xl font-gotham-bold text-foreground mb-3 group-hover:text-primary corporate-transition">Rixos Baghdad</h3>
                   <p className="font-gotham text-muted-foreground text-sm leading-relaxed">
                     Contemporary hospitality anchored in a storied capital.
                   </p>
+                  <div className="mt-4 w-12 h-0.5 bg-primary transform scale-x-0 group-hover:scale-x-100 corporate-transition origin-left"></div>
                 </div>
               </div>
             </Link>
