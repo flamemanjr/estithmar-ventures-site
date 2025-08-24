@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import { CorporateButton } from "@/components/ui/corporate-button";
+import { Building2, Settings, TrendingUp } from "lucide-react";
 import heroImage from "@/assets/hero-image.jpg";
 import alMahaImage from "@/assets/al-maha-island.jpg";
 import kataraHillsImage from "@/assets/katara-hills.jpg";
@@ -72,7 +73,7 @@ const Index = () => {
             <div className="bg-card border border-border p-8 text-center group hover:shadow-lg corporate-transition relative overflow-hidden">
               <div className="absolute top-0 left-0 w-full h-1 bg-primary transform scale-x-0 group-hover:scale-x-100 corporate-transition"></div>
               <div className="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-6">
-                <div className="w-6 h-6 bg-primary rounded-full"></div>
+                <Building2 className="w-6 h-6 text-primary" />
               </div>
               <h3 className="text-xl font-gotham-bold text-foreground mb-4">Develop</h3>
               <p className="font-gotham text-muted-foreground leading-relaxed">
@@ -83,7 +84,7 @@ const Index = () => {
             <div className="bg-card border border-border p-8 text-center group hover:shadow-lg corporate-transition relative overflow-hidden">
               <div className="absolute top-0 left-0 w-full h-1 bg-primary transform scale-x-0 group-hover:scale-x-100 corporate-transition"></div>
               <div className="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-6">
-                <div className="w-6 h-6 bg-primary rounded-full"></div>
+                <Settings className="w-6 h-6 text-primary" />
               </div>
               <h3 className="text-xl font-gotham-bold text-foreground mb-4">Operate</h3>
               <p className="font-gotham text-muted-foreground leading-relaxed">
@@ -94,7 +95,7 @@ const Index = () => {
             <div className="bg-card border border-border p-8 text-center group hover:shadow-lg corporate-transition relative overflow-hidden">
               <div className="absolute top-0 left-0 w-full h-1 bg-primary transform scale-x-0 group-hover:scale-x-100 corporate-transition"></div>
               <div className="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-6">
-                <div className="w-6 h-6 bg-primary rounded-full"></div>
+                <TrendingUp className="w-6 h-6 text-primary" />
               </div>
               <h3 className="text-xl font-gotham-bold text-foreground mb-4">Scale</h3>
               <p className="font-gotham text-muted-foreground leading-relaxed">
