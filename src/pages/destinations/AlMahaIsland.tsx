@@ -45,7 +45,7 @@ const AlMahaIsland = () => {
           className="absolute inset-0 bg-cover bg-center bg-no-repeat"
           style={{ backgroundImage: `url(${alMahaImage})` }}
         >
-          <div className="absolute inset-0 bg-black/40"></div>
+          <div className="absolute inset-0 bg-gradient-to-b from-black/20 via-black/30 to-black/60"></div>
         </div>
         
         <div className="relative z-10 h-full flex items-center justify-center text-center">
@@ -95,34 +95,40 @@ const AlMahaIsland = () => {
             </div>
             
             {/* Fact Cards */}
-            <div className="grid grid-cols-1 gap-6">
-              <div className="bg-card border border-border p-6 flex items-center">
-                <div className="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center mr-4">
-                  <Users className="w-6 h-6 text-primary" />
-                </div>
-                <div>
-                  <div className="text-2xl font-gotham-bold text-primary">1.5M+</div>
-                  <div className="text-sm font-gotham text-muted-foreground">Visitors Annually</div>
-                </div>
-              </div>
-              
-              <div className="bg-card border border-border p-6 flex items-center">
-                <div className="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center mr-4">
-                  <Calendar className="w-6 h-6 text-primary" />
-                </div>
-                <div>
-                  <div className="text-2xl font-gotham-bold text-primary">2022</div>
-                  <div className="text-sm font-gotham text-muted-foreground">Launch Year</div>
+            <div className="grid grid-cols-1 gap-8">
+              <div className="bg-gradient-to-r from-primary/5 to-transparent p-8 rounded-lg hover:from-primary/10 corporate-transition">
+                <div className="flex items-center">
+                  <div className="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mr-6">
+                    <Users className="w-8 h-8 text-primary" />
+                  </div>
+                  <div>
+                    <div className="text-3xl font-gotham-bold text-primary">1.5M+</div>
+                    <div className="text-base font-gotham text-muted-foreground">Visitors Annually</div>
+                  </div>
                 </div>
               </div>
               
-              <div className="bg-card border border-border p-6 flex items-center">
-                <div className="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center mr-4">
-                  <MapPin className="w-6 h-6 text-primary" />
+              <div className="bg-gradient-to-r from-primary/5 to-transparent p-8 rounded-lg hover:from-primary/10 corporate-transition">
+                <div className="flex items-center">
+                  <div className="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mr-6">
+                    <Calendar className="w-8 h-8 text-primary" />
+                  </div>
+                  <div>
+                    <div className="text-3xl font-gotham-bold text-primary">2022</div>
+                    <div className="text-base font-gotham text-muted-foreground">Launch Year</div>
+                  </div>
                 </div>
-                <div>
-                  <div className="text-lg font-gotham-bold text-primary">Global Brands</div>
-                  <div className="text-sm font-gotham text-muted-foreground">Signature Partners</div>
+              </div>
+              
+              <div className="bg-gradient-to-r from-primary/5 to-transparent p-8 rounded-lg hover:from-primary/10 corporate-transition">
+                <div className="flex items-center">
+                  <div className="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mr-6">
+                    <MapPin className="w-8 h-8 text-primary" />
+                  </div>
+                  <div>
+                    <div className="text-2xl font-gotham-bold text-primary">Global Brands</div>
+                    <div className="text-base font-gotham text-muted-foreground">Signature Partners</div>
+                  </div>
                 </div>
               </div>
             </div>
@@ -137,61 +143,127 @@ const AlMahaIsland = () => {
             <h2 className="text-4xl font-gotham-bold text-foreground mb-6">Signature Experiences</h2>
           </div>
           
-          <div className="space-y-12">
-            <div className="space-y-8">
-              <div className="bg-card border border-border p-8">
-                <h3 className="text-2xl font-gotham-bold text-foreground mb-4">Dining & Lounges</h3>
-                <p className="font-gotham text-muted-foreground leading-relaxed">
+          <div className="space-y-16">
+            <div className="space-y-12">
+              <div className="bg-gradient-to-r from-background to-muted/30 p-12 rounded-2xl">
+                <h3 className="text-3xl font-gotham-bold text-foreground mb-6">Dining & Lounges</h3>
+                <p className="text-lg font-gotham text-muted-foreground leading-relaxed max-w-3xl">
                   International operators with flagship concepts bringing world-class culinary experiences to the island.
                 </p>
               </div>
-              <div className="grid grid-cols-2 md:grid-cols-5 gap-4">
-                <div className="h-20 bg-muted border border-border flex items-center justify-center">
-                  <span className="text-xs font-gotham text-muted-foreground">Restaurant 1</span>
+              <div className="grid grid-cols-2 md:grid-cols-5 gap-8">
+                <div className="group hover:scale-105 corporate-transition">
+                  <div className="bg-white p-6 rounded-xl shadow-sm hover:shadow-md corporate-transition flex items-center justify-center h-24">
+                    <img 
+                      src="/lovable-uploads/173cc01c-61cb-4799-836d-6e5fcb0beb4c.png" 
+                      alt="Bagatelle Beach Club Doha" 
+                      className="max-h-full max-w-full object-contain"
+                    />
+                  </div>
                 </div>
-                <div className="h-20 bg-muted border border-border flex items-center justify-center">
-                  <span className="text-xs font-gotham text-muted-foreground">Restaurant 2</span>
+                <div className="group hover:scale-105 corporate-transition">
+                  <div className="bg-white p-6 rounded-xl shadow-sm hover:shadow-md corporate-transition flex items-center justify-center h-24">
+                    <img 
+                      src="/lovable-uploads/dd0dd801-b029-4786-97b2-84b027de2a40.png" 
+                      alt="Zuma" 
+                      className="max-h-full max-w-full object-contain"
+                    />
+                  </div>
                 </div>
-                <div className="h-20 bg-muted border border-border flex items-center justify-center">
-                  <span className="text-xs font-gotham text-muted-foreground">Restaurant 3</span>
+                <div className="group hover:scale-105 corporate-transition">
+                  <div className="bg-white p-6 rounded-xl shadow-sm hover:shadow-md corporate-transition flex items-center justify-center h-24">
+                    <img 
+                      src="/lovable-uploads/ef5b536e-65db-44e7-8342-4fd46ebf9f18.png" 
+                      alt="Beefbar" 
+                      className="max-h-full max-w-full object-contain"
+                    />
+                  </div>
                 </div>
-                <div className="h-20 bg-muted border border-border flex items-center justify-center">
-                  <span className="text-xs font-gotham text-muted-foreground">Restaurant 4</span>
+                <div className="group hover:scale-105 corporate-transition">
+                  <div className="bg-white p-6 rounded-xl shadow-sm hover:shadow-md corporate-transition flex items-center justify-center h-24">
+                    <img 
+                      src="/lovable-uploads/c00388f1-e330-44cd-8f4d-c0373b69c5b4.png" 
+                      alt="LPM Restaurant & Bar" 
+                      className="max-h-full max-w-full object-contain"
+                    />
+                  </div>
                 </div>
-                <div className="h-20 bg-muted border border-border flex items-center justify-center">
-                  <span className="text-xs font-gotham text-muted-foreground">Restaurant 5</span>
+                <div className="group hover:scale-105 corporate-transition">
+                  <div className="bg-white p-6 rounded-xl shadow-sm hover:shadow-md corporate-transition flex items-center justify-center h-24">
+                    <img 
+                      src="/lovable-uploads/3374b7f9-da96-4f50-903f-ea99e2251856.png" 
+                      alt="Carbone" 
+                      className="max-h-full max-w-full object-contain"
+                    />
+                  </div>
                 </div>
-                <div className="h-20 bg-muted border border-border flex items-center justify-center">
-                  <span className="text-xs font-gotham text-muted-foreground">Restaurant 6</span>
+                <div className="group hover:scale-105 corporate-transition">
+                  <div className="bg-white p-6 rounded-xl shadow-sm hover:shadow-md corporate-transition flex items-center justify-center h-24">
+                    <img 
+                      src="/lovable-uploads/56ff954d-6bec-46a1-b7af-dba96c05fe80.png" 
+                      alt="Em Sherif Restaurant" 
+                      className="max-h-full max-w-full object-contain"
+                    />
+                  </div>
                 </div>
-                <div className="h-20 bg-muted border border-border flex items-center justify-center">
-                  <span className="text-xs font-gotham text-muted-foreground">Restaurant 7</span>
+                <div className="group hover:scale-105 corporate-transition">
+                  <div className="bg-white p-6 rounded-xl shadow-sm hover:shadow-md corporate-transition flex items-center justify-center h-24">
+                    <img 
+                      src="/lovable-uploads/0dd443eb-d17f-4d26-8b7f-343eafe33b56.png" 
+                      alt="Moka Caffe" 
+                      className="max-h-full max-w-full object-contain"
+                    />
+                  </div>
                 </div>
-                <div className="h-20 bg-muted border border-border flex items-center justify-center">
-                  <span className="text-xs font-gotham text-muted-foreground">Restaurant 8</span>
+                <div className="group hover:scale-105 corporate-transition">
+                  <div className="bg-white p-6 rounded-xl shadow-sm hover:shadow-md corporate-transition flex items-center justify-center h-24">
+                    <img 
+                      src="/lovable-uploads/3b297576-a589-4167-a085-5dadca1174c5.png" 
+                      alt="Berentak Doha" 
+                      className="max-h-full max-w-full object-contain"
+                    />
+                  </div>
                 </div>
-                <div className="h-20 bg-muted border border-border flex items-center justify-center">
-                  <span className="text-xs font-gotham text-muted-foreground">Restaurant 9</span>
+                <div className="group hover:scale-105 corporate-transition">
+                  <div className="bg-white p-6 rounded-xl shadow-sm hover:shadow-md corporate-transition flex items-center justify-center h-24">
+                    <img 
+                      src="/lovable-uploads/e82814a1-ca39-44b4-a0c3-68b6e7570d22.png" 
+                      alt="Viva La Vida" 
+                      className="max-h-full max-w-full object-contain"
+                    />
+                  </div>
                 </div>
-                <div className="h-20 bg-muted border border-border flex items-center justify-center">
-                  <span className="text-xs font-gotham text-muted-foreground">Restaurant 10</span>
+                <div className="group hover:scale-105 corporate-transition">
+                  <div className="bg-white p-6 rounded-xl shadow-sm hover:shadow-md corporate-transition flex items-center justify-center h-24">
+                    <img 
+                      src="/lovable-uploads/31084831-a788-4d5e-982e-68da4aaa84c1.png" 
+                      alt="Karaki Lounge" 
+                      className="max-h-full max-w-full object-contain"
+                    />
+                  </div>
                 </div>
               </div>
             </div>
             
-            <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 items-center">
+            <div className="grid grid-cols-1 lg:grid-cols-3 gap-12 items-center">
               <div className="lg:col-span-2">
-                <div className="bg-card border border-border p-8">
-                  <h3 className="text-2xl font-gotham-bold text-foreground mb-4">Seasonal Programs</h3>
-                  <p className="font-gotham text-muted-foreground leading-relaxed">
+                <div className="bg-gradient-to-r from-background to-muted/30 p-12 rounded-2xl">
+                  <h3 className="text-3xl font-gotham-bold text-foreground mb-6">Seasonal Programs</h3>
+                  <p className="text-lg font-gotham text-muted-foreground leading-relaxed">
                     Family and headline entertainment throughout the year, curated for all ages and interests.
                   </p>
                 </div>
               </div>
               <div className="lg:col-span-1">
                 <div className="flex justify-center">
-                  <div className="h-20 w-32 bg-muted border border-border flex items-center justify-center">
-                    <span className="text-xs font-gotham text-muted-foreground">Program 1</span>
+                  <div className="group hover:scale-105 corporate-transition">
+                    <div className="bg-white p-8 rounded-xl shadow-sm hover:shadow-md corporate-transition flex items-center justify-center h-32 w-48">
+                      <img 
+                        src="/lovable-uploads/53769d64-af09-4a96-b65b-300f5381482d.png" 
+                        alt="Lusail Winter Wonderland" 
+                        className="max-h-full max-w-full object-contain"
+                      />
+                    </div>
                   </div>
                 </div>
               </div>
