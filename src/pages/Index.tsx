@@ -69,21 +69,33 @@ const Index = () => {
           </div>
           
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            <div className="bg-card border border-border p-8 text-center">
+            <div className="bg-card border border-border p-8 text-center group hover:shadow-lg corporate-transition relative overflow-hidden">
+              <div className="absolute top-0 left-0 w-full h-1 bg-primary transform scale-x-0 group-hover:scale-x-100 corporate-transition"></div>
+              <div className="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-6">
+                <div className="w-6 h-6 bg-primary rounded-full"></div>
+              </div>
               <h3 className="text-xl font-gotham-bold text-foreground mb-4">Develop</h3>
               <p className="font-gotham text-muted-foreground leading-relaxed">
                 From concept to launch, we deliver destinations that set new standards for luxury and reliability.
               </p>
             </div>
             
-            <div className="bg-card border border-border p-8 text-center">
+            <div className="bg-card border border-border p-8 text-center group hover:shadow-lg corporate-transition relative overflow-hidden">
+              <div className="absolute top-0 left-0 w-full h-1 bg-primary transform scale-x-0 group-hover:scale-x-100 corporate-transition"></div>
+              <div className="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-6">
+                <div className="w-6 h-6 bg-primary rounded-full"></div>
+              </div>
               <h3 className="text-xl font-gotham-bold text-foreground mb-4">Operate</h3>
               <p className="font-gotham text-muted-foreground leading-relaxed">
                 We partner with leading brands to ensure excellence in guest experience and performance.
               </p>
             </div>
             
-            <div className="bg-card border border-border p-8 text-center">
+            <div className="bg-card border border-border p-8 text-center group hover:shadow-lg corporate-transition relative overflow-hidden">
+              <div className="absolute top-0 left-0 w-full h-1 bg-primary transform scale-x-0 group-hover:scale-x-100 corporate-transition"></div>
+              <div className="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-6">
+                <div className="w-6 h-6 bg-primary rounded-full"></div>
+              </div>
               <h3 className="text-xl font-gotham-bold text-foreground mb-4">Scale</h3>
               <p className="font-gotham text-muted-foreground leading-relaxed">
                 With the backing of Estithmar Holding, we execute at speed and at global scale.
