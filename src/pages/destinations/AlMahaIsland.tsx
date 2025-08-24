@@ -137,34 +137,85 @@ const AlMahaIsland = () => {
             <h2 className="text-4xl font-gotham-bold text-foreground mb-6">Signature Experiences</h2>
           </div>
           
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            <div className="bg-card border border-border overflow-hidden group hover:shadow-lg corporate-transition">
-              <div className="w-full h-48 bg-gradient-to-br from-primary/20 to-primary/5"></div>
-              <div className="p-6">
-                <h3 className="text-xl font-gotham-bold text-foreground mb-3">Dining & Lounges</h3>
-                <p className="font-gotham text-muted-foreground text-sm leading-relaxed">
-                  International operators with flagship concepts bringing world-class culinary experiences.
-                </p>
+          <div className="space-y-12">
+            <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 items-center">
+              <div className="lg:col-span-2">
+                <div className="bg-card border border-border p-8">
+                  <h3 className="text-2xl font-gotham-bold text-foreground mb-4">Dining & Lounges</h3>
+                  <p className="font-gotham text-muted-foreground leading-relaxed">
+                    International operators with flagship concepts bringing world-class culinary experiences to the island.
+                  </p>
+                </div>
+              </div>
+              <div className="lg:col-span-1">
+                <div className="grid grid-cols-2 gap-4">
+                  <div className="h-20 bg-muted border border-border flex items-center justify-center">
+                    <span className="text-xs font-gotham text-muted-foreground">Restaurant 1</span>
+                  </div>
+                  <div className="h-20 bg-muted border border-border flex items-center justify-center">
+                    <span className="text-xs font-gotham text-muted-foreground">Restaurant 2</span>
+                  </div>
+                  <div className="h-20 bg-muted border border-border flex items-center justify-center">
+                    <span className="text-xs font-gotham text-muted-foreground">Restaurant 3</span>
+                  </div>
+                  <div className="h-20 bg-muted border border-border flex items-center justify-center">
+                    <span className="text-xs font-gotham text-muted-foreground">Restaurant 4</span>
+                  </div>
+                </div>
               </div>
             </div>
             
-            <div className="bg-card border border-border overflow-hidden group hover:shadow-lg corporate-transition">
-              <div className="w-full h-48 bg-gradient-to-br from-primary/20 to-primary/5"></div>
-              <div className="p-6">
-                <h3 className="text-xl font-gotham-bold text-foreground mb-3">Seasonal Programs</h3>
-                <p className="font-gotham text-muted-foreground text-sm leading-relaxed">
-                  Family and headline entertainment throughout the year, curated for all ages.
-                </p>
+            <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 items-center">
+              <div className="lg:col-span-2">
+                <div className="bg-card border border-border p-8">
+                  <h3 className="text-2xl font-gotham-bold text-foreground mb-4">Seasonal Programs</h3>
+                  <p className="font-gotham text-muted-foreground leading-relaxed">
+                    Family and headline entertainment throughout the year, curated for all ages and interests.
+                  </p>
+                </div>
+              </div>
+              <div className="lg:col-span-1">
+                <div className="grid grid-cols-2 gap-4">
+                  <div className="h-20 bg-muted border border-border flex items-center justify-center">
+                    <span className="text-xs font-gotham text-muted-foreground">Program 1</span>
+                  </div>
+                  <div className="h-20 bg-muted border border-border flex items-center justify-center">
+                    <span className="text-xs font-gotham text-muted-foreground">Program 2</span>
+                  </div>
+                  <div className="h-20 bg-muted border border-border flex items-center justify-center">
+                    <span className="text-xs font-gotham text-muted-foreground">Program 3</span>
+                  </div>
+                  <div className="h-20 bg-muted border border-border flex items-center justify-center">
+                    <span className="text-xs font-gotham text-muted-foreground">Program 4</span>
+                  </div>
+                </div>
               </div>
             </div>
             
-            <div className="bg-card border border-border overflow-hidden group hover:shadow-lg corporate-transition">
-              <div className="w-full h-48 bg-gradient-to-br from-primary/20 to-primary/5"></div>
-              <div className="p-6">
-                <h3 className="text-xl font-gotham-bold text-foreground mb-3">Event Zones</h3>
-                <p className="font-gotham text-muted-foreground text-sm leading-relaxed">
-                  Designed for flow, capacity, and guest comfort with state-of-the-art facilities.
-                </p>
+            <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 items-center">
+              <div className="lg:col-span-2">
+                <div className="bg-card border border-border p-8">
+                  <h3 className="text-2xl font-gotham-bold text-foreground mb-4">Event Zones</h3>
+                  <p className="font-gotham text-muted-foreground leading-relaxed">
+                    Designed for flow, capacity, and guest comfort with state-of-the-art facilities and infrastructure.
+                  </p>
+                </div>
+              </div>
+              <div className="lg:col-span-1">
+                <div className="grid grid-cols-2 gap-4">
+                  <div className="h-20 bg-muted border border-border flex items-center justify-center">
+                    <span className="text-xs font-gotham text-muted-foreground">Venue 1</span>
+                  </div>
+                  <div className="h-20 bg-muted border border-border flex items-center justify-center">
+                    <span className="text-xs font-gotham text-muted-foreground">Venue 2</span>
+                  </div>
+                  <div className="h-20 bg-muted border border-border flex items-center justify-center">
+                    <span className="text-xs font-gotham text-muted-foreground">Venue 3</span>
+                  </div>
+                  <div className="h-20 bg-muted border border-border flex items-center justify-center">
+                    <span className="text-xs font-gotham text-muted-foreground">Venue 4</span>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
