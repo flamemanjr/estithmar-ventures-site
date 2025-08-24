@@ -1,90 +1,260 @@
+import { useEffect } from "react";
+import { Link } from "react-router-dom";
+import { ExternalLink, ChevronRight, MapPin, Calendar, Users } from "lucide-react";
 import { CorporateButton } from "@/components/ui/corporate-button";
 import alMahaImage from "@/assets/al-maha-island.jpg";
 
 const AlMahaIsland = () => {
+  useEffect(() => {
+    document.title = "Al Maha Island | Estithmar Ventures";
+    
+    // Update meta description
+    const metaDescription = document.querySelector('meta[name="description"]');
+    if (metaDescription) {
+      metaDescription.setAttribute('content', 'Al Maha Island is Qatar\'s premier leisure and entertainment destination—dining, seasonal programs, and signature events at scale.');
+    }
+  }, []);
+
+  const scrollToExperiences = () => {
+    const element = document.getElementById('experiences');
+    element?.scrollIntoView({ behavior: 'smooth' });
+  };
+
   return (
     <div className="bg-background">
+      {/* Breadcrumbs */}
+      <section className="py-4 bg-muted border-b border-border">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <nav className="flex items-center space-x-2 text-sm font-gotham">
+            <Link to="/" className="text-muted-foreground hover:text-primary corporate-transition">
+              Home
+            </Link>
+            <ChevronRight className="w-4 h-4 text-muted-foreground" />
+            <Link to="/destinations" className="text-muted-foreground hover:text-primary corporate-transition">
+              Destinations
+            </Link>
+            <ChevronRight className="w-4 h-4 text-muted-foreground" />
+            <span className="text-foreground font-gotham-medium">Al Maha Island</span>
+          </nav>
+        </div>
+      </section>
+
       {/* Hero Section */}
-      <section className="relative h-96 bg-black">
+      <section className="relative h-[70vh] bg-black">
         <div 
           className="absolute inset-0 bg-cover bg-center bg-no-repeat"
           style={{ backgroundImage: `url(${alMahaImage})` }}
         >
-          <div className="absolute inset-0 bg-black/50"></div>
+          <div className="absolute inset-0 bg-black/40"></div>
         </div>
         
         <div className="relative z-10 h-full flex items-center justify-center text-center">
           <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-            <h1 className="text-5xl font-gotham-bold text-white mb-4">Al Maha Island</h1>
-            <p className="text-xl font-gotham text-white/90">
+            <h1 className="text-5xl md:text-6xl font-gotham-bold text-white mb-6">Al Maha Island</h1>
+            <p className="text-xl md:text-2xl font-gotham text-white/90 mb-12 max-w-3xl mx-auto leading-relaxed">
               Qatar's premier leisure and entertainment destination.
             </p>
+            
+            <div className="flex flex-col sm:flex-row gap-4 justify-center">
+              <CorporateButton asChild size="lg">
+                <a 
+                  href="OFFICIAL_WEBSITE_URL_PLACEHOLDER" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center"
+                >
+                  Visit Official Website
+                  <ExternalLink className="ml-2 w-4 h-4" />
+                </a>
+              </CorporateButton>
+              <CorporateButton 
+                variant="outline" 
+                size="lg" 
+                onClick={scrollToExperiences}
+                className="text-white border-white hover:bg-white hover:text-black"
+              >
+                Explore Experiences
+              </CorporateButton>
+            </div>
           </div>
         </div>
       </section>
 
-      {/* Overview */}
+      {/* Overview Section */}
       <section className="py-24 bg-background">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="max-w-4xl mx-auto">
-            <p className="text-lg font-gotham text-muted-foreground leading-relaxed mb-16">
-              Al Maha Island brings world-class dining, entertainment, and seasonal programs together 
-              on Doha's doorstep. Designed for scale and seamless operations, the island welcomes 
-              residents and visitors to a curated mix of signature restaurants, family experiences, 
-              and headline events.
-            </p>
-
-            {/* Fact Cards */}
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-16">
-              <div className="bg-card border border-border p-6 text-center">
-                <h3 className="text-2xl font-gotham-bold text-primary mb-2">1.5M+</h3>
-                <p className="font-gotham text-muted-foreground">Visitors Annually</p>
-              </div>
-              
-              <div className="bg-card border border-border p-6 text-center">
-                <h3 className="text-2xl font-gotham-bold text-primary mb-2">2022</h3>
-                <p className="font-gotham text-muted-foreground">Launch Year</p>
-              </div>
-              
-              <div className="bg-card border border-border p-6 text-center">
-                <h3 className="text-2xl font-gotham-bold text-primary mb-2">Global</h3>
-                <p className="font-gotham text-muted-foreground">Signature Partners</p>
-              </div>
-            </div>
-
-            {/* Experiences */}
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
             <div>
-              <h2 className="text-3xl font-gotham-bold text-foreground mb-8">Experiences</h2>
-              <div className="space-y-4">
-                <div className="flex items-center">
-                  <div className="w-2 h-2 bg-primary mr-4 flex-shrink-0"></div>
-                  <p className="font-gotham text-foreground">
-                    Dining & lounges by international operators
-                  </p>
+              <h2 className="text-4xl font-gotham-bold text-foreground mb-8">Overview</h2>
+              <p className="text-lg font-gotham text-muted-foreground leading-relaxed">
+                Al Maha Island brings world-class dining, entertainment, and seasonal programs together 
+                on Doha's doorstep. Designed for scale and seamless operations, the island welcomes 
+                residents and visitors to a curated mix of signature restaurants, family experiences, 
+                and headline events.
+              </p>
+            </div>
+            
+            {/* Fact Cards */}
+            <div className="grid grid-cols-1 gap-6">
+              <div className="bg-card border border-border p-6 flex items-center">
+                <div className="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center mr-4">
+                  <Users className="w-6 h-6 text-primary" />
                 </div>
-                
-                <div className="flex items-center">
-                  <div className="w-2 h-2 bg-primary mr-4 flex-shrink-0"></div>
-                  <p className="font-gotham text-foreground">
-                    Seasonal entertainment and family programming
-                  </p>
-                </div>
-                
-                <div className="flex items-center">
-                  <div className="w-2 h-2 bg-primary mr-4 flex-shrink-0"></div>
-                  <p className="font-gotham text-foreground">
-                    Event zones designed for flow and capacity
-                  </p>
+                <div>
+                  <div className="text-2xl font-gotham-bold text-primary">1.5M+</div>
+                  <div className="text-sm font-gotham text-muted-foreground">Visitors Annually</div>
                 </div>
               </div>
-            </div>
-
-            <div className="text-center mt-12">
-              <CorporateButton>
-                Visit Official Website
-              </CorporateButton>
+              
+              <div className="bg-card border border-border p-6 flex items-center">
+                <div className="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center mr-4">
+                  <Calendar className="w-6 h-6 text-primary" />
+                </div>
+                <div>
+                  <div className="text-2xl font-gotham-bold text-primary">2022</div>
+                  <div className="text-sm font-gotham text-muted-foreground">Launch Year</div>
+                </div>
+              </div>
+              
+              <div className="bg-card border border-border p-6 flex items-center">
+                <div className="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center mr-4">
+                  <MapPin className="w-6 h-6 text-primary" />
+                </div>
+                <div>
+                  <div className="text-lg font-gotham-bold text-primary">Global Brands</div>
+                  <div className="text-sm font-gotham text-muted-foreground">Signature Partners</div>
+                </div>
+              </div>
             </div>
           </div>
+        </div>
+      </section>
+
+      {/* Signature Experiences */}
+      <section id="experiences" className="py-24 bg-muted">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-16">
+            <h2 className="text-4xl font-gotham-bold text-foreground mb-6">Signature Experiences</h2>
+          </div>
+          
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div className="bg-card border border-border overflow-hidden group hover:shadow-lg corporate-transition">
+              <div className="w-full h-48 bg-gradient-to-br from-primary/20 to-primary/5"></div>
+              <div className="p-6">
+                <h3 className="text-xl font-gotham-bold text-foreground mb-3">Dining & Lounges</h3>
+                <p className="font-gotham text-muted-foreground text-sm leading-relaxed">
+                  International operators with flagship concepts bringing world-class culinary experiences.
+                </p>
+              </div>
+            </div>
+            
+            <div className="bg-card border border-border overflow-hidden group hover:shadow-lg corporate-transition">
+              <div className="w-full h-48 bg-gradient-to-br from-primary/20 to-primary/5"></div>
+              <div className="p-6">
+                <h3 className="text-xl font-gotham-bold text-foreground mb-3">Seasonal Programs</h3>
+                <p className="font-gotham text-muted-foreground text-sm leading-relaxed">
+                  Family and headline entertainment throughout the year, curated for all ages.
+                </p>
+              </div>
+            </div>
+            
+            <div className="bg-card border border-border overflow-hidden group hover:shadow-lg corporate-transition">
+              <div className="w-full h-48 bg-gradient-to-br from-primary/20 to-primary/5"></div>
+              <div className="p-6">
+                <h3 className="text-xl font-gotham-bold text-foreground mb-3">Event Zones</h3>
+                <p className="font-gotham text-muted-foreground text-sm leading-relaxed">
+                  Designed for flow, capacity, and guest comfort with state-of-the-art facilities.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Visual Gallery */}
+      <section className="py-24 bg-background">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-16">
+            <h2 className="text-4xl font-gotham-bold text-foreground mb-6">Gallery</h2>
+          </div>
+          
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
+            {Array.from({ length: 8 }).map((_, index) => (
+              <div 
+                key={index} 
+                className={`bg-muted border border-border aspect-square ${
+                  index === 0 || index === 7 ? 'md:col-span-2 md:row-span-2' : ''
+                } group cursor-pointer overflow-hidden`}
+              >
+                <div className="w-full h-full bg-gradient-to-br from-primary/10 to-primary/5 flex items-center justify-center group-hover:from-primary/20 group-hover:to-primary/10 corporate-transition">
+                  <span className="text-xs font-gotham text-muted-foreground">Image {index + 1}</span>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Location & Map */}
+      <section className="py-24 bg-muted">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+            <div>
+              <h2 className="text-4xl font-gotham-bold text-foreground mb-6">Location</h2>
+              <p className="text-lg font-gotham text-muted-foreground leading-relaxed mb-6">
+                Strategically positioned in Lusail, Al Maha Island offers unparalleled access to Doha's 
+                business district while providing a distinct island experience.
+              </p>
+              <div className="flex items-center text-sm font-gotham text-muted-foreground">
+                <MapPin className="w-4 h-4 mr-2 text-primary" />
+                Lusail, Qatar
+              </div>
+            </div>
+            
+            <div className="aspect-video bg-card border border-border flex items-center justify-center">
+              <div className="text-center">
+                <MapPin className="w-12 h-12 text-primary mx-auto mb-4" />
+                <span className="text-sm font-gotham text-muted-foreground">Interactive Map Placeholder</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Partners & Accolades */}
+      <section className="py-16 bg-background">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+          <h2 className="text-3xl font-gotham-bold text-foreground mb-8">Partners & Recognition</h2>
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-8 mb-8">
+            {Array.from({ length: 4 }).map((_, index) => (
+              <div key={index} className="h-16 bg-muted border border-border flex items-center justify-center">
+                <span className="text-xs font-gotham text-muted-foreground">Partner {index + 1}</span>
+              </div>
+            ))}
+          </div>
+          <p className="text-sm font-gotham text-muted-foreground">
+            Recognized for excellence in hospitality and entertainment design.
+          </p>
+        </div>
+      </section>
+
+      {/* CTA Banner */}
+      <section className="py-24 bg-foreground">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+          <h2 className="text-4xl font-gotham-bold text-background mb-6">
+            Discover More About Al Maha Island
+          </h2>
+          <CorporateButton asChild size="lg" variant="outline">
+            <a 
+              href="OFFICIAL_WEBSITE_URL_PLACEHOLDER" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="inline-flex items-center text-background border-background hover:bg-background hover:text-foreground"
+            >
+              Visit Official Website
+              <ExternalLink className="ml-2 w-4 h-4" />
+            </a>
+          </CorporateButton>
         </div>
       </section>
     </div>
