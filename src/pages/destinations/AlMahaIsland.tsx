@@ -138,47 +138,43 @@ const AlMahaIsland = () => {
           </div>
           
           <div className="space-y-12">
-            <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 items-center">
-              <div className="lg:col-span-2">
-                <div className="bg-card border border-border p-8">
-                  <h3 className="text-2xl font-gotham-bold text-foreground mb-4">Dining & Lounges</h3>
-                  <p className="font-gotham text-muted-foreground leading-relaxed">
-                    International operators with flagship concepts bringing world-class culinary experiences to the island.
-                  </p>
-                </div>
+            <div className="space-y-8">
+              <div className="bg-card border border-border p-8">
+                <h3 className="text-2xl font-gotham-bold text-foreground mb-4">Dining & Lounges</h3>
+                <p className="font-gotham text-muted-foreground leading-relaxed">
+                  International operators with flagship concepts bringing world-class culinary experiences to the island.
+                </p>
               </div>
-              <div className="lg:col-span-1">
-                <div className="grid grid-cols-2 gap-4">
-                  <div className="h-20 bg-muted border border-border flex items-center justify-center">
-                    <span className="text-xs font-gotham text-muted-foreground">Restaurant 1</span>
-                  </div>
-                  <div className="h-20 bg-muted border border-border flex items-center justify-center">
-                    <span className="text-xs font-gotham text-muted-foreground">Restaurant 2</span>
-                  </div>
-                  <div className="h-20 bg-muted border border-border flex items-center justify-center">
-                    <span className="text-xs font-gotham text-muted-foreground">Restaurant 3</span>
-                  </div>
-                  <div className="h-20 bg-muted border border-border flex items-center justify-center">
-                    <span className="text-xs font-gotham text-muted-foreground">Restaurant 4</span>
-                  </div>
-                  <div className="h-20 bg-muted border border-border flex items-center justify-center">
-                    <span className="text-xs font-gotham text-muted-foreground">Restaurant 5</span>
-                  </div>
-                  <div className="h-20 bg-muted border border-border flex items-center justify-center">
-                    <span className="text-xs font-gotham text-muted-foreground">Restaurant 6</span>
-                  </div>
-                  <div className="h-20 bg-muted border border-border flex items-center justify-center">
-                    <span className="text-xs font-gotham text-muted-foreground">Restaurant 7</span>
-                  </div>
-                  <div className="h-20 bg-muted border border-border flex items-center justify-center">
-                    <span className="text-xs font-gotham text-muted-foreground">Restaurant 8</span>
-                  </div>
-                  <div className="h-20 bg-muted border border-border flex items-center justify-center">
-                    <span className="text-xs font-gotham text-muted-foreground">Restaurant 9</span>
-                  </div>
-                  <div className="h-20 bg-muted border border-border flex items-center justify-center">
-                    <span className="text-xs font-gotham text-muted-foreground">Restaurant 10</span>
-                  </div>
+              <div className="grid grid-cols-2 md:grid-cols-5 gap-4">
+                <div className="h-20 bg-muted border border-border flex items-center justify-center">
+                  <span className="text-xs font-gotham text-muted-foreground">Restaurant 1</span>
+                </div>
+                <div className="h-20 bg-muted border border-border flex items-center justify-center">
+                  <span className="text-xs font-gotham text-muted-foreground">Restaurant 2</span>
+                </div>
+                <div className="h-20 bg-muted border border-border flex items-center justify-center">
+                  <span className="text-xs font-gotham text-muted-foreground">Restaurant 3</span>
+                </div>
+                <div className="h-20 bg-muted border border-border flex items-center justify-center">
+                  <span className="text-xs font-gotham text-muted-foreground">Restaurant 4</span>
+                </div>
+                <div className="h-20 bg-muted border border-border flex items-center justify-center">
+                  <span className="text-xs font-gotham text-muted-foreground">Restaurant 5</span>
+                </div>
+                <div className="h-20 bg-muted border border-border flex items-center justify-center">
+                  <span className="text-xs font-gotham text-muted-foreground">Restaurant 6</span>
+                </div>
+                <div className="h-20 bg-muted border border-border flex items-center justify-center">
+                  <span className="text-xs font-gotham text-muted-foreground">Restaurant 7</span>
+                </div>
+                <div className="h-20 bg-muted border border-border flex items-center justify-center">
+                  <span className="text-xs font-gotham text-muted-foreground">Restaurant 8</span>
+                </div>
+                <div className="h-20 bg-muted border border-border flex items-center justify-center">
+                  <span className="text-xs font-gotham text-muted-foreground">Restaurant 9</span>
+                </div>
+                <div className="h-20 bg-muted border border-border flex items-center justify-center">
+                  <span className="text-xs font-gotham text-muted-foreground">Restaurant 10</span>
                 </div>
               </div>
             </div>
