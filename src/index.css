@@ -144,4 +144,19 @@ All colors MUST be HSL.
       transform: translateY(0);
     }
   }
+
+  /* Logo Carousel Animation */
+  .animate-scroll-left {
+    animation: scrollLeft 30s linear infinite;
+    width: max-content;
+  }
+  
+  @keyframes scrollLeft {
+    from {
+      transform: translateX(0);
+    }
+    to {
+      transform: translateX(-50%);
+    }
+  }
 }

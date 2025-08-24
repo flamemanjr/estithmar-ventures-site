@@ -188,9 +188,54 @@ const Index = () => {
       <section className="py-24 bg-background">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="text-4xl font-gotham-bold text-foreground mb-6">Partnerships</h2>
-          <p className="text-lg font-gotham text-muted-foreground max-w-4xl mx-auto leading-relaxed">
+          <p className="text-lg font-gotham text-muted-foreground max-w-4xl mx-auto leading-relaxed mb-12">
             We collaborate with global leaders—including tourism authorities, hospitality brands, and event innovators—to bring ambitious projects to life.
           </p>
+          
+          {/* Logo Carousel */}
+          <div className="relative overflow-hidden">
+            <div className="flex animate-scroll-left space-x-12 items-center">
+              {/* First set of placeholder logos */}
+              <div className="flex-shrink-0 w-32 h-16 bg-muted border border-border flex items-center justify-center">
+                <span className="text-xs font-gotham text-muted-foreground">Partner 1</span>
+              </div>
+              <div className="flex-shrink-0 w-32 h-16 bg-muted border border-border flex items-center justify-center">
+                <span className="text-xs font-gotham text-muted-foreground">Partner 2</span>
+              </div>
+              <div className="flex-shrink-0 w-32 h-16 bg-muted border border-border flex items-center justify-center">
+                <span className="text-xs font-gotham text-muted-foreground">Partner 3</span>
+              </div>
+              <div className="flex-shrink-0 w-32 h-16 bg-muted border border-border flex items-center justify-center">
+                <span className="text-xs font-gotham text-muted-foreground">Partner 4</span>
+              </div>
+              <div className="flex-shrink-0 w-32 h-16 bg-muted border border-border flex items-center justify-center">
+                <span className="text-xs font-gotham text-muted-foreground">Partner 5</span>
+              </div>
+              <div className="flex-shrink-0 w-32 h-16 bg-muted border border-border flex items-center justify-center">
+                <span className="text-xs font-gotham text-muted-foreground">Partner 6</span>
+              </div>
+              
+              {/* Duplicate set for seamless loop */}
+              <div className="flex-shrink-0 w-32 h-16 bg-muted border border-border flex items-center justify-center">
+                <span className="text-xs font-gotham text-muted-foreground">Partner 1</span>
+              </div>
+              <div className="flex-shrink-0 w-32 h-16 bg-muted border border-border flex items-center justify-center">
+                <span className="text-xs font-gotham text-muted-foreground">Partner 2</span>
+              </div>
+              <div className="flex-shrink-0 w-32 h-16 bg-muted border border-border flex items-center justify-center">
+                <span className="text-xs font-gotham text-muted-foreground">Partner 3</span>
+              </div>
+              <div className="flex-shrink-0 w-32 h-16 bg-muted border border-border flex items-center justify-center">
+                <span className="text-xs font-gotham text-muted-foreground">Partner 4</span>
+              </div>
+              <div className="flex-shrink-0 w-32 h-16 bg-muted border border-border flex items-center justify-center">
+                <span className="text-xs font-gotham text-muted-foreground">Partner 5</span>
+              </div>
+              <div className="flex-shrink-0 w-32 h-16 bg-muted border border-border flex items-center justify-center">
+                <span className="text-xs font-gotham text-muted-foreground">Partner 6</span>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
     </div>
