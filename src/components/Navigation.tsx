@@ -24,7 +24,7 @@ export const Navigation = () => {
           {/* Logo */}
           <Link to="/" className="flex-shrink-0">
             <img
-              src="/lovable-uploads/53769d64-af09-4a96-b65b-300f5381482d.png"
+              src="/lovable-uploads/eaf0d3be-5c3e-463b-82ab-abc84fac666c.png"
               alt="Estithmar Ventures"
               className="h-8 w-auto"
             />
