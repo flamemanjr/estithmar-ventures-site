@@ -209,7 +209,7 @@ const AlMahaIsland = () => {
                 <div className="group hover:scale-105 corporate-transition">
                   <div className="bg-white p-6 rounded-xl shadow-sm hover:shadow-md corporate-transition flex items-center justify-center h-24">
                     <img 
-                      src="/lovable-uploads/cb3c982f-e343-40f2-9a7a-15e13adf68d0.png" 
+                      src="/lovable-uploads/e42bd7a3-7a5f-4be6-99db-e2eda2171a36.png" 
                       alt="Moka Caffe" 
                       className="max-h-full max-w-full object-contain"
                     />
