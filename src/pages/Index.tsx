@@ -194,45 +194,65 @@ const Index = () => {
           
           {/* Logo Carousel */}
           <div className="relative overflow-hidden">
-            <div className="flex animate-scroll-left space-x-12 items-center">
-              {/* First set of placeholder logos */}
-              <div className="flex-shrink-0 w-32 h-16 bg-muted border border-border flex items-center justify-center">
-                <span className="text-xs font-gotham text-muted-foreground">Partner 1</span>
+            <div className="flex animate-scroll-left space-x-16 items-center">
+              {/* First set of partner logos */}
+              <div className="flex-shrink-0 w-40 h-20 flex items-center justify-center">
+                <img 
+                  src="/lovable-uploads/2317e58c-3b32-4aa0-a42e-29ee723632a5.png" 
+                  alt="Rixos Hotels" 
+                  className="max-w-full max-h-full object-contain filter grayscale hover:grayscale-0 corporate-transition"
+                />
               </div>
-              <div className="flex-shrink-0 w-32 h-16 bg-muted border border-border flex items-center justify-center">
-                <span className="text-xs font-gotham text-muted-foreground">Partner 2</span>
+              <div className="flex-shrink-0 w-40 h-20 flex items-center justify-center">
+                <img 
+                  src="/lovable-uploads/e5c48a09-5d0b-4737-a622-121e8ac87c28.png" 
+                  alt="LXR Hotels & Resorts" 
+                  className="max-w-full max-h-full object-contain filter grayscale hover:grayscale-0 corporate-transition"
+                />
               </div>
-              <div className="flex-shrink-0 w-32 h-16 bg-muted border border-border flex items-center justify-center">
-                <span className="text-xs font-gotham text-muted-foreground">Partner 3</span>
+              <div className="flex-shrink-0 w-40 h-20 flex items-center justify-center">
+                <img 
+                  src="/lovable-uploads/13076e8c-b2b1-4033-9936-795f6cdd8eee.png" 
+                  alt="Qatar Tourism" 
+                  className="max-w-full max-h-full object-contain filter grayscale hover:grayscale-0 corporate-transition"
+                />
               </div>
-              <div className="flex-shrink-0 w-32 h-16 bg-muted border border-border flex items-center justify-center">
-                <span className="text-xs font-gotham text-muted-foreground">Partner 4</span>
-              </div>
-              <div className="flex-shrink-0 w-32 h-16 bg-muted border border-border flex items-center justify-center">
-                <span className="text-xs font-gotham text-muted-foreground">Partner 5</span>
-              </div>
-              <div className="flex-shrink-0 w-32 h-16 bg-muted border border-border flex items-center justify-center">
-                <span className="text-xs font-gotham text-muted-foreground">Partner 6</span>
+              <div className="flex-shrink-0 w-40 h-20 flex items-center justify-center">
+                <img 
+                  src="/lovable-uploads/6b9cc736-1983-4b57-bcb2-80c5e1467cb1.png" 
+                  alt="Qatari Diar" 
+                  className="max-w-full max-h-full object-contain filter grayscale hover:grayscale-0 corporate-transition"
+                />
               </div>
               
-              {/* Duplicate set for seamless loop */}
-              <div className="flex-shrink-0 w-32 h-16 bg-muted border border-border flex items-center justify-center">
-                <span className="text-xs font-gotham text-muted-foreground">Partner 1</span>
+              {/* Second set for seamless loop */}
+              <div className="flex-shrink-0 w-40 h-20 flex items-center justify-center">
+                <img 
+                  src="/lovable-uploads/2317e58c-3b32-4aa0-a42e-29ee723632a5.png" 
+                  alt="Rixos Hotels" 
+                  className="max-w-full max-h-full object-contain filter grayscale hover:grayscale-0 corporate-transition"
+                />
               </div>
-              <div className="flex-shrink-0 w-32 h-16 bg-muted border border-border flex items-center justify-center">
-                <span className="text-xs font-gotham text-muted-foreground">Partner 2</span>
+              <div className="flex-shrink-0 w-40 h-20 flex items-center justify-center">
+                <img 
+                  src="/lovable-uploads/e5c48a09-5d0b-4737-a622-121e8ac87c28.png" 
+                  alt="LXR Hotels & Resorts" 
+                  className="max-w-full max-h-full object-contain filter grayscale hover:grayscale-0 corporate-transition"
+                />
               </div>
-              <div className="flex-shrink-0 w-32 h-16 bg-muted border border-border flex items-center justify-center">
-                <span className="text-xs font-gotham text-muted-foreground">Partner 3</span>
+              <div className="flex-shrink-0 w-40 h-20 flex items-center justify-center">
+                <img 
+                  src="/lovable-uploads/13076e8c-b2b1-4033-9936-795f6cdd8eee.png" 
+                  alt="Qatar Tourism" 
+                  className="max-w-full max-h-full object-contain filter grayscale hover:grayscale-0 corporate-transition"
+                />
               </div>
-              <div className="flex-shrink-0 w-32 h-16 bg-muted border border-border flex items-center justify-center">
-                <span className="text-xs font-gotham text-muted-foreground">Partner 4</span>
-              </div>
-              <div className="flex-shrink-0 w-32 h-16 bg-muted border border-border flex items-center justify-center">
-                <span className="text-xs font-gotham text-muted-foreground">Partner 5</span>
-              </div>
-              <div className="flex-shrink-0 w-32 h-16 bg-muted border border-border flex items-center justify-center">
-                <span className="text-xs font-gotham text-muted-foreground">Partner 6</span>
+              <div className="flex-shrink-0 w-40 h-20 flex items-center justify-center">
+                <img 
+                  src="/lovable-uploads/6b9cc736-1983-4b57-bcb2-80c5e1467cb1.png" 
+                  alt="Qatari Diar" 
+                  className="max-w-full max-h-full object-contain filter grayscale hover:grayscale-0 corporate-transition"
+                />
               </div>
             </div>
           </div>
