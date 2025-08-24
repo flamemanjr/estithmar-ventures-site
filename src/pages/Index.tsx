@@ -20,8 +20,27 @@ const Index = () => {
         </div>
         
         <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+          <h1 className="text-5xl md:text-7xl font-gotham-bold text-white mb-6 leading-tight">
+            Where Vision Meets Luxury
+          </h1>
+          
+          <p className="text-xl md:text-2xl font-gotham text-white/90 mb-12 max-w-4xl mx-auto leading-relaxed">
+            Estithmar Ventures creates destinations that are more than places — they are experiences designed to inspire, connect, and endure.
+          </p>
+          
+          <div className="flex flex-col sm:flex-row gap-4 justify-center mb-16">
+            <CorporateButton asChild size="lg">
+              <Link to="/destinations">Explore Our Destinations</Link>
+            </CorporateButton>
+            <CorporateButton variant="outline" size="lg" asChild>
+              <Link to="/about" className="text-white border-white hover:bg-white hover:text-black">
+                About Estithmar Ventures
+              </Link>
+            </CorporateButton>
+          </div>
+
           {/* Key Figures */}
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-6 mb-16">
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
             <div className="bg-white/10 backdrop-blur-sm border border-white/20 p-6">
               <div className="text-3xl font-gotham-bold text-white mb-1">105+</div>
               <div className="text-sm font-gotham text-white/80">Companies</div>
@@ -38,25 +57,6 @@ const Index = () => {
               <div className="text-3xl font-gotham-bold text-white mb-1">1.5M+</div>
               <div className="text-sm font-gotham text-white/80">Visitors Served Annually</div>
             </div>
-          </div>
-
-          <h1 className="text-5xl md:text-7xl font-gotham-bold text-white mb-6 leading-tight">
-            Where Vision Meets Luxury
-          </h1>
-          
-          <p className="text-xl md:text-2xl font-gotham text-white/90 mb-12 max-w-4xl mx-auto leading-relaxed">
-            Estithmar Ventures creates destinations that are more than places — they are experiences designed to inspire, connect, and endure.
-          </p>
-          
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <CorporateButton asChild size="lg">
-              <Link to="/destinations">Explore Our Destinations</Link>
-            </CorporateButton>
-            <CorporateButton variant="outline" size="lg" asChild>
-              <Link to="/about" className="text-white border-white hover:bg-white hover:text-black">
-                About Estithmar Ventures
-              </Link>
-            </CorporateButton>
           </div>
         </div>
       </section>
