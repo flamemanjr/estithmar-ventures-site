@@ -45,7 +45,7 @@ const Index = () => {
           </h1>
           
           <p className="text-xl md:text-2xl font-gotham text-white/90 mb-12 max-w-4xl mx-auto leading-relaxed">
-            Estithmar Ventures shapes world-class hospitality and entertainment experiences across Qatar and beyond.
+            Estithmar Ventures creates destinations that are more than places — they are experiences designed to inspire, connect, and endure.
           </p>
           
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
