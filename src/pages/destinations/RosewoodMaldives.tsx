@@ -106,27 +106,27 @@ const RosewoodMaldives = () => {
           
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             <div className="relative overflow-hidden rosewood-transition hover:shadow-sm hover:-translate-y-0.5">
-              <div className="aspect-[3/2] bg-gradient-to-br from-blue-400 to-blue-600"></div>
-              <div className="absolute inset-0 bg-black/20"></div>
-              <div className="absolute bottom-0 left-0 right-0 p-6 bg-gradient-to-t from-black/60 to-transparent">
+              <div className="aspect-[3/2] bg-gradient-to-br from-slate-100 to-slate-200"></div>
+              <div className="absolute inset-0 bg-black/10"></div>
+              <div className="absolute bottom-0 left-0 right-0 p-6 bg-gradient-to-t from-black/50 to-transparent">
                 <h3 className="rosewood-h3 font-gotham-bold text-white mb-2">Marine Excursions</h3>
                 <p className="rosewood-body font-gotham text-white/90">Private yacht discoveries through pristine reefs</p>
               </div>
             </div>
             
             <div className="relative overflow-hidden rosewood-transition hover:shadow-sm hover:-translate-y-0.5">
-              <div className="aspect-[3/2] bg-gradient-to-br from-teal-400 to-emerald-500"></div>
-              <div className="absolute inset-0 bg-black/20"></div>
-              <div className="absolute bottom-0 left-0 right-0 p-6 bg-gradient-to-t from-black/60 to-transparent">
+              <div className="aspect-[3/2] bg-gradient-to-br from-gray-100 to-gray-200"></div>
+              <div className="absolute inset-0 bg-black/10"></div>
+              <div className="absolute bottom-0 left-0 right-0 p-6 bg-gradient-to-t from-black/50 to-transparent">
                 <h3 className="rosewood-h3 font-gotham-bold text-white mb-2">Ocean Botanicals Spa</h3>
                 <p className="rosewood-body font-gotham text-white/90">Healing rituals inspired by marine botanicals</p>
               </div>
             </div>
             
             <div className="relative overflow-hidden rosewood-transition hover:shadow-sm hover:-translate-y-0.5">
-              <div className="aspect-[3/2] bg-gradient-to-br from-amber-400 to-orange-500"></div>
-              <div className="absolute inset-0 bg-black/20"></div>
-              <div className="absolute bottom-0 left-0 right-0 p-6 bg-gradient-to-t from-black/60 to-transparent">
+              <div className="aspect-[3/2] bg-gradient-to-br from-stone-100 to-stone-200"></div>
+              <div className="absolute inset-0 bg-black/10"></div>
+              <div className="absolute bottom-0 left-0 right-0 p-6 bg-gradient-to-t from-black/50 to-transparent">
                 <h3 className="rosewood-h3 font-gotham-bold text-white mb-2">Destination Dining</h3>
                 <p className="rosewood-body font-gotham text-white/90">Chef's table experiences on private sandbanks</p>
               </div>
@@ -143,7 +143,7 @@ const RosewoodMaldives = () => {
           {/* Triptych Lead Row */}
           <div className="grid grid-cols-1 lg:grid-cols-3 gap-4 mb-8">
             <div className="lg:col-span-2">
-              <div className="aspect-[3/2] bg-gradient-to-r from-blue-500 to-teal-500 rounded-sm overflow-hidden">
+              <div className="aspect-[3/2] bg-gradient-to-r from-gray-200 to-gray-300 rounded-sm overflow-hidden">
                 <img 
                   src={rosewoodMaldivesImage} 
                   alt="Overwater villa at dusk with uninterrupted horizon view"
@@ -155,23 +155,23 @@ const RosewoodMaldives = () => {
               </div>
             </div>
             <div className="space-y-4">
-              <div className="aspect-[3/4] bg-gradient-to-b from-emerald-400 to-blue-500 rounded-sm overflow-hidden">
-                <div className="w-full h-full bg-gradient-to-b from-emerald-400 to-blue-500"></div>
+              <div className="aspect-[3/4] bg-gradient-to-b from-slate-200 to-slate-300 rounded-sm overflow-hidden">
+                <div className="w-full h-full bg-gradient-to-b from-slate-200 to-slate-300"></div>
               </div>
-              <div className="aspect-[3/4] bg-gradient-to-b from-teal-400 to-blue-600 rounded-sm overflow-hidden">
-                <div className="w-full h-full bg-gradient-to-b from-teal-400 to-blue-600"></div>
+              <div className="aspect-[3/4] bg-gradient-to-b from-stone-200 to-stone-300 rounded-sm overflow-hidden">
+                <div className="w-full h-full bg-gradient-to-b from-stone-200 to-stone-300"></div>
               </div>
             </div>
           </div>
 
           {/* Masonry Grid */}
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
-            <div className="aspect-[4/3] bg-gradient-to-br from-blue-400 to-teal-500 rounded-sm"></div>
-            <div className="aspect-[3/4] bg-gradient-to-br from-emerald-400 to-blue-500 rounded-sm"></div>
-            <div className="aspect-[4/3] bg-gradient-to-br from-teal-400 to-blue-600 rounded-sm"></div>
-            <div className="aspect-[3/4] bg-gradient-to-br from-blue-500 to-emerald-400 rounded-sm"></div>
-            <div className="aspect-[4/3] bg-gradient-to-br from-teal-500 to-blue-400 rounded-sm"></div>
-            <div className="aspect-[3/4] bg-gradient-to-br from-blue-600 to-teal-400 rounded-sm"></div>
+            <div className="aspect-[4/3] bg-gradient-to-br from-gray-100 to-gray-200 rounded-sm"></div>
+            <div className="aspect-[3/4] bg-gradient-to-br from-slate-100 to-slate-200 rounded-sm"></div>
+            <div className="aspect-[4/3] bg-gradient-to-br from-stone-100 to-stone-200 rounded-sm"></div>
+            <div className="aspect-[3/4] bg-gradient-to-br from-neutral-100 to-neutral-200 rounded-sm"></div>
+            <div className="aspect-[4/3] bg-gradient-to-br from-zinc-100 to-zinc-200 rounded-sm"></div>
+            <div className="aspect-[3/4] bg-gradient-to-br from-gray-50 to-gray-150 rounded-sm"></div>
           </div>
         </div>
       </section>
