@@ -29,6 +29,7 @@ All colors MUST be HSL.
 
     /* Rosewood Maldives Design Tokens - Ocean-first, ultra-luxury */
     --mist: 202 33% 96%; /* #F2F6F8 - Cool oceanic neutral */
+    --horizon-start: 202 20% 90%; /* #E6F0F3 - Horizon rule start */
 
     /* Surface Colors */
     --card: 0 0% 100%;
