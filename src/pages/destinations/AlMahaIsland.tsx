@@ -1,9 +1,14 @@
-import { useEffect } from "react";
+import { useEffect, Suspense, lazy } from "react";
 import { Link } from "react-router-dom";
 import { ExternalLink, ChevronRight, MapPin, Calendar, Users } from "lucide-react";
 import { CorporateButton } from "@/components/ui/corporate-button";
-import AlMahaMap from "@/components/AlMahaMap";
+import { RestaurantLogos } from "@/components/ui/restaurant-logos";
+import { ProgressiveLoader } from "@/components/ui/progressive-loader";
+import { ImageSkeleton } from "@/components/ui/image-skeleton";
 import alMahaImage from "@/assets/al-maha-island.jpg";
+
+// Lazy load heavy components
+const AlMahaMap = lazy(() => import("@/components/AlMahaMap"));
 
 const AlMahaIsland = () => {
   useEffect(() => {
@@ -82,9 +87,10 @@ const AlMahaIsland = () => {
       </section>
 
       {/* Overview Section */}
-      <section className="py-24 bg-background">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+      <ProgressiveLoader delay={100}>
+        <section className="py-24 bg-background">
+          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
             <div>
               <h2 className="text-4xl font-gotham-bold text-foreground mb-8">Overview</h2>
               <p className="text-lg font-gotham text-muted-foreground leading-relaxed">
@@ -136,115 +142,26 @@ const AlMahaIsland = () => {
           </div>
         </div>
       </section>
+      </ProgressiveLoader>
 
       {/* Signature Experiences */}
-      <section id="experiences" className="py-24 bg-muted">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-16">
-            <h2 className="text-4xl font-gotham-bold text-foreground mb-6">Signature Experiences</h2>
-          </div>
-          
-          <div className="space-y-16">
-            <div className="space-y-12">
-              <div className="bg-gradient-to-r from-background to-muted/30 p-12 rounded-2xl">
-                <h3 className="text-3xl font-gotham-bold text-foreground mb-6">Dining & Lounges</h3>
-                <p className="text-lg font-gotham text-muted-foreground leading-relaxed max-w-3xl">
-                  International operators with flagship concepts bringing world-class culinary experiences to the island.
-                </p>
-              </div>
-              <div className="grid grid-cols-2 md:grid-cols-5 gap-8">
-                <div className="group hover:scale-105 corporate-transition">
-                  <div className="bg-white p-6 rounded-xl shadow-sm hover:shadow-md corporate-transition flex items-center justify-center h-24">
-                    <img 
-                      src="/lovable-uploads/173cc01c-61cb-4799-836d-6e5fcb0beb4c.png" 
-                      alt="Bagatelle Beach Club Doha" 
-                      className="max-h-full max-w-full object-contain"
-                    />
-                  </div>
-                </div>
-                <div className="group hover:scale-105 corporate-transition">
-                  <div className="bg-white p-6 rounded-xl shadow-sm hover:shadow-md corporate-transition flex items-center justify-center h-24">
-                    <img 
-                      src="/lovable-uploads/dd0dd801-b029-4786-97b2-84b027de2a40.png" 
-                      alt="Zuma" 
-                      className="max-h-full max-w-full object-contain"
-                    />
-                  </div>
-                </div>
-                <div className="group hover:scale-105 corporate-transition">
-                  <div className="bg-white p-6 rounded-xl shadow-sm hover:shadow-md corporate-transition flex items-center justify-center h-24">
-                    <img 
-                      src="/lovable-uploads/ef5b536e-65db-44e7-8342-4fd46ebf9f18.png" 
-                      alt="Beefbar" 
-                      className="max-h-full max-w-full object-contain"
-                    />
-                  </div>
-                </div>
-                <div className="group hover:scale-105 corporate-transition">
-                  <div className="bg-white p-6 rounded-xl shadow-sm hover:shadow-md corporate-transition flex items-center justify-center h-24">
-                    <img 
-                      src="/lovable-uploads/c00388f1-e330-44cd-8f4d-c0373b69c5b4.png" 
-                      alt="LPM Restaurant & Bar" 
-                      className="max-h-full max-w-full object-contain"
-                    />
-                  </div>
-                </div>
-                <div className="group hover:scale-105 corporate-transition">
-                  <div className="bg-white p-6 rounded-xl shadow-sm hover:shadow-md corporate-transition flex items-center justify-center h-24">
-                    <img 
-                      src="/lovable-uploads/3374b7f9-da96-4f50-903f-ea99e2251856.png" 
-                      alt="Carbone" 
-                      className="max-h-full max-w-full object-contain"
-                    />
-                  </div>
-                </div>
-                <div className="group hover:scale-105 corporate-transition">
-                  <div className="bg-white p-6 rounded-xl shadow-sm hover:shadow-md corporate-transition flex items-center justify-center h-24">
-                    <img 
-                      src="/lovable-uploads/56ff954d-6bec-46a1-b7af-dba96c05fe80.png" 
-                      alt="Em Sherif Restaurant" 
-                      className="max-h-full max-w-full object-contain"
-                    />
-                  </div>
-                </div>
-                <div className="group hover:scale-105 corporate-transition">
-                  <div className="bg-white p-6 rounded-xl shadow-sm hover:shadow-md corporate-transition flex items-center justify-center h-24">
-                    <img 
-                      src="/lovable-uploads/e42bd7a3-7a5f-4be6-99db-e2eda2171a36.png" 
-                      alt="Moka Caffe" 
-                      className="max-h-full max-w-full object-contain"
-                    />
-                  </div>
-                </div>
-                <div className="group hover:scale-105 corporate-transition">
-                  <div className="bg-white p-6 rounded-xl shadow-sm hover:shadow-md corporate-transition flex items-center justify-center h-24">
-                    <img 
-                      src="/lovable-uploads/3b297576-a589-4167-a085-5dadca1174c5.png" 
-                      alt="Berentak Doha" 
-                      className="max-h-full max-w-full object-contain"
-                    />
-                  </div>
-                </div>
-                <div className="group hover:scale-105 corporate-transition">
-                  <div className="bg-white p-6 rounded-xl shadow-sm hover:shadow-md corporate-transition flex items-center justify-center h-24">
-                    <img 
-                      src="/lovable-uploads/e82814a1-ca39-44b4-a0c3-68b6e7570d22.png" 
-                      alt="Viva La Vida" 
-                      className="max-h-full max-w-full object-contain"
-                    />
-                  </div>
-                </div>
-                <div className="group hover:scale-105 corporate-transition">
-                  <div className="bg-white p-6 rounded-xl shadow-sm hover:shadow-md corporate-transition flex items-center justify-center h-24">
-                    <img 
-                      src="/lovable-uploads/31084831-a788-4d5e-982e-68da4aaa84c1.png" 
-                      alt="Karaki Lounge" 
-                      className="max-h-full max-w-full object-contain"
-                    />
-                  </div>
-                </div>
-              </div>
+      <ProgressiveLoader delay={300}>
+        <section id="experiences" className="py-24 bg-muted">
+          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div className="text-center mb-16">
+              <h2 className="text-4xl font-gotham-bold text-foreground mb-6">Signature Experiences</h2>
             </div>
+            
+            <div className="space-y-16">
+              <div className="space-y-12">
+                <div className="bg-gradient-to-r from-background to-muted/30 p-12 rounded-2xl">
+                  <h3 className="text-3xl font-gotham-bold text-foreground mb-6">Dining & Lounges</h3>
+                  <p className="text-lg font-gotham text-muted-foreground leading-relaxed max-w-3xl">
+                    International operators with flagship concepts bringing world-class culinary experiences to the island.
+                  </p>
+                </div>
+                <RestaurantLogos />
+              </div>
             
             <div className="grid grid-cols-1 lg:grid-cols-3 gap-12 items-center">
               <div className="lg:col-span-2">
@@ -263,6 +180,7 @@ const AlMahaIsland = () => {
                         src="/lovable-uploads/2699f67a-0f95-46e6-8e10-716ba89ff67c.png" 
                         alt="Lusail Winter Wonderland" 
                         className="max-h-full max-w-full object-contain"
+                        loading="lazy"
                       />
                     </div>
                   </div>
@@ -272,51 +190,58 @@ const AlMahaIsland = () => {
           </div>
         </div>
       </section>
+      </ProgressiveLoader>
 
       {/* Visual Gallery */}
-      <section className="py-24 bg-background">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-16">
-            <h2 className="text-4xl font-gotham-bold text-foreground mb-6">Gallery</h2>
-          </div>
-          
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
-            {Array.from({ length: 8 }).map((_, index) => (
-              <div 
-                key={index} 
-                className={`bg-muted border border-border aspect-square ${
-                  index === 0 || index === 7 ? 'md:col-span-2 md:row-span-2' : ''
-                } group cursor-pointer overflow-hidden`}
-              >
-                <div className="w-full h-full bg-gradient-to-br from-primary/10 to-primary/5 flex items-center justify-center group-hover:from-primary/20 group-hover:to-primary/10 corporate-transition">
-                  <span className="text-xs font-gotham text-muted-foreground">Image {index + 1}</span>
-                </div>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* Location & Map */}
-      <section className="py-24 bg-muted">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
-            <div>
-              <h2 className="text-4xl font-gotham-bold text-foreground mb-6">Location</h2>
-              <p className="text-lg font-gotham text-muted-foreground leading-relaxed mb-6">
-                Strategically positioned in Lusail, Al Maha Island offers unparalleled access to Doha's 
-                business district while providing a distinct island experience.
-              </p>
-              <div className="flex items-center text-sm font-gotham text-muted-foreground">
-                <MapPin className="w-4 h-4 mr-2 text-primary" />
-                Lusail, Qatar
-              </div>
+      <ProgressiveLoader delay={500}>
+        <section className="py-24 bg-background">
+          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div className="text-center mb-16">
+              <h2 className="text-4xl font-gotham-bold text-foreground mb-6">Gallery</h2>
             </div>
             
-            <AlMahaMap />
+            <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
+              {Array.from({ length: 8 }).map((_, index) => (
+                <div 
+                  key={index} 
+                  className={`bg-muted border border-border aspect-square ${
+                    index === 0 || index === 7 ? 'md:col-span-2 md:row-span-2' : ''
+                  } group cursor-pointer overflow-hidden`}
+                >
+                  <div className="w-full h-full bg-gradient-to-br from-primary/10 to-primary/5 flex items-center justify-center group-hover:from-primary/20 group-hover:to-primary/10 corporate-transition">
+                    <ImageSkeleton className="w-full h-full animate-pulse" />
+                  </div>
+                </div>
+              ))}
+            </div>
           </div>
-        </div>
-      </section>
+        </section>
+      </ProgressiveLoader>
+
+      {/* Location & Map */}
+      <ProgressiveLoader delay={700}>
+        <section className="py-24 bg-muted">
+          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+              <div>
+                <h2 className="text-4xl font-gotham-bold text-foreground mb-6">Location</h2>
+                <p className="text-lg font-gotham text-muted-foreground leading-relaxed mb-6">
+                  Strategically positioned in Lusail, Al Maha Island offers unparalleled access to Doha's 
+                  business district while providing a distinct island experience.
+                </p>
+                <div className="flex items-center text-sm font-gotham text-muted-foreground">
+                  <MapPin className="w-4 h-4 mr-2 text-primary" />
+                  Lusail, Qatar
+                </div>
+              </div>
+              
+              <Suspense fallback={<ImageSkeleton aspectRatio="video" className="animate-pulse" />}>
+                <AlMahaMap />
+              </Suspense>
+            </div>
+          </div>
+        </section>
+      </ProgressiveLoader>
 
       {/* Partners & Accolades */}
       <section className="py-16 bg-background">
