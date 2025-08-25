@@ -110,7 +110,7 @@ const MaysanDohaLXR = () => {
                   Maysan Doha LXR is designed as a calm, private world—where Arabian architecture, 
                   contemporary craft, and thoughtful service create space to reset and reconnect.
                 </p>
-                <p className="maysan-body font-gotham text-katara-muted leading-relaxed transition-all duration-500 hover:text-ink">
+                <p className="maysan-body font-gotham text-katara-muted leading-relaxed">
                   This sanctuary balances heritage with innovation, offering an intimate escape 
                   from the energy of the city. Every detail speaks to a philosophy of mindful luxury, 
                   where time moves slowly and wellness takes precedence.
