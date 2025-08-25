@@ -364,7 +364,7 @@ const AlMahaIsland = () => {
               href="OFFICIAL_WEBSITE_URL_PLACEHOLDER" 
               target="_blank" 
               rel="noopener noreferrer"
-              className="inline-flex items-center text-background border-background hover:bg-background hover:text-foreground"
+              className="inline-flex items-center text-white border-white hover:bg-white hover:text-black"
             >
               Visit Official Website
               <ExternalLink className="ml-2 w-4 h-4" />
