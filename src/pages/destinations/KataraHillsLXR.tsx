@@ -168,7 +168,13 @@ const KataraHillsLXR = () => {
               </div>
               
               <div className="border border-line bg-paper p-8 rounded katara-transition hover:shadow-sm hover:translate-y-0.5">
-                <div className="aspect-[3/2] bg-gradient-to-br from-ink/5 to-ink/10 rounded mb-6"></div>
+                <div className="aspect-[3/2] rounded mb-6 overflow-hidden">
+                  <img 
+                    src="/lovable-uploads/e0cf8caf-cd5c-45b7-b146-a8901553930a.png" 
+                    alt="Traditional Islamic architecture at Katara Cultural Village" 
+                    className="w-full h-full object-cover"
+                  />
+                </div>
                 <h3 className="katara-h3 font-gotham-medium text-ink mb-3">Cultural Access</h3>
                 <p className="katara-body font-gotham text-katara-muted leading-relaxed">
                   Direct connection to Katara's venues.
