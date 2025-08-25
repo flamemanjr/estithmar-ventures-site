@@ -1,5 +1,6 @@
 import { Skeleton } from "@/components/ui/skeleton";
 import { cn } from "@/lib/utils";
+import kataraImage from "@/assets/katara-hills.jpg";
 
 interface ImageSkeletonProps {
   className?: string;
@@ -17,7 +18,11 @@ export function ImageSkeleton({
   };
 
   return (
-    <Skeleton className={cn("w-full h-full", aspectClasses[aspectRatio], className)} />
+    <img 
+      src={kataraImage} 
+      alt="Katara Hills" 
+      className={cn("w-full h-full object-cover rounded-lg", aspectClasses[aspectRatio], className)} 
+    />
   );
 }
 
