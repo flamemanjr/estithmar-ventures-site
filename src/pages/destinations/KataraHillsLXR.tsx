@@ -5,25 +5,23 @@ import { CorporateButton } from "@/components/ui/corporate-button";
 import { ImageSkeleton } from "@/components/ui/image-skeleton";
 import { ProgressiveLoader } from "@/components/ui/progressive-loader";
 import kataraHillsImage from "/lovable-uploads/2279181b-8e3e-4789-a205-88d461bcde4f.png";
-
 const KataraHillsLXR = () => {
   useEffect(() => {
     document.title = "Katara Hills LXR | Estithmar Ventures";
-    
+
     // Update meta description
     const metaDescription = document.querySelector('meta[name="description"]');
     if (metaDescription) {
       metaDescription.setAttribute('content', 'Private, low-density villas with panoramic views above Doha\'s cultural district.');
     }
   }, []);
-
   const scrollToVillas = () => {
     const element = document.getElementById('villas-amenities');
-    element?.scrollIntoView({ behavior: 'smooth' });
+    element?.scrollIntoView({
+      behavior: 'smooth'
+    });
   };
-
-  return (
-    <div className="bg-background">
+  return <div className="bg-background">
       {/* Breadcrumbs */}
       <section className="py-4 bg-paper border-b border-line">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -43,10 +41,9 @@ const KataraHillsLXR = () => {
 
       {/* Hero Section */}
       <section className="relative h-[75vh] bg-black overflow-hidden">
-        <div 
-          className="absolute inset-0 bg-cover bg-center bg-no-repeat"
-          style={{ backgroundImage: `url(${kataraHillsImage})` }}
-        >
+        <div className="absolute inset-0 bg-cover bg-center bg-no-repeat" style={{
+        backgroundImage: `url(${kataraHillsImage})`
+      }}>
           <div className="absolute inset-0 bg-gradient-to-b from-black/15 via-black/25 to-black/50"></div>
         </div>
         
@@ -60,22 +57,12 @@ const KataraHillsLXR = () => {
               
               <div className="flex flex-row gap-4">
                 <CorporateButton asChild size="lg">
-                  <a 
-                    href="OFFICIAL_WEBSITE_URL_PLACEHOLDER" 
-                    target="_blank" 
-                    rel="noopener noreferrer"
-                    className="inline-flex items-center bg-brand-orange hover:bg-brand-orange/90 text-white px-6 py-3 rounded-2xl katara-transition font-gotham-medium"
-                  >
+                  <a href="OFFICIAL_WEBSITE_URL_PLACEHOLDER" target="_blank" rel="noopener noreferrer" className="inline-flex items-center bg-brand-orange hover:bg-brand-orange/90 text-white px-6 py-3 rounded-2xl katara-transition font-gotham-medium">
                     Visit Official Website
                     <ExternalLink className="ml-2 w-4 h-4" />
                   </a>
                 </CorporateButton>
-                <CorporateButton 
-                  variant="outline" 
-                  size="lg" 
-                  onClick={scrollToVillas}
-                  className="text-white border-white/60 hover:bg-white hover:text-ink px-6 py-3 rounded-2xl backdrop-blur-sm bg-white/5 katara-transition font-gotham-medium"
-                >
+                <CorporateButton variant="outline" size="lg" onClick={scrollToVillas} className="text-white border-white/60 hover:bg-white hover:text-ink px-6 py-3 rounded-2xl backdrop-blur-sm bg-white/5 katara-transition font-gotham-medium">
                   View Villas & Amenities
                 </CorporateButton>
               </div>
@@ -93,11 +80,7 @@ const KataraHillsLXR = () => {
                 <div className="katara-eyebrow mb-6">Overview</div>
                 <h2 className="katara-h2 font-gotham-medium text-ink mb-8">Architecture meets tranquility</h2>
                 <div className="max-w-lg">
-                  <p className="katara-body font-gotham text-ink leading-relaxed">
-                    Katara Hills LXR blends Scandinavian simplicity with Qatari landscape and light. 
-                    Private villas overlook the Katara district, pairing privacy with immediate access 
-                    to culture, cuisine, and the waterfront.
-                  </p>
+                  <p className="katara-body font-gotham text-ink leading-relaxed">An intimate, low-density villa enclave above Katara, LXR at Katara Hills blends Scandinavian discipline with Qatari context to deliver privacy, proximity, and performance. Guests gain immediate access to cultural venues, dining, and the waterfront while enjoying panoramic outlooks and wellness-forward amenities. Architecture and operations are purposefully restrained—elevating experience, protecting quiet, and sustaining value.</p>
                 </div>
               </div>
               
@@ -194,18 +177,13 @@ const KataraHillsLXR = () => {
             </div>
             
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-              {Array.from({ length: 8 }).map((_, index) => (
-                <div 
-                  key={index} 
-                  className={`bg-paper border border-line aspect-[4/3] ${
-                    index === 0 || index === 7 ? 'md:aspect-[3/2]' : ''
-                  } group cursor-pointer overflow-hidden rounded katara-transition hover:shadow-sm`}
-                >
+              {Array.from({
+              length: 8
+            }).map((_, index) => <div key={index} className={`bg-paper border border-line aspect-[4/3] ${index === 0 || index === 7 ? 'md:aspect-[3/2]' : ''} group cursor-pointer overflow-hidden rounded katara-transition hover:shadow-sm`}>
                   <div className="w-full h-full bg-gradient-to-br from-ink/5 to-ink/10 flex items-center justify-center group-hover:from-ink/10 group-hover:to-ink/15 katara-transition">
                     <ImageSkeleton className="w-full h-full" />
                   </div>
-                </div>
-              ))}
+                </div>)}
             </div>
           </div>
         </section>
@@ -262,33 +240,23 @@ const KataraHillsLXR = () => {
 
 
       {/* CTA Banner */}
-      <section 
-        className="py-24 relative overflow-hidden"
-        style={{ 
-          backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.5)), url(${kataraHillsImage})`,
-          backgroundSize: 'cover',
-          backgroundPosition: 'center'
-        }}
-      >
+      <section className="py-24 relative overflow-hidden" style={{
+      backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.5)), url(${kataraHillsImage})`,
+      backgroundSize: 'cover',
+      backgroundPosition: 'center'
+    }}>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10">
           <h2 className="katara-h2 font-gotham-medium text-white mb-8">
             Discover Katara Hills LXR
           </h2>
           <CorporateButton asChild size="lg">
-            <a 
-              href="OFFICIAL_WEBSITE_URL_PLACEHOLDER" 
-              target="_blank" 
-              rel="noopener noreferrer"
-              className="inline-flex items-center bg-brand-orange hover:bg-brand-orange/90 text-white px-6 py-3 rounded katara-transition font-gotham-medium"
-            >
+            <a href="OFFICIAL_WEBSITE_URL_PLACEHOLDER" target="_blank" rel="noopener noreferrer" className="inline-flex items-center bg-brand-orange hover:bg-brand-orange/90 text-white px-6 py-3 rounded katara-transition font-gotham-medium">
               Visit Official Website
               <ExternalLink className="ml-2 w-4 h-4" />
             </a>
           </CorporateButton>
         </div>
       </section>
-    </div>
-  );
+    </div>;
 };
-
 export default KataraHillsLXR;
