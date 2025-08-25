@@ -7,7 +7,7 @@ import { ProgressiveLoader } from "@/components/ui/progressive-loader";
 import { ImageSkeleton } from "@/components/ui/image-skeleton";
 import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from "@/components/ui/carousel";
 import alMahaImage from "@/assets/al-maha-island.jpg";
-import pepsiLogo from "@/assets/partners/pepsi-logo.png";
+import pepsiLogo from "/lovable-uploads/e05dd73e-db8a-437f-b0be-40808a3db812.png";
 import qatarAirwaysLogo from "@/assets/partners/qatar-airways-logo.png";
 import qatariDiarLogo from "@/assets/partners/qatari-diar-logo.png";
 import rafeeqLogo from "@/assets/partners/rafeeq-logo.png";
@@ -324,8 +324,8 @@ const AlMahaIsland = () => {
                 </div>
               </CarouselItem>
               <CarouselItem className="pl-2 md:pl-4 basis-1/2 md:basis-1/3 lg:basis-1/4">
-                <div className="h-16 flex items-center justify-center bg-black rounded-lg px-4">
-                  <img src={dohaBankLogo} alt="Doha Bank" className="max-h-full max-w-full object-contain opacity-60 hover:opacity-100 corporate-transition" />
+                <div className="h-16 flex items-center justify-center">
+                  <img src={dohaBankLogo} alt="Doha Bank" className="max-h-full max-w-full object-contain opacity-60 hover:opacity-100 corporate-transition brightness-0" />
                 </div>
               </CarouselItem>
               <CarouselItem className="pl-2 md:pl-4 basis-1/2 md:basis-1/3 lg:basis-1/4">
