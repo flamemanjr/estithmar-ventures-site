@@ -1,7 +1,7 @@
 import { useState, useEffect, useRef } from "react";
 import { CorporateButton } from "@/components/ui/corporate-button";
 import { Heart, Building, Sparkles, Waves, Trees, ChefHat, MapPin, Plane, Landmark } from "lucide-react";
-import maysanDohaImage from "@/assets/maysan-doha.jpg";
+const maysanDohaImage = "/lovable-uploads/4bda99b4-4bdc-402f-bd4c-8d87a987ace2.png";
 
 const MaysanDohaLXR = () => {
   const [isVisible, setIsVisible] = useState<Record<string, boolean>>({});
