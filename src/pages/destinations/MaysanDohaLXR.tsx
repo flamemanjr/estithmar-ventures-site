@@ -27,14 +27,8 @@ const MaysanDohaLXR = () => {
     const sections = document.querySelectorAll('[data-section]');
     sections.forEach(section => observerRef.current?.observe(section));
 
-    // Auto-advance ritual steps
-    const ritualInterval = setInterval(() => {
-      setRitualStep(prev => (prev + 1) % 3);
-    }, 3000);
-
     return () => {
       observerRef.current?.disconnect();
-      clearInterval(ritualInterval);
     };
   }, []);
 
@@ -180,6 +174,7 @@ const MaysanDohaLXR = () => {
                 } ${ritualStep === index ? 'scale-105 shadow-lg' : ''}`}
                 style={getStaggerDelay(index)}
                 onMouseEnter={() => setRitualStep(index)}
+                onMouseLeave={() => setRitualStep(-1)}
               >
                 <div className="relative mb-8">
                   <div className={`w-20 h-20 rounded-full flex items-center justify-center mx-auto mb-6 transition-all duration-500 ${
