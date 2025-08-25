@@ -5,7 +5,18 @@ import { CorporateButton } from "@/components/ui/corporate-button";
 import { RestaurantLogos } from "@/components/ui/restaurant-logos";
 import { ProgressiveLoader } from "@/components/ui/progressive-loader";
 import { ImageSkeleton } from "@/components/ui/image-skeleton";
+import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from "@/components/ui/carousel";
 import alMahaImage from "@/assets/al-maha-island.jpg";
+import pepsiLogo from "@/assets/partners/pepsi-logo.png";
+import qatarAirwaysLogo from "@/assets/partners/qatar-airways-logo.png";
+import qatariDiarLogo from "@/assets/partners/qatari-diar-logo.png";
+import rafeeqLogo from "@/assets/partners/rafeeq-logo.png";
+import visitQatarLogo from "@/assets/partners/visit-qatar-logo.png";
+import alRayanLogo from "@/assets/partners/al-rayan-logo.png";
+import dohaBankLogo from "@/assets/partners/doha-bank-logo.png";
+import karwaLogo from "@/assets/partners/karwa-logo.png";
+import qnbLogo from "@/assets/partners/qnb-logo.png";
+import ooredooLogo from "@/assets/partners/ooredoo-logo.png";
 
 // Lazy load heavy components
 const AlMahaMap = lazy(() => import("@/components/AlMahaMap"));
@@ -280,13 +291,62 @@ const AlMahaIsland = () => {
       <section className="py-16 bg-background">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="text-3xl font-gotham-bold text-foreground mb-8">Partners & Recognition</h2>
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-8 mb-8">
-            {Array.from({ length: 4 }).map((_, index) => (
-              <div key={index} className="h-16 bg-muted border border-border flex items-center justify-center">
-                <span className="text-xs font-gotham text-muted-foreground">Partner {index + 1}</span>
-              </div>
-            ))}
-          </div>
+          <Carousel className="w-full max-w-5xl mx-auto" opts={{ align: "start", loop: true }}>
+            <CarouselContent className="-ml-2 md:-ml-4">
+              <CarouselItem className="pl-2 md:pl-4 basis-1/2 md:basis-1/3 lg:basis-1/4">
+                <div className="h-16 bg-white rounded-lg border border-border flex items-center justify-center p-4 hover:shadow-md corporate-transition">
+                  <img src={pepsiLogo} alt="Pepsi" className="max-h-full max-w-full object-contain" />
+                </div>
+              </CarouselItem>
+              <CarouselItem className="pl-2 md:pl-4 basis-1/2 md:basis-1/3 lg:basis-1/4">
+                <div className="h-16 bg-white rounded-lg border border-border flex items-center justify-center p-4 hover:shadow-md corporate-transition">
+                  <img src={qatarAirwaysLogo} alt="Qatar Airways" className="max-h-full max-w-full object-contain" />
+                </div>
+              </CarouselItem>
+              <CarouselItem className="pl-2 md:pl-4 basis-1/2 md:basis-1/3 lg:basis-1/4">
+                <div className="h-16 bg-white rounded-lg border border-border flex items-center justify-center p-4 hover:shadow-md corporate-transition">
+                  <img src={qatariDiarLogo} alt="Qatari Diar" className="max-h-full max-w-full object-contain" />
+                </div>
+              </CarouselItem>
+              <CarouselItem className="pl-2 md:pl-4 basis-1/2 md:basis-1/3 lg:basis-1/4">
+                <div className="h-16 bg-white rounded-lg border border-border flex items-center justify-center p-4 hover:shadow-md corporate-transition">
+                  <img src={rafeeqLogo} alt="Rafeeq" className="max-h-full max-w-full object-contain" />
+                </div>
+              </CarouselItem>
+              <CarouselItem className="pl-2 md:pl-4 basis-1/2 md:basis-1/3 lg:basis-1/4">
+                <div className="h-16 bg-white rounded-lg border border-border flex items-center justify-center p-4 hover:shadow-md corporate-transition">
+                  <img src={visitQatarLogo} alt="Visit Qatar" className="max-h-full max-w-full object-contain" />
+                </div>
+              </CarouselItem>
+              <CarouselItem className="pl-2 md:pl-4 basis-1/2 md:basis-1/3 lg:basis-1/4">
+                <div className="h-16 bg-white rounded-lg border border-border flex items-center justify-center p-4 hover:shadow-md corporate-transition">
+                  <img src={alRayanLogo} alt="Al Rayan Bank" className="max-h-full max-w-full object-contain" />
+                </div>
+              </CarouselItem>
+              <CarouselItem className="pl-2 md:pl-4 basis-1/2 md:basis-1/3 lg:basis-1/4">
+                <div className="h-16 bg-white rounded-lg border border-border flex items-center justify-center p-4 hover:shadow-md corporate-transition">
+                  <img src={dohaBankLogo} alt="Doha Bank" className="max-h-full max-w-full object-contain" />
+                </div>
+              </CarouselItem>
+              <CarouselItem className="pl-2 md:pl-4 basis-1/2 md:basis-1/3 lg:basis-1/4">
+                <div className="h-16 bg-white rounded-lg border border-border flex items-center justify-center p-4 hover:shadow-md corporate-transition">
+                  <img src={karwaLogo} alt="Karwa" className="max-h-full max-w-full object-contain" />
+                </div>
+              </CarouselItem>
+              <CarouselItem className="pl-2 md:pl-4 basis-1/2 md:basis-1/3 lg:basis-1/4">
+                <div className="h-16 bg-white rounded-lg border border-border flex items-center justify-center p-4 hover:shadow-md corporate-transition">
+                  <img src={qnbLogo} alt="QNB" className="max-h-full max-w-full object-contain" />
+                </div>
+              </CarouselItem>
+              <CarouselItem className="pl-2 md:pl-4 basis-1/2 md:basis-1/3 lg:basis-1/4">
+                <div className="h-16 bg-white rounded-lg border border-border flex items-center justify-center p-4 hover:shadow-md corporate-transition">
+                  <img src={ooredooLogo} alt="Ooredoo" className="max-h-full max-w-full object-contain" />
+                </div>
+              </CarouselItem>
+            </CarouselContent>
+            <CarouselPrevious className="text-muted-foreground hover:text-primary" />
+            <CarouselNext className="text-muted-foreground hover:text-primary" />
+          </Carousel>
           <p className="text-sm font-gotham text-muted-foreground">
             Recognized for excellence in hospitality and entertainment design.
           </p>
