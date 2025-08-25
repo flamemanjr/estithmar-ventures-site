@@ -106,7 +106,7 @@ const MaysanDohaLXR = () => {
             {/* Left Column - Enhanced with better typography */}
             <div className={`lg:col-span-3 transition-all duration-700 ${getAnimationClass('overview')}`} style={getStaggerDelay(2)}>
               <div className="space-y-8">
-                <p className="text-xl font-gotham text-ink leading-relaxed transform transition-all duration-500 hover:text-brand-orange/80">
+                <p className="text-xl font-gotham text-ink leading-relaxed">
                   Maysan Doha LXR is designed as a calm, private world—where Arabian architecture, 
                   contemporary craft, and thoughtful service create space to reset and reconnect.
                 </p>
