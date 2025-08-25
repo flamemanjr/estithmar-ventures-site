@@ -61,23 +61,23 @@ const AlMahaIsland = () => {
               Qatar's premier leisure and entertainment destination.
             </p>
             
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
+            <div className="flex flex-col sm:flex-row gap-6 justify-center">
               <CorporateButton asChild size="lg">
                 <a 
                   href="OFFICIAL_WEBSITE_URL_PLACEHOLDER" 
                   target="_blank" 
                   rel="noopener noreferrer"
-                  className="inline-flex items-center"
+                  className="inline-flex items-center bg-primary hover:bg-primary/90 text-white px-8 py-4 rounded-lg shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-300 font-gotham-medium"
                 >
                   Visit Official Website
-                  <ExternalLink className="ml-2 w-4 h-4" />
+                  <ExternalLink className="ml-2 w-5 h-5" />
                 </a>
               </CorporateButton>
               <CorporateButton 
                 variant="outline" 
                 size="lg" 
                 onClick={scrollToExperiences}
-                className="text-white border-white hover:bg-white hover:text-black"
+                className="text-white border-white/80 hover:bg-white hover:text-black px-8 py-4 rounded-lg backdrop-blur-sm bg-white/10 hover:bg-white hover:shadow-lg transform hover:scale-105 transition-all duration-300 font-gotham-medium"
               >
                 Explore Experiences
               </CorporateButton>
