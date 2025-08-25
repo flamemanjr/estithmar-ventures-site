@@ -2,6 +2,7 @@ import { useEffect } from "react";
 import { Link } from "react-router-dom";
 import { ExternalLink, ChevronRight, MapPin, Calendar, Users } from "lucide-react";
 import { CorporateButton } from "@/components/ui/corporate-button";
+import AlMahaMap from "@/components/AlMahaMap";
 import alMahaImage from "@/assets/al-maha-island.jpg";
 
 const AlMahaIsland = () => {
@@ -312,12 +313,7 @@ const AlMahaIsland = () => {
               </div>
             </div>
             
-            <div className="aspect-video bg-card border border-border flex items-center justify-center">
-              <div className="text-center">
-                <MapPin className="w-12 h-12 text-primary mx-auto mb-4" />
-                <span className="text-sm font-gotham text-muted-foreground">Interactive Map Placeholder</span>
-              </div>
-            </div>
+            <AlMahaMap />
           </div>
         </div>
       </section>
