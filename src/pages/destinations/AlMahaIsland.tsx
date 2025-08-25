@@ -1,4 +1,4 @@
-import { useEffect, Suspense, lazy } from "react";
+import { useEffect, useState, Suspense, lazy } from "react";
 import { Link } from "react-router-dom";
 import { ExternalLink, ChevronRight, MapPin, Calendar, Users } from "lucide-react";
 import { CorporateButton } from "@/components/ui/corporate-button";
@@ -9,6 +9,33 @@ import alMahaImage from "@/assets/al-maha-island.jpg";
 
 // Lazy load heavy components
 const AlMahaMap = lazy(() => import("@/components/AlMahaMap"));
+
+// Counter animation component
+const AnimatedCounter = ({ end, duration = 2000, suffix = "" }: { end: number; duration?: number; suffix?: string }) => {
+  const [count, setCount] = useState(0);
+  
+  useEffect(() => {
+    let startTime: number;
+    let animationFrame: number;
+    
+    const animate = (timestamp: number) => {
+      if (!startTime) startTime = timestamp;
+      const progress = Math.min((timestamp - startTime) / duration, 1);
+      
+      setCount(Math.floor(progress * end));
+      
+      if (progress < 1) {
+        animationFrame = requestAnimationFrame(animate);
+      }
+    };
+    
+    animationFrame = requestAnimationFrame(animate);
+    
+    return () => cancelAnimationFrame(animationFrame);
+  }, [end, duration]);
+  
+  return <>{count.toLocaleString()}{suffix}</>;
+};
 
 const AlMahaIsland = () => {
   useEffect(() => {
@@ -109,7 +136,9 @@ const AlMahaIsland = () => {
                     <Users className="w-8 h-8 text-primary" />
                   </div>
                   <div>
-                    <div className="text-3xl font-gotham-bold text-primary">1.5M+</div>
+                    <div className="text-3xl font-gotham-bold text-primary">
+                      <AnimatedCounter end={1.5} suffix="M+" />
+                    </div>
                     <div className="text-base font-gotham text-muted-foreground">Visitors Annually</div>
                   </div>
                 </div>
@@ -121,7 +150,9 @@ const AlMahaIsland = () => {
                     <Calendar className="w-8 h-8 text-primary" />
                   </div>
                   <div>
-                    <div className="text-3xl font-gotham-bold text-primary">2022</div>
+                    <div className="text-3xl font-gotham-bold text-primary">
+                      <AnimatedCounter end={2022} />
+                    </div>
                     <div className="text-base font-gotham text-muted-foreground">Launch Year</div>
                   </div>
                 </div>
@@ -133,8 +164,10 @@ const AlMahaIsland = () => {
                     <MapPin className="w-8 h-8 text-primary" />
                   </div>
                   <div>
-                    <div className="text-2xl font-gotham-bold text-primary">Global Brands</div>
-                    <div className="text-base font-gotham text-muted-foreground">Signature Partners</div>
+                    <div className="text-3xl font-gotham-bold text-primary">
+                      <AnimatedCounter end={12} />
+                    </div>
+                    <div className="text-base font-gotham text-muted-foreground">Global Signature Partners</div>
                   </div>
                 </div>
               </div>
