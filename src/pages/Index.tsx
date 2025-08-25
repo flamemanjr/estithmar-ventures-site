@@ -3,7 +3,7 @@ import { CorporateButton } from "@/components/ui/corporate-button";
 import { Building2, Settings, TrendingUp } from "lucide-react";
 import heroImage from "@/assets/hero-image.jpg";
 import alMahaImage from "@/assets/al-maha-island.jpg";
-const kataraHillsImage = "/lovable-uploads/e42bd7a3-7a5f-4be6-99db-e2eda2171a36.png";
+const kataraHillsImage = "/lovable-uploads/53769d64-af09-4a96-b65b-300f5381482d.png";
 import maysanDohaImage from "@/assets/maysan-doha.jpg";
 import rosewoodMaldivesImage from "@/assets/rosewood-maldives.jpg";
 import rixosBaghdadImage from "@/assets/rixos-baghdad.jpg";
