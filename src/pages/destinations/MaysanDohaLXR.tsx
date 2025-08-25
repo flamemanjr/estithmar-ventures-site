@@ -1,5 +1,6 @@
 import { useState, useEffect, useRef } from "react";
 import { CorporateButton } from "@/components/ui/corporate-button";
+import { Heart, Building, Sparkles, Waves, Trees, ChefHat, MapPin } from "lucide-react";
 import maysanDohaImage from "@/assets/maysan-doha.jpg";
 
 const MaysanDohaLXR = () => {
@@ -124,7 +125,7 @@ const MaysanDohaLXR = () => {
                 <div className="space-y-8">
                   <div className="text-center group">
                     <div className="w-12 h-12 bg-brand-orange/10 rounded-full flex items-center justify-center mx-auto mb-4">
-                      <div className="w-6 h-6 bg-brand-orange/20 rounded-full"></div>
+                      <Heart className="w-6 h-6 text-brand-orange" />
                     </div>
                     <h3 className="maysan-h3 font-gotham-bold text-ink mb-2">Wellness</h3>
                     <p className="maysan-small font-gotham text-katara-muted">& Retreat</p>
@@ -132,7 +133,7 @@ const MaysanDohaLXR = () => {
                   
                   <div className="text-center group">
                     <div className="w-12 h-12 bg-brand-orange/10 rounded-full flex items-center justify-center mx-auto mb-4">
-                      <div className="w-6 h-6 bg-brand-orange/20 rounded-full"></div>
+                      <Building className="w-6 h-6 text-brand-orange" />
                     </div>
                     <h3 className="maysan-h3 font-gotham-bold text-ink mb-2">Contemporary</h3>
                     <p className="maysan-small font-gotham text-katara-muted">Arabian Design</p>
@@ -140,7 +141,7 @@ const MaysanDohaLXR = () => {
                   
                   <div className="text-center group">
                     <div className="w-12 h-12 bg-brand-orange/10 rounded-full flex items-center justify-center mx-auto mb-4">
-                      <div className="w-6 h-6 bg-brand-orange/20 rounded-full"></div>
+                      <Sparkles className="w-6 h-6 text-brand-orange" />
                     </div>
                     <h3 className="maysan-h3 font-gotham-bold text-ink mb-2">Spa</h3>
                     <p className="maysan-small font-gotham text-katara-muted">Private Club</p>
@@ -226,19 +227,22 @@ const MaysanDohaLXR = () => {
             </p>
           </div>
           
-          <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
+           <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
             {[
               { 
                 title: "Holistic Spa & Thermal Suites", 
-                description: "Reset at your pace. Discover thermal experiences that honor ancient wellness traditions while embracing modern comfort." 
+                description: "Reset at your pace. Discover thermal experiences that honor ancient wellness traditions while embracing modern comfort.",
+                icon: Waves
               },
               { 
                 title: "Garden Courtyards & Quiet Lounges", 
-                description: "Architectural calm. Private spaces where light and shadow create natural rhythms for contemplation and rest." 
+                description: "Architectural calm. Private spaces where light and shadow create natural rhythms for contemplation and rest.",
+                icon: Trees
               },
               { 
                 title: "Chef-Led, Ingredient-Driven Dining", 
-                description: "Refined, seasonal menus. Culinary experiences that celebrate local heritage through contemporary techniques." 
+                description: "Refined, seasonal menus. Culinary experiences that celebrate local heritage through contemporary techniques.",
+                icon: ChefHat
               }
             ].map((experience, index) => (
               <div 
@@ -258,9 +262,9 @@ const MaysanDohaLXR = () => {
                     hoveredCard === index ? 'scale-125' : ''
                   }`}>
                     <div className="w-8 h-8 bg-brand-orange/20 rounded-full flex items-center justify-center">
-                      <div className={`w-4 h-4 bg-brand-orange/40 rounded-full transition-all duration-300 ${
-                        hoveredCard === index ? 'bg-brand-orange' : ''
-                      }`}></div>
+                      <experience.icon className={`w-4 h-4 transition-all duration-300 ${
+                        hoveredCard === index ? 'text-brand-orange' : 'text-brand-orange/60'
+                      }`} />
                     </div>
                   </div>
                 </div>
@@ -316,7 +320,7 @@ const MaysanDohaLXR = () => {
                   >
                     <div className="flex items-center space-x-3">
                       <div className="w-8 h-8 bg-brand-orange/20 rounded-full flex items-center justify-center transition-all duration-300 hover:bg-brand-orange/30 hover:scale-110">
-                        <div className="w-4 h-4 bg-brand-orange/40 rounded-full transition-all duration-300 hover:bg-brand-orange"></div>
+                        <MapPin className="w-4 h-4 text-brand-orange transition-all duration-300" />
                       </div>
                       <span className="maysan-small font-gotham text-ink font-medium transition-all duration-300 hover:text-brand-orange">{item.location}</span>
                     </div>
