@@ -17,11 +17,7 @@ export function ImageSkeleton({
   };
 
   return (
-    <img 
-      src="https://strapi.katara.net/uploads/katara_Dron4_ad47d97ea2.png" 
-      alt="Katara Cultural Center" 
-      className={cn("w-full h-full object-cover rounded-lg", aspectClasses[aspectRatio], className)} 
-    />
+    <Skeleton className={cn("w-full h-full", aspectClasses[aspectRatio], className)} />
   );
 }
 

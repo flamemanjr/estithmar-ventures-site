@@ -198,9 +198,17 @@ const KataraHillsLXR = () => {
               {Array.from({
               length: 8
             }).map((_, index) => <div key={index} className={`bg-paper border border-line aspect-[4/3] ${index === 0 || index === 7 ? 'md:aspect-[3/2]' : ''} group cursor-pointer overflow-hidden rounded katara-transition hover:shadow-sm`}>
-                  <div className="w-full h-full bg-gradient-to-br from-ink/5 to-ink/10 flex items-center justify-center group-hover:from-ink/10 group-hover:to-ink/15 katara-transition">
-                    <ImageSkeleton className="w-full h-full" />
-                  </div>
+                  {index === 0 ? (
+                    <img 
+                      src="https://strapi.katara.net/uploads/katara_Dron4_ad47d97ea2.png" 
+                      alt="Katara Cultural Center" 
+                      className="w-full h-full object-cover group-hover:scale-105 katara-transition"
+                    />
+                  ) : (
+                    <div className="w-full h-full bg-gradient-to-br from-ink/5 to-ink/10 flex items-center justify-center group-hover:from-ink/10 group-hover:to-ink/15 katara-transition">
+                      <ImageSkeleton className="w-full h-full" />
+                    </div>
+                  )}
                 </div>)}
             </div>
           </div>
