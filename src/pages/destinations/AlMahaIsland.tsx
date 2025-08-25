@@ -94,7 +94,7 @@ const AlMahaIsland = () => {
                   href="OFFICIAL_WEBSITE_URL_PLACEHOLDER" 
                   target="_blank" 
                   rel="noopener noreferrer"
-                  className="inline-flex items-center bg-primary hover:bg-primary/90 text-white px-8 py-4 rounded-lg shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-300 font-gotham-medium"
+                  className="inline-flex items-center bg-primary hover:bg-primary/90 text-white px-8 py-4 rounded-2xl shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-300 font-gotham-medium"
                 >
                   Visit Official Website
                   <ExternalLink className="ml-2 w-5 h-5" />
@@ -104,7 +104,7 @@ const AlMahaIsland = () => {
                 variant="outline" 
                 size="lg" 
                 onClick={scrollToExperiences}
-                className="text-white border-white/80 hover:bg-white hover:text-black px-8 py-4 rounded-lg backdrop-blur-sm bg-white/10 hover:bg-white hover:shadow-lg transform hover:scale-105 transition-all duration-300 font-gotham-medium"
+                className="text-white border-white/80 hover:bg-white hover:text-black px-8 py-4 rounded-2xl backdrop-blur-sm bg-white/10 hover:bg-white hover:shadow-lg transform hover:scale-105 transition-all duration-300 font-gotham-medium"
               >
                 Explore Experiences
               </CorporateButton>
