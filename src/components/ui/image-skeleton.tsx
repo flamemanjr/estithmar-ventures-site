@@ -17,11 +17,7 @@ export function ImageSkeleton({
   };
 
   return (
-    <img 
-      src="/lovable-uploads/e42bd7a3-7a5f-4be6-99db-e2eda2171a36.png" 
-      alt="Katara Cultural Center" 
-      className={cn("w-full h-full object-cover rounded-lg", aspectClasses[aspectRatio], className)} 
-    />
+    <Skeleton className={cn("w-full h-full", aspectClasses[aspectRatio], className)} />
   );
 }
 
