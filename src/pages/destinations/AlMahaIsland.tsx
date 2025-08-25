@@ -47,7 +47,10 @@ const AlMahaIsland = () => {
 
       {/* Hero Section */}
       <section className="relative h-[70vh] bg-black">
-        <div className="absolute inset-0">
+        <div 
+          className="absolute inset-0 bg-cover bg-center bg-no-repeat"
+          style={{ backgroundImage: `url(/lovable-uploads/eed4c83a-46f0-40c1-a910-21a558f97ea9.png)` }}
+        >
           <div className="absolute inset-0 bg-gradient-to-b from-black/20 via-black/30 to-black/60"></div>
         </div>
         
