@@ -17,13 +17,15 @@ export function ImageSkeleton({
   };
 
   return (
-    <Skeleton 
-      className={cn(
-        "w-full bg-gradient-to-br from-muted to-muted/50",
-        aspectClasses[aspectRatio],
-        className
-      )} 
-    />
+    <div className={cn("relative overflow-hidden", aspectClasses[aspectRatio], className)}>
+      <img 
+        src="/lovable-uploads/ab4d4a94-5c56-4339-9e89-b0b55a1b5878.png" 
+        alt="Modern architectural building with classical structure in background" 
+        className="w-full h-full object-cover"
+        loading="lazy"
+        decoding="async"
+      />
+    </div>
   );
 }
 
