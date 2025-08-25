@@ -16,22 +16,30 @@ All colors MUST be HSL.
     --background: 0 0% 100%; /* Pure White */
     --foreground: 0 0% 0%; /* Pure Black */
 
+    /* Katara Hills Specific Colors */
+    --brand-orange: 22 89% 54%; /* #F47A20 Orange - CTAs only */
+    --ink: 0 0% 5%; /* #0D0D0D - Body text */
+    --paper: 0 0% 100%; /* #FFFFFF - White sections */
+    --stone: 35 25% 96%; /* #F6F3EF - Katara section background */
+    --line: 0 0% 90%; /* #E6E6E6 - Hairline borders */
+    --katara-muted: 0 0% 56%; /* #8F8F8F - Eyebrows/meta */
+
     /* Surface Colors */
     --card: 0 0% 100%;
-    --card-foreground: 0 0% 0%;
+    --card-foreground: 0 0% 5%;
     
     --popover: 0 0% 100%;
-    --popover-foreground: 0 0% 0%;
+    --popover-foreground: 0 0% 5%;
 
     /* Neutral Gray Scale */
-    --muted: 0 0% 96%; /* #F5F5F5 */
+    --muted: 35 25% 96%; /* Stone background for Katara */
     --muted-foreground: 0 0% 56%; /* #8F8F8F */
     
     --secondary: 0 0% 90%; /* #E6E6E6 */
-    --secondary-foreground: 0 0% 0%;
+    --secondary-foreground: 0 0% 5%;
     
     --accent: 0 0% 81%; /* #CFCFCF */
-    --accent-foreground: 0 0% 0%;
+    --accent-foreground: 0 0% 5%;
 
     /* Utility Colors */
     --destructive: 0 84% 60%;
@@ -42,8 +50,8 @@ All colors MUST be HSL.
     --input: 0 0% 90%;
     --ring: 22 89% 54%; /* Orange focus ring */
 
-    /* Border Radius - Square for corporate feel */
-    --radius: 0.125rem;
+    /* Border Radius - Minimal for architectural feel */
+    --radius: 0.25rem;
 
     --sidebar-background: 0 0% 98%;
 
@@ -130,8 +138,17 @@ All colors MUST be HSL.
     transition: all 0.2s ease-out;
   }
   
-  .corporate-fade-in {
-    animation: corporateFadeIn 0.3s ease-out;
+  /* Katara Hills Specific - Slower, Serene Animations */
+  .katara-transition {
+    transition: all 0.16s ease-out;
+  }
+  
+  .katara-fade-in {
+    animation: kataraFadeIn 0.16s ease-out;
+  }
+  
+  .katara-reveal {
+    animation: kataraReveal 0.16s ease-out;
   }
   
   @keyframes corporateFadeIn {
@@ -143,6 +160,65 @@ All colors MUST be HSL.
       opacity: 1;
       transform: translateY(0);
     }
+  }
+
+  @keyframes kataraFadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(4px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  @keyframes kataraReveal {
+    from {
+      opacity: 0;
+      transform: translateY(8px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  /* Katara Typography Styles */
+  .katara-h1 {
+    font-size: 2.75rem; /* 44px */
+    line-height: 3.25rem; /* 52px */
+    letter-spacing: -0.01em;
+  }
+
+  .katara-h2 {
+    font-size: 1.875rem; /* 30px */
+    line-height: 2.375rem; /* 38px */
+    letter-spacing: -0.005em;
+  }
+
+  .katara-h3 {
+    font-size: 1.375rem; /* 22px */
+    line-height: 1.875rem; /* 30px */
+  }
+
+  .katara-body {
+    font-size: 1rem; /* 16px */
+    line-height: 1.625rem; /* 26px */
+  }
+
+  .katara-small {
+    font-size: 0.875rem; /* 14px */
+    line-height: 1.375rem; /* 22px */
+    letter-spacing: 0.025em;
+  }
+
+  .katara-eyebrow {
+    font-size: 0.875rem;
+    line-height: 1.375rem;
+    letter-spacing: 0.025em;
+    text-transform: uppercase;
+    color: hsl(var(--katara-muted));
   }
 
   /* Logo Carousel Animation */

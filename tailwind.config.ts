@@ -57,6 +57,13 @@ export default {
 					DEFAULT: 'hsl(var(--card))',
 					foreground: 'hsl(var(--card-foreground))'
 				},
+				// Katara Hills specific colors
+				'brand-orange': 'hsl(var(--brand-orange))',
+				'ink': 'hsl(var(--ink))',
+				'paper': 'hsl(var(--paper))',
+				'stone': 'hsl(var(--stone))',
+				'line': 'hsl(var(--line))',
+				'katara-muted': 'hsl(var(--katara-muted))',
 				sidebar: {
 					DEFAULT: 'hsl(var(--sidebar-background))',
 					foreground: 'hsl(var(--sidebar-foreground))',

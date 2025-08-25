@@ -25,58 +25,60 @@ const KataraHillsLXR = () => {
   return (
     <div className="bg-background">
       {/* Breadcrumbs */}
-      <section className="py-4 bg-muted border-b border-border">
+      <section className="py-4 bg-paper border-b border-line">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <nav className="flex items-center space-x-2 text-sm font-gotham">
-            <Link to="/" className="text-muted-foreground hover:text-primary corporate-transition">
+          <nav className="flex items-center space-x-2 katara-small font-gotham">
+            <Link to="/" className="text-katara-muted hover:text-ink katara-transition">
               Home
             </Link>
-            <ChevronRight className="w-4 h-4 text-muted-foreground" />
-            <Link to="/destinations" className="text-muted-foreground hover:text-primary corporate-transition">
+            <ChevronRight className="w-4 h-4 text-katara-muted" />
+            <Link to="/destinations" className="text-katara-muted hover:text-ink katara-transition">
               Destinations
             </Link>
-            <ChevronRight className="w-4 h-4 text-muted-foreground" />
-            <span className="text-foreground font-gotham-medium">Katara Hills LXR</span>
+            <ChevronRight className="w-4 h-4 text-katara-muted" />
+            <span className="text-ink font-gotham-medium">Katara Hills LXR</span>
           </nav>
         </div>
       </section>
 
       {/* Hero Section */}
-      <section className="relative h-[70vh] bg-black">
+      <section className="relative h-[75vh] bg-black overflow-hidden">
         <div 
           className="absolute inset-0 bg-cover bg-center bg-no-repeat"
           style={{ backgroundImage: `url(${kataraHillsImage})` }}
         >
-          <div className="absolute inset-0 bg-gradient-to-b from-black/20 via-black/30 to-black/60"></div>
+          <div className="absolute inset-0 bg-gradient-to-b from-black/15 via-black/25 to-black/50"></div>
         </div>
         
-        <div className="relative z-10 h-full flex items-center justify-center text-center">
-          <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-            <h1 className="text-5xl md:text-6xl font-gotham-bold text-white mb-6">Katara Hills LXR</h1>
-            <p className="text-xl md:text-2xl font-gotham text-white/90 mb-12 max-w-3xl mx-auto leading-relaxed">
-              Elevated villa living above Doha's cultural heart.
-            </p>
-            
-            <div className="flex flex-col sm:flex-row gap-6 justify-center">
-              <CorporateButton asChild size="lg">
-                <a 
-                  href="OFFICIAL_WEBSITE_URL_PLACEHOLDER" 
-                  target="_blank" 
-                  rel="noopener noreferrer"
-                  className="inline-flex items-center bg-primary hover:bg-primary/90 text-white px-8 py-4 rounded-2xl shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-300 font-gotham-medium"
+        <div className="relative z-10 h-full flex items-center">
+          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div className="max-w-2xl">
+              <h1 className="katara-h1 font-gotham-medium text-white mb-8">Katara Hills LXR</h1>
+              <p className="katara-body font-gotham text-white/90 mb-12 max-w-lg leading-relaxed">
+                Elevated villa living above Doha's cultural heart.
+              </p>
+              
+              <div className="flex flex-row gap-4">
+                <CorporateButton asChild size="lg">
+                  <a 
+                    href="OFFICIAL_WEBSITE_URL_PLACEHOLDER" 
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center bg-brand-orange hover:bg-brand-orange/90 text-white px-6 py-3 rounded katara-transition font-gotham-medium"
+                  >
+                    Visit Official Website
+                    <ExternalLink className="ml-2 w-4 h-4" />
+                  </a>
+                </CorporateButton>
+                <CorporateButton 
+                  variant="outline" 
+                  size="lg" 
+                  onClick={scrollToVillas}
+                  className="text-white border-white/60 hover:bg-white hover:text-ink px-6 py-3 rounded backdrop-blur-sm bg-white/5 katara-transition font-gotham-medium"
                 >
-                  Visit Official Website
-                  <ExternalLink className="ml-2 w-5 h-5" />
-                </a>
-              </CorporateButton>
-              <CorporateButton 
-                variant="outline" 
-                size="lg" 
-                onClick={scrollToVillas}
-                className="text-white border-white/80 hover:bg-white hover:text-black px-8 py-4 rounded-2xl backdrop-blur-sm bg-white/10 hover:bg-white hover:shadow-lg transform hover:scale-105 transition-all duration-300 font-gotham-medium"
-              >
-                View Villas & Amenities
-              </CorporateButton>
+                  View Villas & Amenities
+                </CorporateButton>
+              </div>
             </div>
           </div>
         </div>
@@ -84,52 +86,57 @@ const KataraHillsLXR = () => {
 
       {/* Overview Section */}
       <ProgressiveLoader delay={100}>
-        <section className="py-24 bg-background">
+        <section className="py-20 bg-paper">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
-              <div>
-                <h2 className="text-4xl font-gotham-bold text-foreground mb-8">Overview</h2>
-                <p className="text-lg font-gotham text-muted-foreground leading-relaxed">
-                  Katara Hills LXR blends Scandinavian simplicity with Qatari landscape and light. 
-                  Private villas overlook the Katara district, pairing privacy with immediate access 
-                  to culture, cuisine, and the waterfront.
-                </p>
+            <div className="grid grid-cols-1 lg:grid-cols-12 gap-16 items-start">
+              <div className="lg:col-span-7">
+                <div className="katara-eyebrow mb-6">Overview</div>
+                <h2 className="katara-h2 font-gotham-medium text-ink mb-8">Architecture meets tranquility</h2>
+                <div className="max-w-lg">
+                  <p className="katara-body font-gotham text-ink leading-relaxed">
+                    Katara Hills LXR blends Scandinavian simplicity with Qatari landscape and light. 
+                    Private villas overlook the Katara district, pairing privacy with immediate access 
+                    to culture, cuisine, and the waterfront.
+                  </p>
+                </div>
               </div>
               
               {/* Fact Cards */}
-              <div className="grid grid-cols-1 gap-8">
-                <div className="bg-gradient-to-r from-primary/5 to-transparent p-8 rounded-lg hover:from-primary/10 corporate-transition">
-                  <div className="flex items-center">
-                    <div className="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mr-6">
-                      <Home className="w-8 h-8 text-primary" />
-                    </div>
-                    <div>
-                      <div className="text-2xl font-gotham-bold text-primary">Villas</div>
-                      <div className="text-base font-gotham text-muted-foreground">Low-density private villas</div>
-                    </div>
-                  </div>
-                </div>
-                
-                <div className="bg-gradient-to-r from-primary/5 to-transparent p-8 rounded-lg hover:from-primary/10 corporate-transition">
-                  <div className="flex items-center">
-                    <div className="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mr-6">
-                      <Eye className="w-8 h-8 text-primary" />
-                    </div>
-                    <div>
-                      <div className="text-2xl font-gotham-bold text-primary">Outlook</div>
-                      <div className="text-base font-gotham text-muted-foreground">Panoramic city & sea views</div>
+              <div className="lg:col-span-5">
+                <div className="bg-stone p-8 rounded space-y-6">
+                  <div className="border border-line bg-paper p-6 rounded katara-transition hover:shadow-sm">
+                    <div className="flex items-center">
+                      <div className="w-12 h-12 bg-ink/5 rounded flex items-center justify-center mr-4">
+                        <Home className="w-6 h-6 text-ink" />
+                      </div>
+                      <div>
+                        <div className="katara-h3 font-gotham-medium text-ink">Villas</div>
+                        <div className="katara-small font-gotham text-katara-muted">Low-density private villas</div>
+                      </div>
                     </div>
                   </div>
-                </div>
-                
-                <div className="bg-gradient-to-r from-primary/5 to-transparent p-8 rounded-lg hover:from-primary/10 corporate-transition">
-                  <div className="flex items-center">
-                    <div className="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mr-6">
-                      <Sparkles className="w-8 h-8 text-primary" />
+                  
+                  <div className="border border-line bg-paper p-6 rounded katara-transition hover:shadow-sm">
+                    <div className="flex items-center">
+                      <div className="w-12 h-12 bg-ink/5 rounded flex items-center justify-center mr-4">
+                        <Eye className="w-6 h-6 text-ink" />
+                      </div>
+                      <div>
+                        <div className="katara-h3 font-gotham-medium text-ink">Outlook</div>
+                        <div className="katara-small font-gotham text-katara-muted">Panoramic city & sea views</div>
+                      </div>
                     </div>
-                    <div>
-                      <div className="text-2xl font-gotham-bold text-primary">Focus</div>
-                      <div className="text-base font-gotham text-muted-foreground">Quiet luxury, proximity to culture</div>
+                  </div>
+                  
+                  <div className="border border-line bg-paper p-6 rounded katara-transition hover:shadow-sm">
+                    <div className="flex items-center">
+                      <div className="w-12 h-12 bg-ink/5 rounded flex items-center justify-center mr-4">
+                        <Sparkles className="w-6 h-6 text-ink" />
+                      </div>
+                      <div>
+                        <div className="katara-h3 font-gotham-medium text-ink">Focus</div>
+                        <div className="katara-small font-gotham text-katara-muted">Quiet luxury, proximity to culture</div>
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -141,30 +148,34 @@ const KataraHillsLXR = () => {
 
       {/* Signature Experiences */}
       <ProgressiveLoader delay={300}>
-        <section id="villas-amenities" className="py-24 bg-muted">
+        <section id="villas-amenities" className="py-20 bg-stone">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div className="text-center mb-16">
-              <h2 className="text-4xl font-gotham-bold text-foreground mb-6">Signature Experiences</h2>
+            <div className="mb-16">
+              <div className="katara-eyebrow mb-6">Signature Experiences</div>
+              <h2 className="katara-h2 font-gotham-medium text-ink">Curated for tranquility</h2>
             </div>
             
-            <div className="grid grid-cols-1 lg:grid-cols-3 gap-12">
-              <div className="bg-background p-8 rounded-2xl hover:shadow-lg corporate-transition">
-                <h3 className="text-2xl font-gotham-bold text-foreground mb-4">Discreet Service & Dining</h3>
-                <p className="text-base font-gotham text-muted-foreground leading-relaxed">
+            <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
+              <div className="border border-line bg-paper p-8 rounded katara-transition hover:shadow-sm hover:translate-y-0.5">
+                <div className="aspect-[3/2] bg-gradient-to-br from-ink/5 to-ink/10 rounded mb-6"></div>
+                <h3 className="katara-h3 font-gotham-medium text-ink mb-3">Discreet Service & Dining</h3>
+                <p className="katara-body font-gotham text-katara-muted leading-relaxed">
                   Tailored in-villa and on-property options.
                 </p>
               </div>
               
-              <div className="bg-background p-8 rounded-2xl hover:shadow-lg corporate-transition">
-                <h3 className="text-2xl font-gotham-bold text-foreground mb-4">Wellness-forward Amenities</h3>
-                <p className="text-base font-gotham text-muted-foreground leading-relaxed">
+              <div className="border border-line bg-paper p-8 rounded katara-transition hover:shadow-sm hover:translate-y-0.5">
+                <div className="aspect-[3/2] bg-gradient-to-br from-ink/5 to-ink/10 rounded mb-6"></div>
+                <h3 className="katara-h3 font-gotham-medium text-ink mb-3">Wellness-forward Amenities</h3>
+                <p className="katara-body font-gotham text-katara-muted leading-relaxed">
                   Spa, fitness, and nature-led spaces.
                 </p>
               </div>
               
-              <div className="bg-background p-8 rounded-2xl hover:shadow-lg corporate-transition">
-                <h3 className="text-2xl font-gotham-bold text-foreground mb-4">Cultural Access</h3>
-                <p className="text-base font-gotham text-muted-foreground leading-relaxed">
+              <div className="border border-line bg-paper p-8 rounded katara-transition hover:shadow-sm hover:translate-y-0.5">
+                <div className="aspect-[3/2] bg-gradient-to-br from-ink/5 to-ink/10 rounded mb-6"></div>
+                <h3 className="katara-h3 font-gotham-medium text-ink mb-3">Cultural Access</h3>
+                <p className="katara-body font-gotham text-katara-muted leading-relaxed">
                   Direct connection to Katara's venues.
                 </p>
               </div>
@@ -175,25 +186,23 @@ const KataraHillsLXR = () => {
 
       {/* Visual Gallery */}
       <ProgressiveLoader delay={500}>
-        <section className="py-24 bg-background">
+        <section className="py-20 bg-stone">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div className="text-center mb-16">
-              <h2 className="text-4xl font-gotham-bold text-foreground mb-6">Visual Gallery</h2>
-              <p className="text-lg font-gotham text-muted-foreground">
-                Villas, interiors, terraces, and dusk scenes
-              </p>
+            <div className="mb-16">
+              <div className="katara-eyebrow mb-6">Visual Gallery</div>
+              <h2 className="katara-h2 font-gotham-medium text-ink mb-4">Villas, interiors, terraces, and dusk scenes</h2>
             </div>
             
-            <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
-              {Array.from({ length: 10 }).map((_, index) => (
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+              {Array.from({ length: 8 }).map((_, index) => (
                 <div 
                   key={index} 
-                  className={`bg-muted border border-border aspect-square ${
-                    index === 0 || index === 9 ? 'md:col-span-2 md:row-span-2' : ''
-                  } group cursor-pointer overflow-hidden rounded-lg`}
+                  className={`bg-paper border border-line aspect-[4/3] ${
+                    index === 0 || index === 7 ? 'md:aspect-[3/2]' : ''
+                  } group cursor-pointer overflow-hidden rounded katara-transition hover:shadow-sm`}
                 >
-                  <div className="w-full h-full bg-gradient-to-br from-primary/10 to-primary/5 flex items-center justify-center group-hover:from-primary/20 group-hover:to-primary/10 corporate-transition">
-                    <ImageSkeleton className="w-full h-full animate-pulse" />
+                  <div className="w-full h-full bg-gradient-to-br from-ink/5 to-ink/10 flex items-center justify-center group-hover:from-ink/10 group-hover:to-ink/15 katara-transition">
+                    <ImageSkeleton className="w-full h-full" />
                   </div>
                 </div>
               ))}
@@ -204,25 +213,47 @@ const KataraHillsLXR = () => {
 
       {/* Location & Map */}
       <ProgressiveLoader delay={700}>
-        <section className="py-24 bg-muted">
+        <section className="py-20 bg-paper">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-start">
               <div>
-                <h2 className="text-4xl font-gotham-bold text-foreground mb-6">Location</h2>
-                <p className="text-lg font-gotham text-muted-foreground leading-relaxed mb-4">
-                  Positioned above the vibrant Katara Cultural Village, offering elevated views and direct access to Doha's premier cultural district.
-                </p>
-                <p className="text-lg font-gotham text-muted-foreground leading-relaxed mb-6">
-                  Minutes from the waterfront, galleries, theaters, and world-class dining.
-                </p>
-                <div className="flex items-center text-sm font-gotham text-muted-foreground">
-                  <MapPin className="w-4 h-4 mr-2 text-primary" />
+                <div className="katara-eyebrow mb-6">Location</div>
+                <h2 className="katara-h2 font-gotham-medium text-ink mb-8">Above Doha's cultural heart</h2>
+                <div className="max-w-lg space-y-4 mb-8">
+                  <p className="katara-body font-gotham text-ink leading-relaxed">
+                    Positioned above the vibrant Katara Cultural Village, offering elevated views and direct access to Doha's premier cultural district.
+                  </p>
+                  <p className="katara-body font-gotham text-katara-muted leading-relaxed">
+                    Minutes from the waterfront, galleries, theaters, and world-class dining.
+                  </p>
+                </div>
+
+                <div className="space-y-3">
+                  <div className="katara-small font-gotham-medium text-ink mb-3">Proximity</div>
+                  <div className="space-y-2 katara-small">
+                    <div className="flex items-center text-katara-muted">
+                      <div className="w-1 h-1 bg-katara-muted rounded-full mr-3"></div>
+                      Katara Cultural Village — 3 min
+                    </div>
+                    <div className="flex items-center text-katara-muted">
+                      <div className="w-1 h-1 bg-katara-muted rounded-full mr-3"></div>
+                      Doha waterfront — 5 min
+                    </div>
+                    <div className="flex items-center text-katara-muted">
+                      <div className="w-1 h-1 bg-katara-muted rounded-full mr-3"></div>
+                      Theaters & galleries — 2–6 min
+                    </div>
+                  </div>
+                </div>
+
+                <div className="flex items-center katara-small font-gotham text-katara-muted mt-8">
+                  <MapPin className="w-4 h-4 mr-2 text-brand-orange" />
                   Katara Cultural Village, Doha
                 </div>
               </div>
               
-              <div className="bg-gradient-to-br from-primary/10 to-primary/5 h-80 rounded-2xl flex items-center justify-center">
-                <ImageSkeleton className="w-full h-full animate-pulse rounded-2xl" />
+              <div className="border border-line bg-gradient-to-br from-ink/5 to-ink/10 h-80 rounded flex items-center justify-center">
+                <ImageSkeleton className="w-full h-full rounded" />
               </div>
             </div>
           </div>
@@ -230,34 +261,43 @@ const KataraHillsLXR = () => {
       </ProgressiveLoader>
 
       {/* Partners & Accolades */}
-      <section className="py-16 bg-background">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h2 className="text-3xl font-gotham-bold text-foreground mb-8">Partners & Accolades</h2>
+      <section className="py-16 bg-stone">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-12">
+            <div className="katara-eyebrow mb-6">Partners & Accolades</div>
+          </div>
           <div className="grid grid-cols-2 md:grid-cols-4 gap-8 mb-8">
             {Array.from({ length: 4 }).map((_, index) => (
-              <div key={index} className="h-16 bg-muted border border-border rounded-lg flex items-center justify-center">
-                <span className="text-xs font-gotham text-muted-foreground">Partner {index + 1}</span>
+              <div key={index} className="h-12 bg-paper border border-line rounded flex items-center justify-center opacity-60 hover:opacity-80 katara-transition">
+                <span className="katara-small font-gotham text-katara-muted">Partner {index + 1}</span>
               </div>
             ))}
           </div>
-          <p className="text-sm font-gotham text-muted-foreground">
-            Recognized for exceptional villa design and cultural integration.
+          <p className="katara-small font-gotham text-katara-muted text-center max-w-2xl mx-auto">
+            Select partners and regional recognition for design excellence.
           </p>
         </div>
       </section>
 
       {/* CTA Banner */}
-      <section className="py-24 bg-foreground">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h2 className="text-4xl font-gotham-bold text-background mb-6">
+      <section 
+        className="py-24 relative overflow-hidden"
+        style={{ 
+          backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.5)), url(${kataraHillsImage})`,
+          backgroundSize: 'cover',
+          backgroundPosition: 'center'
+        }}
+      >
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10">
+          <h2 className="katara-h2 font-gotham-medium text-white mb-8">
             Discover Katara Hills LXR
           </h2>
-          <CorporateButton asChild size="lg" variant="outline">
+          <CorporateButton asChild size="lg">
             <a 
               href="OFFICIAL_WEBSITE_URL_PLACEHOLDER" 
               target="_blank" 
               rel="noopener noreferrer"
-              className="inline-flex items-center text-background border-background hover:bg-background hover:text-foreground rounded-2xl"
+              className="inline-flex items-center bg-brand-orange hover:bg-brand-orange/90 text-white px-6 py-3 rounded katara-transition font-gotham-medium"
             >
               Visit Official Website
               <ExternalLink className="ml-2 w-4 h-4" />
