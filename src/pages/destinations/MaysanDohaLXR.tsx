@@ -1,6 +1,6 @@
 import { useState, useEffect, useRef } from "react";
 import { CorporateButton } from "@/components/ui/corporate-button";
-import { Heart, Building, Sparkles, Waves, Trees, ChefHat, MapPin } from "lucide-react";
+import { Heart, Building, Sparkles, Waves, Trees, ChefHat, MapPin, Plane, Landmark } from "lucide-react";
 import maysanDohaImage from "@/assets/maysan-doha.jpg";
 
 const MaysanDohaLXR = () => {
@@ -307,9 +307,9 @@ const MaysanDohaLXR = () => {
             <div className={`bg-white border border-line/50 p-8 rounded-sm shadow-sm transform transition-all duration-700 hover:shadow-lg hover:scale-105 ${getAnimationClass('location')}`} style={getStaggerDelay(1)}>
               <div className="space-y-6">
                 {[
-                  { location: "Doha waterfront", time: "10 min" },
-                  { location: "Cultural venues", time: "8–12 min" },
-                  { location: "Airport", time: "25 min" }
+                  { location: "Doha waterfront", time: "10 min", icon: Waves },
+                  { location: "Cultural venues", time: "8–12 min", icon: Landmark },
+                  { location: "Airport", time: "25 min", icon: Plane }
                 ].map((item, index) => (
                   <div 
                     key={index}
@@ -320,7 +320,7 @@ const MaysanDohaLXR = () => {
                   >
                     <div className="flex items-center space-x-3">
                       <div className="w-8 h-8 bg-brand-orange/20 rounded-full flex items-center justify-center transition-all duration-300 hover:bg-brand-orange/30 hover:scale-110">
-                        <MapPin className="w-4 h-4 text-brand-orange transition-all duration-300" />
+                        <item.icon className="w-4 h-4 text-brand-orange transition-all duration-300" />
                       </div>
                       <span className="maysan-small font-gotham text-ink font-medium transition-all duration-300 hover:text-brand-orange">{item.location}</span>
                     </div>
