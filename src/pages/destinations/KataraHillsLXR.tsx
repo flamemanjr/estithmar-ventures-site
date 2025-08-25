@@ -140,7 +140,13 @@ const KataraHillsLXR = () => {
             
             <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
               <div className="border border-line bg-paper p-8 rounded katara-transition hover:shadow-sm hover:translate-y-0.5">
-                <div className="aspect-[3/2] bg-gradient-to-br from-ink/5 to-ink/10 rounded mb-6"></div>
+                <div className="aspect-[3/2] rounded mb-6 overflow-hidden">
+                  <img 
+                    src="/lovable-uploads/1dfa42a0-1539-4f15-a027-7730182a0ee6.png" 
+                    alt="Luxury dining terrace with panoramic city views" 
+                    className="w-full h-full object-cover"
+                  />
+                </div>
                 <h3 className="katara-h3 font-gotham-medium text-ink mb-3">Discreet Service & Dining</h3>
                 <p className="katara-body font-gotham text-katara-muted leading-relaxed">
                   Tailored in-villa and on-property options.
