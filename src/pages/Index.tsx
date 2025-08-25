@@ -3,8 +3,8 @@ import { CorporateButton } from "@/components/ui/corporate-button";
 import { Building2, Settings, TrendingUp } from "lucide-react";
 import heroImage from "@/assets/hero-image.jpg";
 import alMahaImage from "@/assets/al-maha-island.jpg";
-const kataraHillsImage = "/lovable-uploads/53769d64-af09-4a96-b65b-300f5381482d.png";
-import maysanDohaImage from "@/assets/maysan-doha.jpg";
+const kataraHillsImage = "/lovable-uploads/2279181b-8e3e-4789-a205-88d461bcde4f.png";
+const maysanDohaImage = "/lovable-uploads/4bda99b4-4bdc-402f-bd4c-8d87a987ace2.png";
 import rosewoodMaldivesImage from "@/assets/rosewood-maldives.jpg";
 import rixosBaghdadImage from "@/assets/rixos-baghdad.jpg";
 
