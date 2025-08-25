@@ -254,7 +254,16 @@ const MaysanDohaLXR = () => {
                 <div className={`aspect-[4/3] bg-gradient-to-br from-sand to-sand/60 border-b border-line/30 relative overflow-hidden transition-all duration-500 ${
                   hoveredCard === index ? 'scale-110' : ''
                 }`}>
-                  <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent"></div>
+                  {index === 0 ? (
+                    <div 
+                      className="absolute inset-0 bg-cover bg-center bg-no-repeat"
+                      style={{ backgroundImage: `url(/lovable-uploads/904ac2a9-edd7-43c2-85d6-694d225075aa.png)` }}
+                    >
+                      <div className="absolute inset-0 bg-gradient-to-t from-black/40 via-black/10 to-transparent"></div>
+                    </div>
+                  ) : (
+                    <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent"></div>
+                  )}
                   <div className={`absolute bottom-4 left-4 transition-all duration-500 ${
                     hoveredCard === index ? 'scale-125' : ''
                   }`}>
