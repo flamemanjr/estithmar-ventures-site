@@ -248,8 +248,12 @@ const KataraHillsLXR = () => {
                 </div>
               </div>
               
-              <div className="border border-line bg-gradient-to-br from-ink/5 to-ink/10 h-80 rounded flex items-center justify-center">
-                <ImageSkeleton className="w-full h-full rounded" />
+              <div className="border border-line bg-gradient-to-br from-ink/5 to-ink/10 h-80 rounded flex items-center justify-center overflow-hidden">
+                <img 
+                  src="https://strapi.katara.net/uploads/katara_Dron4_ad47d97ea2.png" 
+                  alt="Katara Cultural Center" 
+                  className="w-full h-full object-cover rounded"
+                />
               </div>
             </div>
           </div>
