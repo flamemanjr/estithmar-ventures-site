@@ -324,7 +324,7 @@ const AlMahaIsland = () => {
                 </div>
               </CarouselItem>
               <CarouselItem className="pl-2 md:pl-4 basis-1/2 md:basis-1/3 lg:basis-1/4">
-                <div className="h-16 flex items-center justify-center">
+                <div className="h-16 flex items-center justify-center bg-black rounded-lg px-4">
                   <img src={dohaBankLogo} alt="Doha Bank" className="max-h-full max-w-full object-contain opacity-60 hover:opacity-100 corporate-transition" />
                 </div>
               </CarouselItem>
