@@ -268,6 +268,13 @@ const MaysanDohaLXR = () => {
                     >
                       <div className="absolute inset-0 bg-gradient-to-t from-black/40 via-black/10 to-transparent"></div>
                     </div>
+                  ) : index === 2 ? (
+                    <div 
+                      className="absolute inset-0 bg-cover bg-center bg-no-repeat"
+                      style={{ backgroundImage: `url(/lovable-uploads/45618c6e-d114-407d-8136-efdc0c5dc75c.png)` }}
+                    >
+                      <div className="absolute inset-0 bg-gradient-to-t from-black/40 via-black/10 to-transparent"></div>
+                    </div>
                   ) : (
                     <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent"></div>
                   )}
