@@ -17,15 +17,7 @@ export function ImageSkeleton({
   };
 
   return (
-    <div className={cn("relative overflow-hidden", aspectClasses[aspectRatio], className)}>
-      <img 
-        src="/lovable-uploads/ab4d4a94-5c56-4339-9e89-b0b55a1b5878.png" 
-        alt="Modern architectural building with classical structure in background" 
-        className="w-full h-full object-cover"
-        loading="lazy"
-        decoding="async"
-      />
-    </div>
+    <Skeleton className={cn("w-full h-full", aspectClasses[aspectRatio], className)} />
   );
 }
 
