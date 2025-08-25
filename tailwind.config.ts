@@ -64,6 +64,8 @@ export default {
 				'stone': 'hsl(var(--stone))',
 				'line': 'hsl(var(--line))',
 				'katara-muted': 'hsl(var(--katara-muted))',
+				// Maysan Doha specific colors
+				'sand': 'hsl(var(--sand))',
 				sidebar: {
 					DEFAULT: 'hsl(var(--sidebar-background))',
 					foreground: 'hsl(var(--sidebar-foreground))',

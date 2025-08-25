@@ -24,6 +24,9 @@ All colors MUST be HSL.
     --line: 0 0% 90%; /* #E6E6E6 - Hairline borders */
     --katara-muted: 0 0% 56%; /* #8F8F8F - Eyebrows/meta */
 
+    /* Maysan Doha Specific Colors - Spa-calm aesthetic */
+    --sand: 33 20% 94%; /* #F4EEE8 - Warm sand for Maysan sections */
+
     /* Surface Colors */
     --card: 0 0% 100%;
     --card-foreground: 0 0% 5%;
@@ -219,6 +222,76 @@ All colors MUST be HSL.
     letter-spacing: 0.025em;
     text-transform: uppercase;
     color: hsl(var(--katara-muted));
+  }
+
+  /* Maysan Doha Typography - Softer, Spa-calm */
+  .maysan-h1 {
+    font-size: 2.625rem; /* 42px */
+    line-height: 3.25rem; /* 52px */
+    letter-spacing: -0.005em;
+  }
+
+  .maysan-h2 {
+    font-size: 1.75rem; /* 28px */
+    line-height: 2.25rem; /* 36px */
+  }
+
+  .maysan-h3 {
+    font-size: 1.25rem; /* 20px */
+    line-height: 1.75rem; /* 28px */
+  }
+
+  .maysan-body {
+    font-size: 1rem; /* 16px */
+    line-height: 1.75rem; /* 28px */
+    max-width: 70ch;
+  }
+
+  .maysan-small {
+    font-size: 0.875rem; /* 14px */
+    line-height: 1.375rem; /* 22px */
+  }
+
+  .maysan-eyebrow {
+    font-size: 0.875rem;
+    line-height: 1.375rem;
+    letter-spacing: 0.025em;
+    color: hsl(var(--katara-muted));
+  }
+
+  /* Maysan Transitions - Slower, Spa-like */
+  .maysan-transition {
+    transition: all 0.16s ease-out;
+  }
+  
+  .maysan-fade-in {
+    animation: maysanFadeIn 0.16s ease-out;
+  }
+  
+  .maysan-reveal {
+    animation: maysanReveal 0.16s ease-out;
+  }
+  
+  @keyframes maysanFadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(6px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  @keyframes maysanReveal {
+    from {
+      opacity: 0;
+      transform: translateY(6px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
   }
 
   /* Logo Carousel Animation */
