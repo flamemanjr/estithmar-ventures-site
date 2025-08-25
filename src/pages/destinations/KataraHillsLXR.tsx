@@ -64,7 +64,7 @@ const KataraHillsLXR = () => {
                     href="OFFICIAL_WEBSITE_URL_PLACEHOLDER" 
                     target="_blank" 
                     rel="noopener noreferrer"
-                    className="inline-flex items-center bg-brand-orange hover:bg-brand-orange/90 text-white px-6 py-3 rounded-full katara-transition font-gotham-medium"
+                    className="inline-flex items-center bg-brand-orange hover:bg-brand-orange/90 text-white px-6 py-3 rounded-2xl katara-transition font-gotham-medium"
                   >
                     Visit Official Website
                     <ExternalLink className="ml-2 w-4 h-4" />
@@ -74,7 +74,7 @@ const KataraHillsLXR = () => {
                   variant="outline" 
                   size="lg" 
                   onClick={scrollToVillas}
-                  className="text-white border-white/60 hover:bg-white hover:text-ink px-6 py-3 rounded-full backdrop-blur-sm bg-white/5 katara-transition font-gotham-medium"
+                  className="text-white border-white/60 hover:bg-white hover:text-ink px-6 py-3 rounded-2xl backdrop-blur-sm bg-white/5 katara-transition font-gotham-medium"
                 >
                   View Villas & Amenities
                 </CorporateButton>
