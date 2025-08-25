@@ -88,25 +88,22 @@ const MaysanDohaLXR = () => {
         data-section="overview"
       >
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className={`text-center mb-20 transition-all duration-700 ${getAnimationClass('overview')}`}>
-            <div 
-              className="maysan-eyebrow font-gotham-medium text-katara-muted mb-4 tracking-wide"
-              style={getStaggerDelay(0)}
-            >
-              Overview
-            </div>
-            <h2 
-              className="maysan-h2 font-gotham-bold text-ink mb-6 transform transition-all duration-500 hover:text-brand-orange"
-              style={getStaggerDelay(1)}
-            >
-              A Sanctuary of Modern Wellness
-            </h2>
-          </div>
-          
           <div className="grid grid-cols-1 lg:grid-cols-5 gap-16 items-start">
             {/* Left Column - Enhanced with better typography */}
-            <div className={`lg:col-span-3 transition-all duration-700 ${getAnimationClass('overview')}`} style={getStaggerDelay(2)}>
+            <div className={`lg:col-span-3 transition-all duration-700 ${getAnimationClass('overview')}`} style={getStaggerDelay(0)}>
               <div className="space-y-8">
+                <div 
+                  className="maysan-eyebrow font-gotham-medium text-katara-muted mb-4 tracking-wide"
+                  style={getStaggerDelay(0)}
+                >
+                  Overview
+                </div>
+                <h2 
+                  className="maysan-h2 font-gotham-bold text-ink mb-6 transform transition-all duration-500 hover:text-brand-orange"
+                  style={getStaggerDelay(1)}
+                >
+                  A Sanctuary of Modern Wellness
+                </h2>
                 <p className="text-xl font-gotham text-ink leading-relaxed">
                   Maysan Doha LXR is designed as a calm, private world—where Arabian architecture, 
                   contemporary craft, and thoughtful service create space to reset and reconnect.
