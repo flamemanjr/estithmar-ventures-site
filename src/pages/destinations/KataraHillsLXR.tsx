@@ -104,37 +104,37 @@ const KataraHillsLXR = () => {
               {/* Fact Cards */}
               <div className="lg:col-span-5">
                 <div className="bg-stone p-8 rounded space-y-6">
-                  <div className="border border-line bg-paper p-6 rounded katara-transition hover:shadow-sm">
+                  <div className="border border-line bg-paper p-6 rounded katara-transition hover:shadow-md hover:border-brand-orange/30 cursor-pointer group">
                     <div className="flex items-center">
-                      <div className="w-12 h-12 bg-ink/5 rounded flex items-center justify-center mr-4">
-                        <Home className="w-6 h-6 text-ink" />
+                      <div className="w-12 h-12 bg-ink/5 group-hover:bg-brand-orange/10 rounded flex items-center justify-center mr-4 katara-transition">
+                        <Home className="w-6 h-6 text-ink group-hover:text-brand-orange katara-transition" />
                       </div>
                       <div>
-                        <div className="katara-h3 font-gotham-medium text-ink">Villas</div>
+                        <div className="katara-h3 font-gotham-medium text-ink group-hover:text-brand-orange katara-transition">Villas</div>
                         <div className="katara-small font-gotham text-katara-muted">Low-density private villas</div>
                       </div>
                     </div>
                   </div>
                   
-                  <div className="border border-line bg-paper p-6 rounded katara-transition hover:shadow-sm">
+                  <div className="border border-line bg-paper p-6 rounded katara-transition hover:shadow-md hover:border-brand-orange/30 cursor-pointer group">
                     <div className="flex items-center">
-                      <div className="w-12 h-12 bg-ink/5 rounded flex items-center justify-center mr-4">
-                        <Eye className="w-6 h-6 text-ink" />
+                      <div className="w-12 h-12 bg-ink/5 group-hover:bg-brand-orange/10 rounded flex items-center justify-center mr-4 katara-transition">
+                        <Eye className="w-6 h-6 text-ink group-hover:text-brand-orange katara-transition" />
                       </div>
                       <div>
-                        <div className="katara-h3 font-gotham-medium text-ink">Outlook</div>
+                        <div className="katara-h3 font-gotham-medium text-ink group-hover:text-brand-orange katara-transition">Outlook</div>
                         <div className="katara-small font-gotham text-katara-muted">Panoramic city & sea views</div>
                       </div>
                     </div>
                   </div>
                   
-                  <div className="border border-line bg-paper p-6 rounded katara-transition hover:shadow-sm">
+                  <div className="border border-line bg-paper p-6 rounded katara-transition hover:shadow-md hover:border-brand-orange/30 cursor-pointer group">
                     <div className="flex items-center">
-                      <div className="w-12 h-12 bg-ink/5 rounded flex items-center justify-center mr-4">
-                        <Sparkles className="w-6 h-6 text-ink" />
+                      <div className="w-12 h-12 bg-ink/5 group-hover:bg-brand-orange/10 rounded flex items-center justify-center mr-4 katara-transition">
+                        <Sparkles className="w-6 h-6 text-ink group-hover:text-brand-orange katara-transition" />
                       </div>
                       <div>
-                        <div className="katara-h3 font-gotham-medium text-ink">Focus</div>
+                        <div className="katara-h3 font-gotham-medium text-ink group-hover:text-brand-orange katara-transition">Focus</div>
                         <div className="katara-small font-gotham text-katara-muted">Quiet luxury, proximity to culture</div>
                       </div>
                     </div>
