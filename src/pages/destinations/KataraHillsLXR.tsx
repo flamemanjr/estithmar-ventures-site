@@ -52,7 +52,7 @@ const KataraHillsLXR = () => {
         
         <div className="relative z-10 h-full flex items-center">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div className="max-w-2xl">
+            <div className="max-w-2xl mx-auto text-center">
               <h1 className="katara-h1 font-gotham-medium text-white mb-8">Katara Hills LXR</h1>
               <p className="katara-body font-gotham text-white/90 mb-12 max-w-lg leading-relaxed">
                 Elevated villa living above Doha's cultural heart.
