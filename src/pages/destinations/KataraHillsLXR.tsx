@@ -4,7 +4,7 @@ import { ExternalLink, ChevronRight, MapPin, Home, Eye, Sparkles } from "lucide-
 import { CorporateButton } from "@/components/ui/corporate-button";
 import { ImageSkeleton } from "@/components/ui/image-skeleton";
 import { ProgressiveLoader } from "@/components/ui/progressive-loader";
-import kataraHillsImage from "@/assets/katara-hills.jpg";
+import kataraHillsImage from "/lovable-uploads/2279181b-8e3e-4789-a205-88d461bcde4f.png";
 
 const KataraHillsLXR = () => {
   useEffect(() => {
