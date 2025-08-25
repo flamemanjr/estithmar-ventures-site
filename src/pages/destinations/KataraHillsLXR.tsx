@@ -260,24 +260,6 @@ const KataraHillsLXR = () => {
         </section>
       </ProgressiveLoader>
 
-      {/* Partners & Accolades */}
-      <section className="py-16 bg-stone">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-12">
-            <div className="katara-eyebrow mb-6">Partners & Accolades</div>
-          </div>
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-8 mb-8">
-            {Array.from({ length: 4 }).map((_, index) => (
-              <div key={index} className="h-12 bg-paper border border-line rounded flex items-center justify-center opacity-60 hover:opacity-80 katara-transition">
-                <span className="katara-small font-gotham text-katara-muted">Partner {index + 1}</span>
-              </div>
-            ))}
-          </div>
-          <p className="katara-small font-gotham text-katara-muted text-center max-w-2xl mx-auto">
-            Select partners and regional recognition for design excellence.
-          </p>
-        </div>
-      </section>
 
       {/* CTA Banner */}
       <section 
