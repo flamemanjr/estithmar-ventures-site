@@ -294,53 +294,53 @@ const AlMahaIsland = () => {
           <Carousel className="w-full max-w-5xl mx-auto" opts={{ align: "start", loop: true }}>
             <CarouselContent className="-ml-2 md:-ml-4">
               <CarouselItem className="pl-2 md:pl-4 basis-1/2 md:basis-1/3 lg:basis-1/4">
-                <div className="h-16 bg-white rounded-lg border border-border flex items-center justify-center p-4 hover:shadow-md corporate-transition">
-                  <img src={pepsiLogo} alt="Pepsi" className="max-h-full max-w-full object-contain" />
+                <div className="h-16 flex items-center justify-center">
+                  <img src={pepsiLogo} alt="Pepsi" className="max-h-full max-w-full object-contain opacity-60 hover:opacity-100 corporate-transition" />
                 </div>
               </CarouselItem>
               <CarouselItem className="pl-2 md:pl-4 basis-1/2 md:basis-1/3 lg:basis-1/4">
-                <div className="h-16 bg-white rounded-lg border border-border flex items-center justify-center p-4 hover:shadow-md corporate-transition">
-                  <img src={qatarAirwaysLogo} alt="Qatar Airways" className="max-h-full max-w-full object-contain" />
+                <div className="h-16 flex items-center justify-center">
+                  <img src={qatarAirwaysLogo} alt="Qatar Airways" className="max-h-full max-w-full object-contain opacity-60 hover:opacity-100 corporate-transition" />
                 </div>
               </CarouselItem>
               <CarouselItem className="pl-2 md:pl-4 basis-1/2 md:basis-1/3 lg:basis-1/4">
-                <div className="h-16 bg-white rounded-lg border border-border flex items-center justify-center p-4 hover:shadow-md corporate-transition">
-                  <img src={qatariDiarLogo} alt="Qatari Diar" className="max-h-full max-w-full object-contain" />
+                <div className="h-16 flex items-center justify-center">
+                  <img src={qatariDiarLogo} alt="Qatari Diar" className="max-h-full max-w-full object-contain opacity-60 hover:opacity-100 corporate-transition" />
                 </div>
               </CarouselItem>
               <CarouselItem className="pl-2 md:pl-4 basis-1/2 md:basis-1/3 lg:basis-1/4">
-                <div className="h-16 bg-white rounded-lg border border-border flex items-center justify-center p-4 hover:shadow-md corporate-transition">
-                  <img src={rafeeqLogo} alt="Rafeeq" className="max-h-full max-w-full object-contain" />
+                <div className="h-16 flex items-center justify-center">
+                  <img src={rafeeqLogo} alt="Rafeeq" className="max-h-full max-w-full object-contain opacity-60 hover:opacity-100 corporate-transition" />
                 </div>
               </CarouselItem>
               <CarouselItem className="pl-2 md:pl-4 basis-1/2 md:basis-1/3 lg:basis-1/4">
-                <div className="h-16 bg-white rounded-lg border border-border flex items-center justify-center p-4 hover:shadow-md corporate-transition">
-                  <img src={visitQatarLogo} alt="Visit Qatar" className="max-h-full max-w-full object-contain" />
+                <div className="h-16 flex items-center justify-center">
+                  <img src={visitQatarLogo} alt="Visit Qatar" className="max-h-full max-w-full object-contain opacity-60 hover:opacity-100 corporate-transition" />
                 </div>
               </CarouselItem>
               <CarouselItem className="pl-2 md:pl-4 basis-1/2 md:basis-1/3 lg:basis-1/4">
-                <div className="h-16 bg-white rounded-lg border border-border flex items-center justify-center p-4 hover:shadow-md corporate-transition">
-                  <img src={alRayanLogo} alt="Al Rayan Bank" className="max-h-full max-w-full object-contain" />
+                <div className="h-16 flex items-center justify-center">
+                  <img src={alRayanLogo} alt="Al Rayan Bank" className="max-h-full max-w-full object-contain opacity-60 hover:opacity-100 corporate-transition" />
                 </div>
               </CarouselItem>
               <CarouselItem className="pl-2 md:pl-4 basis-1/2 md:basis-1/3 lg:basis-1/4">
-                <div className="h-16 bg-white rounded-lg border border-border flex items-center justify-center p-4 hover:shadow-md corporate-transition">
-                  <img src={dohaBankLogo} alt="Doha Bank" className="max-h-full max-w-full object-contain" />
+                <div className="h-16 flex items-center justify-center">
+                  <img src={dohaBankLogo} alt="Doha Bank" className="max-h-full max-w-full object-contain opacity-60 hover:opacity-100 corporate-transition" />
                 </div>
               </CarouselItem>
               <CarouselItem className="pl-2 md:pl-4 basis-1/2 md:basis-1/3 lg:basis-1/4">
-                <div className="h-16 bg-white rounded-lg border border-border flex items-center justify-center p-4 hover:shadow-md corporate-transition">
-                  <img src={karwaLogo} alt="Karwa" className="max-h-full max-w-full object-contain" />
+                <div className="h-16 flex items-center justify-center">
+                  <img src={karwaLogo} alt="Karwa" className="max-h-full max-w-full object-contain opacity-60 hover:opacity-100 corporate-transition" />
                 </div>
               </CarouselItem>
               <CarouselItem className="pl-2 md:pl-4 basis-1/2 md:basis-1/3 lg:basis-1/4">
-                <div className="h-16 bg-white rounded-lg border border-border flex items-center justify-center p-4 hover:shadow-md corporate-transition">
-                  <img src={qnbLogo} alt="QNB" className="max-h-full max-w-full object-contain" />
+                <div className="h-16 flex items-center justify-center">
+                  <img src={qnbLogo} alt="QNB" className="max-h-full max-w-full object-contain opacity-60 hover:opacity-100 corporate-transition" />
                 </div>
               </CarouselItem>
               <CarouselItem className="pl-2 md:pl-4 basis-1/2 md:basis-1/3 lg:basis-1/4">
-                <div className="h-16 bg-white rounded-lg border border-border flex items-center justify-center p-4 hover:shadow-md corporate-transition">
-                  <img src={ooredooLogo} alt="Ooredoo" className="max-h-full max-w-full object-contain" />
+                <div className="h-16 flex items-center justify-center">
+                  <img src={ooredooLogo} alt="Ooredoo" className="max-h-full max-w-full object-contain opacity-60 hover:opacity-100 corporate-transition" />
                 </div>
               </CarouselItem>
             </CarouselContent>
