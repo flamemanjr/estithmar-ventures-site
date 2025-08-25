@@ -11,7 +11,7 @@ import alMahaImage from "@/assets/al-maha-island.jpg";
 const AlMahaMap = lazy(() => import("@/components/AlMahaMap"));
 
 // Counter animation component
-const AnimatedCounter = ({ end, duration = 2000, suffix = "" }: { end: number; duration?: number; suffix?: string }) => {
+const AnimatedCounter = ({ end, duration = 2000, suffix = "", useCommas = true }: { end: number; duration?: number; suffix?: string; useCommas?: boolean }) => {
   const [count, setCount] = useState(0);
   
   useEffect(() => {
@@ -34,7 +34,7 @@ const AnimatedCounter = ({ end, duration = 2000, suffix = "" }: { end: number; d
     return () => cancelAnimationFrame(animationFrame);
   }, [end, duration]);
   
-  return <>{count.toLocaleString()}{suffix}</>;
+  return <>{useCommas ? count.toLocaleString() : count}{suffix}</>;
 };
 
 const AlMahaIsland = () => {
@@ -151,7 +151,7 @@ const AlMahaIsland = () => {
                   </div>
                   <div>
                     <div className="text-3xl font-gotham-bold text-primary">
-                      <AnimatedCounter end={2022} />
+                      <AnimatedCounter end={2022} useCommas={false} />
                     </div>
                     <div className="text-base font-gotham text-muted-foreground">Launch Year</div>
                   </div>
