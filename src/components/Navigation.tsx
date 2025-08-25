@@ -26,7 +26,7 @@ export const Navigation = () => {
             <img
               src="/lovable-uploads/eaf0d3be-5c3e-463b-82ab-abc84fac666c.png"
               alt="Estithmar Ventures"
-              className="h-20 w-auto"
+              className="h-24 w-auto"
             />
           </Link>
 
