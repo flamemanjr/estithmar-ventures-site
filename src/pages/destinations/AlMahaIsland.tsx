@@ -65,7 +65,7 @@ const AlMahaIsland = () => {
   };
 
   return (
-    <div className="bg-background">
+    <div className="bg-background overflow-x-hidden">
       {/* Breadcrumbs */}
       <section className="py-4 bg-muted border-b border-border">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
