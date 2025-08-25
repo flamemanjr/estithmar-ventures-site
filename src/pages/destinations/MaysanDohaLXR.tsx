@@ -122,25 +122,29 @@ const MaysanDohaLXR = () => {
             <div className={`lg:col-span-2 transition-all duration-700 ${getAnimationClass('overview')}`} style={getStaggerDelay(3)}>
               <div className="bg-gradient-to-br from-sand to-sand/80 p-10 rounded-sm border border-line/50 shadow-sm transform transition-all duration-500 hover:shadow-lg hover:scale-105">
                 <div className="space-y-8">
-                  {[
-                    { title: "Wellness", subtitle: "& Retreat" },
-                    { title: "Contemporary", subtitle: "Arabian Design" },
-                    { title: "Spa", subtitle: "Private Club" }
-                  ].map((item, index) => (
-                    <div 
-                      key={index}
-                      className={`text-center group transform transition-all duration-500 hover:scale-110 ${
-                        isVisible.overview ? 'animate-fade-in' : 'opacity-0'
-                      }`}
-                      style={{ animationDelay: `${800 + index * 200}ms` }}
-                    >
-                      <div className="w-12 h-12 bg-brand-orange/10 rounded-full flex items-center justify-center mx-auto mb-4 transition-all duration-300 group-hover:bg-brand-orange/20 group-hover:scale-110">
-                        <div className="w-6 h-6 bg-brand-orange/20 rounded-full transition-all duration-300 group-hover:bg-brand-orange/40"></div>
-                      </div>
-                      <h3 className="maysan-h3 font-gotham-bold text-ink mb-2 transition-all duration-300 group-hover:text-brand-orange">{item.title}</h3>
-                      <p className="maysan-small font-gotham text-katara-muted transition-all duration-300 group-hover:text-ink">{item.subtitle}</p>
+                  <div className="text-center group">
+                    <div className="w-12 h-12 bg-brand-orange/10 rounded-full flex items-center justify-center mx-auto mb-4">
+                      <div className="w-6 h-6 bg-brand-orange/20 rounded-full"></div>
                     </div>
-                  ))}
+                    <h3 className="maysan-h3 font-gotham-bold text-ink mb-2">Wellness</h3>
+                    <p className="maysan-small font-gotham text-katara-muted">& Retreat</p>
+                  </div>
+                  
+                  <div className="text-center group">
+                    <div className="w-12 h-12 bg-brand-orange/10 rounded-full flex items-center justify-center mx-auto mb-4">
+                      <div className="w-6 h-6 bg-brand-orange/20 rounded-full"></div>
+                    </div>
+                    <h3 className="maysan-h3 font-gotham-bold text-ink mb-2">Contemporary</h3>
+                    <p className="maysan-small font-gotham text-katara-muted">Arabian Design</p>
+                  </div>
+                  
+                  <div className="text-center group">
+                    <div className="w-12 h-12 bg-brand-orange/10 rounded-full flex items-center justify-center mx-auto mb-4">
+                      <div className="w-6 h-6 bg-brand-orange/20 rounded-full"></div>
+                    </div>
+                    <h3 className="maysan-h3 font-gotham-bold text-ink mb-2">Spa</h3>
+                    <p className="maysan-small font-gotham text-katara-muted">Private Club</p>
+                  </div>
                 </div>
               </div>
             </div>
