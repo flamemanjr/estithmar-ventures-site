@@ -30,6 +30,7 @@ All colors MUST be HSL.
     /* Rosewood Maldives Design Tokens - Ocean-first, ultra-luxury */
     --mist: 202 33% 96%; /* #F2F6F8 - Cool oceanic neutral */
     --horizon-start: 202 20% 90%; /* #E6F0F3 - Horizon rule start */
+    --horizon-end: 202 33% 96%; /* Transparent end for gradient */
 
     /* Surface Colors */
     --card: 0 0% 100%;
@@ -327,17 +328,17 @@ All colors MUST be HSL.
     line-height: 1.375rem; /* 22px */
   }
 
-  /* Rosewood Transitions - Calm, precise */
+  /* Rosewood Transitions - Calm, precise, board-ready */
   .rosewood-transition {
-    transition: all 0.16s ease-out;
+    transition: all 0.18s ease-in-out;
   }
   
   .rosewood-fade-in {
-    animation: rosewoodFadeIn 0.16s ease-out;
+    animation: rosewoodFadeIn 0.18s ease-in-out;
   }
   
   .rosewood-reveal {
-    animation: rosewoodReveal 0.16s ease-out;
+    animation: rosewoodReveal 0.18s ease-in-out;
   }
   
   @keyframes rosewoodFadeIn {
