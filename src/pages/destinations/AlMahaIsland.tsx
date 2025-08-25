@@ -259,7 +259,7 @@ const AlMahaIsland = () => {
                   <div className="group hover:scale-105 corporate-transition">
                     <div className="bg-white p-8 rounded-xl shadow-sm hover:shadow-md corporate-transition flex items-center justify-center h-32 w-48">
                       <img 
-                        src="/lovable-uploads/53769d64-af09-4a96-b65b-300f5381482d.png" 
+                        src="/lovable-uploads/2699f67a-0f95-46e6-8e10-716ba89ff67c.png" 
                         alt="Lusail Winter Wonderland" 
                         className="max-h-full max-w-full object-contain"
                       />
