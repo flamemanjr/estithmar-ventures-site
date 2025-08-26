@@ -287,7 +287,7 @@ const Index = () => {
             </Link>
 
             <Link to="/destinations/rixos-baghdad" className="group">
-              <div className="bg-card border border-border overflow-hidden corporate-transition group-hover:shadow-xl group-hover:-translate-y-1 relative mt-8">
+              <div className="bg-card border border-border overflow-hidden corporate-transition group-hover:shadow-xl group-hover:-translate-y-1 relative mt-16">
                 <div className="relative overflow-hidden">
                   <LazyImage 
                     src={rixosBaghdadImage} 
