@@ -138,7 +138,7 @@ const Index = () => {
           <div className="text-center mb-16">
             <h2 className="text-4xl font-gotham-bold text-foreground mb-6">Hospitality Excellence Through Strategic Investment</h2>
             <p className="text-lg font-gotham text-muted-foreground max-w-3xl mx-auto leading-relaxed">
-              Backed by Estithmar Holding's expertise and Qatar's vision for diversified economic growth, we deliver transformative hospitality destinations that drive tourism and create lasting value.
+              Backed by Estithmar Holding's global expertise and vision for diversified economic growth, we deliver transformative hospitality destinations worldwide that drive tourism and create lasting value.
             </p>
           </div>
           
@@ -150,7 +150,7 @@ const Index = () => {
               </div>
               <h3 className="text-xl font-gotham-bold text-foreground mb-4">Strategic Development</h3>
               <p className="font-gotham text-muted-foreground leading-relaxed">
-                From innovative concept to successful launch, we develop luxury hospitality destinations that enhance Qatar's tourism landscape and deliver exceptional guest experiences.
+                From innovative concept to successful launch, we develop luxury hospitality destinations that enhance global tourism landscapes and deliver exceptional guest experiences worldwide.
               </p>
             </div>
             
@@ -161,7 +161,7 @@ const Index = () => {
               </div>
               <h3 className="text-xl font-gotham-bold text-foreground mb-4">Operational Excellence</h3>
               <p className="font-gotham text-muted-foreground leading-relaxed">
-                Through partnerships with world-renowned hospitality brands, we ensure operational excellence and deliver consistently superior guest experiences across all properties.
+                Through partnerships with world-renowned hospitality brands, we ensure operational excellence and deliver consistently superior guest experiences across all international properties.
               </p>
             </div>
             
@@ -172,7 +172,7 @@ const Index = () => {
               </div>
               <h3 className="text-xl font-gotham-bold text-foreground mb-4">Investment Scale</h3>
               <p className="font-gotham text-muted-foreground leading-relaxed">
-                Leveraging Estithmar Holding's robust investment platform, we execute large-scale hospitality projects with proven financial strength and strategic vision for Qatar's tourism sector.
+                Leveraging Estithmar Holding's robust investment platform, we execute large-scale hospitality projects with proven financial strength and strategic vision for global tourism development.
               </p>
             </div>
           </div>
@@ -185,7 +185,7 @@ const Index = () => {
           <div className="text-center mb-16">
             <h2 className="text-4xl font-gotham-bold text-foreground mb-6">Premier Hospitality Destinations</h2>
             <p className="text-lg font-gotham text-muted-foreground max-w-3xl mx-auto leading-relaxed">
-              Discover our portfolio of luxury destinations, each thoughtfully developed to elevate Qatar's hospitality landscape and provide unforgettable experiences for discerning travelers.
+              Discover our portfolio of luxury destinations, each thoughtfully developed to elevate global hospitality landscapes and provide unforgettable experiences for discerning travelers worldwide.
             </p>
           </div>
           
