@@ -223,11 +223,11 @@ const RosewoodMaldives = () => {
               Stretched across a striking chain of private islands around a pristine lagoon in South Male Atoll, accessible by yacht or seaplane.
             </p>
             <div className="flex flex-wrap justify-center gap-6 text-center">
-              <span className="rosewood-small font-gotham text-[hsl(var(--muted))] leading-[22px]">Crystal lagoon</span>
-              <span className="rosewood-small font-gotham text-[hsl(var(--muted))] leading-[22px]">•</span>
-              <span className="rosewood-small font-gotham text-[hsl(var(--muted))] leading-[22px]">Private islands</span>
-              <span className="rosewood-small font-gotham text-[hsl(var(--muted))] leading-[22px]">•</span>
-              <span className="rosewood-small font-gotham text-[hsl(var(--muted))] leading-[22px]">10 min seaplane</span>
+              <span className="rosewood-small font-gotham text-[hsl(var(--muted-foreground))] leading-[22px]">Crystal lagoon</span>
+              <span className="rosewood-small font-gotham text-[hsl(var(--muted-foreground))] leading-[22px]">•</span>
+              <span className="rosewood-small font-gotham text-[hsl(var(--muted-foreground))] leading-[22px]">Private islands</span>
+              <span className="rosewood-small font-gotham text-[hsl(var(--muted-foreground))] leading-[22px]">•</span>
+              <span className="rosewood-small font-gotham text-[hsl(var(--muted-foreground))] leading-[22px]">10 min seaplane</span>
             </div>
           </div>
         </div>
