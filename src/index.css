@@ -18,6 +18,11 @@ All colors MUST be HSL.
 
     /* Katara Hills Specific Colors */
     --brand-orange: 22 89% 54%; /* #F47A20 Orange - CTAs only */
+    
+    /* Rixos Brand Colors */
+    --rixos-orange: 18 89% 54%; /* #F37021 */
+    --rixos-black: 240 9% 4%; /* #0A0A0A */
+    --rixos-white: 0 0% 100%; /* #FFFFFF */
     --ink: 0 0% 5%; /* #0D0D0D - Body text */
     --paper: 0 0% 100%; /* #FFFFFF - White sections */
     --stone: 35 25% 96%; /* #F6F3EF - Katara section background */
@@ -380,6 +385,40 @@ All colors MUST be HSL.
       opacity: 1;
       transform: translateY(0);
     }
+  }
+
+  /* Rixos Typography - Corporate, confident */
+  .rixos-h1 {
+    font-size: 3rem; /* 48px */
+    line-height: 3.5rem; /* 56px */
+    letter-spacing: -0.01em;
+  }
+
+  .rixos-h2 {
+    font-size: 2rem; /* 32px */
+    line-height: 2.5rem; /* 40px */
+    letter-spacing: -0.005em;
+  }
+
+  .rixos-h3 {
+    font-size: 1.5rem; /* 24px */
+    line-height: 2rem; /* 32px */
+  }
+
+  .rixos-body {
+    font-size: 1rem; /* 16px */
+    line-height: 1.625rem; /* 26px */
+    max-width: 70ch;
+  }
+
+  .rixos-small {
+    font-size: 0.875rem; /* 14px */
+    line-height: 1.375rem; /* 22px */
+  }
+
+  /* Rixos Transitions - Corporate precision */
+  .rixos-transition {
+    transition: all 0.2s ease-out;
   }
 
   /* Logo Carousel Animation */
