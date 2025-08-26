@@ -84,7 +84,7 @@ const AlMahaIsland = () => {
       </section>
 
       {/* Hero Section */}
-      <section className="relative h-[70vh] bg-black overflow-hidden">
+      <section className="relative h-[85vh] bg-black overflow-hidden">
         {/* Video Background */}
         <video 
           className="absolute inset-0 w-full h-full object-cover"
@@ -98,7 +98,7 @@ const AlMahaIsland = () => {
         </video>
         <div className="absolute inset-0 bg-gradient-to-b from-black/20 via-black/30 to-black/60"></div>
         
-        <div className="relative z-10 h-full flex items-center justify-center text-center">
+        <div className="relative z-10 h-full flex items-center justify-center text-center min-h-[85vh]">
           <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
             <h1 className="text-5xl md:text-6xl font-gotham-bold text-white mb-6">Al Maha Island</h1>
             <p className="text-xl md:text-2xl font-gotham text-white/90 mb-12 max-w-3xl mx-auto leading-relaxed">
