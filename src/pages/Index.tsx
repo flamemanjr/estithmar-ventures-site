@@ -325,12 +325,12 @@ const Index = () => {
           <div className="relative overflow-hidden">
             <div className="flex animate-scroll-left space-x-16 items-center">
               {/* First set of partner logos */}
-              <div className="flex-shrink-0 w-40 h-20 flex items-center justify-center pt-2">
+              <div className="flex-shrink-0 w-40 h-20 flex items-center justify-center pt-4">
                 <LazyImage 
                   src="/lovable-uploads/2317e58c-3b32-4aa0-a42e-29ee723632a5.png" 
                   alt="Rixos Hotels" 
                   className="max-w-full max-h-full object-contain filter grayscale hover:grayscale-0 corporate-transition"
-                  containerClassName="w-full h-full"
+                  containerClassName="w-full h-full flex items-center justify-center"
                 />
               </div>
               <div className="flex-shrink-0 w-40 h-20 flex items-center justify-center">
@@ -338,7 +338,7 @@ const Index = () => {
                   src="/lovable-uploads/e5c48a09-5d0b-4737-a622-121e8ac87c28.png" 
                   alt="LXR Hotels & Resorts" 
                   className="max-w-full max-h-full object-contain filter grayscale hover:grayscale-0 corporate-transition"
-                  containerClassName="w-full h-full"
+                  containerClassName="w-full h-full flex items-center justify-center"
                 />
               </div>
               <div className="flex-shrink-0 w-40 h-20 flex items-center justify-center">
@@ -354,7 +354,7 @@ const Index = () => {
                   src="/lovable-uploads/6b9cc736-1983-4b57-bcb2-80c5e1467cb1.png" 
                   alt="Qatari Diar" 
                   className="max-w-full max-h-full object-contain filter grayscale hover:grayscale-0 corporate-transition"
-                  containerClassName="w-full h-full"
+                  containerClassName="w-full h-full flex items-center justify-center"
                 />
               </div>
               
