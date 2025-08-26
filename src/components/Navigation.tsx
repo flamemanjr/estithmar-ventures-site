@@ -31,10 +31,10 @@ export const Navigation = () => {
 
   return (
     <header className="sticky top-0 z-50 bg-background/95 backdrop-blur-sm border-b border-border">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
-        <div className="flex items-center justify-between h-20">
-          {/* Logo */}
-          <Link to="/" className="flex-shrink-0 absolute left-4 sm:left-6 lg:left-8">
+      <div className="w-full px-4 sm:px-6 lg:px-8">
+        <div className="flex items-center h-20">
+          {/* Logo - Far Left */}
+          <Link to="/" className="flex-shrink-0">
             <LazyImage
               src="/lovable-uploads/eaf0d3be-5c3e-463b-82ab-abc84fac666c.png"
               alt="Estithmar Ventures"
@@ -44,11 +44,8 @@ export const Navigation = () => {
             />
           </Link>
 
-          {/* Spacer for logo */}
-          <div className="w-48"></div>
-
-          {/* Navigation */}
-          <nav className="hidden md:flex items-center space-x-8">
+          {/* Navigation - Right Aligned with proper spacing */}
+          <nav className="hidden md:flex items-center space-x-8 ml-auto">
             <Link
               to="/"
               className={cn(
