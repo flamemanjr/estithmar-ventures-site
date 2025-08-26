@@ -106,21 +106,21 @@ const Index = () => {
           <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
             <div className="bg-white/10 backdrop-blur-sm border border-white/20 p-6">
               <div className="text-3xl font-gotham-bold text-white mb-1">
-                <AnimatedCounter end={105} suffix="+" duration={2500} />
+                <AnimatedCounter end={1} duration={1500} useCommas={false} />
               </div>
-              <div className="text-sm font-gotham text-white/80">Companies</div>
+              <div className="text-sm font-gotham text-white/80">Theme Park</div>
             </div>
             <div className="bg-white/10 backdrop-blur-sm border border-white/20 p-6">
               <div className="text-3xl font-gotham-bold text-white mb-1">
-                <AnimatedCounter end={8} duration={1500} useCommas={false} />
+                <AnimatedCounter end={40} suffix="+" duration={2000} useCommas={false} />
               </div>
-              <div className="text-sm font-gotham text-white/80">Countries</div>
+              <div className="text-sm font-gotham text-white/80">Restaurants</div>
             </div>
             <div className="bg-white/10 backdrop-blur-sm border border-white/20 p-6">
               <div className="text-3xl font-gotham-bold text-white mb-1">
-                <AnimatedCounter end={28000} suffix="+" duration={3000} />
+                <AnimatedCounter end={4} duration={1500} useCommas={false} />
               </div>
-              <div className="text-sm font-gotham text-white/80">Team Members</div>
+              <div className="text-sm font-gotham text-white/80">Hotels and Resorts</div>
             </div>
             <div className="bg-white/10 backdrop-blur-sm border border-white/20 p-6">
               <div className="text-3xl font-gotham-bold text-white mb-1">
