@@ -368,12 +368,12 @@ const Index = () => {
               </div>
               
               {/* Second set for seamless loop */}
-              <div className="flex-shrink-0 w-40 h-20 flex items-center justify-center">
+              <div className="flex-shrink-0 w-40 h-20 flex items-center justify-center pt-6">
                 <LazyImage 
                   src="/lovable-uploads/2317e58c-3b32-4aa0-a42e-29ee723632a5.png" 
                   alt="Rixos Hotels" 
                   className="max-w-full max-h-full object-contain filter grayscale hover:grayscale-0 corporate-transition"
-                  containerClassName="w-full h-full"
+                  containerClassName="w-full h-full flex items-center justify-center"
                 />
               </div>
               <div className="flex-shrink-0 w-40 h-20 flex items-center justify-center">
