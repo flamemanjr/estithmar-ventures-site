@@ -84,11 +84,16 @@ const AlMahaIsland = () => {
       </section>
 
       {/* Hero Section */}
-      <section className="relative h-[70vh] bg-black">
-        <div 
-          className="absolute inset-0 bg-cover bg-center bg-no-repeat"
-          style={{ backgroundImage: `url(/lovable-uploads/eed4c83a-46f0-40c1-a910-21a558f97ea9.png)` }}
-        >
+      <section className="relative h-[70vh] bg-black overflow-hidden">
+        {/* YouTube Video Background */}
+        <div className="absolute inset-0 w-full h-full">
+          <iframe 
+            src="https://www.youtube.com/embed/9ge5PzHSS0Y?playlist=9ge5PzHSS0Y&loop=1&controls=0&showinfo=0&autoplay=1&mute=1&rel=0&modestbranding=1&iv_load_policy=3&disablekb=1&fs=0"
+            className="absolute top-1/2 left-1/2 w-[177.77777778vh] h-[56.25vw] min-w-full min-h-full object-cover transform -translate-x-1/2 -translate-y-1/2"
+            frameBorder="0"
+            allow="autoplay; encrypted-media"
+            style={{ pointerEvents: 'none' }}
+          />
           <div className="absolute inset-0 bg-gradient-to-b from-black/20 via-black/30 to-black/60"></div>
         </div>
         
