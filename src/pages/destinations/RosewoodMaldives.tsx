@@ -96,17 +96,17 @@ const RosewoodMaldives = () => {
       {/* Ocean Rhythm Strip */}
       <section className="py-16 bg-[hsl(var(--mist))]">
         <div className="max-w-[1240px] mx-auto px-6 lg:px-8">
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-16 text-center">
-            <div className="animate-fade-in [animation-delay:200ms] hover:scale-105 transition-transform duration-300 cursor-pointer">
-              <h3 className="rosewood-h3 font-gotham-bold text-[hsl(var(--ink))] mb-3 leading-[30px] hover:text-[hsl(var(--brand-orange))] transition-colors duration-300">Arrive</h3>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
+            <div className="bg-white border border-[hsl(var(--line))] p-8 rounded-[4px] shadow-sm hover:shadow-lg hover:-translate-y-2 transition-all duration-300 cursor-pointer animate-fade-in [animation-delay:200ms] group">
+              <h3 className="rosewood-h3 font-gotham-bold text-[hsl(var(--ink))] mb-4 leading-[30px] group-hover:text-[hsl(var(--brand-orange))] transition-colors duration-300">Arrive</h3>
               <p className="rosewood-small font-gotham text-[hsl(var(--muted-foreground))] leading-[22px]">Seaplane journey to your private island</p>
             </div>
-            <div className="animate-fade-in [animation-delay:400ms] hover:scale-105 transition-transform duration-300 cursor-pointer">
-              <h3 className="rosewood-h3 font-gotham-bold text-[hsl(var(--ink))] mb-3 leading-[30px] hover:text-[hsl(var(--brand-orange))] transition-colors duration-300">Explore</h3>
+            <div className="bg-white border border-[hsl(var(--line))] p-8 rounded-[4px] shadow-sm hover:shadow-lg hover:-translate-y-2 transition-all duration-300 cursor-pointer animate-fade-in [animation-delay:400ms] group">
+              <h3 className="rosewood-h3 font-gotham-bold text-[hsl(var(--ink))] mb-4 leading-[30px] group-hover:text-[hsl(var(--brand-orange))] transition-colors duration-300">Explore</h3>
               <p className="rosewood-small font-gotham text-[hsl(var(--muted-foreground))] leading-[22px]">Reef discoveries and marine adventures</p>
             </div>
-            <div className="animate-fade-in [animation-delay:600ms] hover:scale-105 transition-transform duration-300 cursor-pointer">
-              <h3 className="rosewood-h3 font-gotham-bold text-[hsl(var(--ink))] mb-3 leading-[30px] hover:text-[hsl(var(--brand-orange))] transition-colors duration-300">Unwind</h3>
+            <div className="bg-white border border-[hsl(var(--line))] p-8 rounded-[4px] shadow-sm hover:shadow-lg hover:-translate-y-2 transition-all duration-300 cursor-pointer animate-fade-in [animation-delay:600ms] group">
+              <h3 className="rosewood-h3 font-gotham-bold text-[hsl(var(--ink))] mb-4 leading-[30px] group-hover:text-[hsl(var(--brand-orange))] transition-colors duration-300">Unwind</h3>
               <p className="rosewood-small font-gotham text-[hsl(var(--muted-foreground))] leading-[22px]">Ocean botanicals and horizon meditation</p>
             </div>
           </div>
