@@ -5,6 +5,7 @@ import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { Layout } from "./components/Layout";
 import { ScrollToTop } from "./components/ScrollToTop";
+import { ErrorBoundary } from "./components/ErrorBoundary";
 import { Suspense, lazy } from "react";
 import { ImageSkeleton } from "@/components/ui/image-skeleton";
 
@@ -53,80 +54,120 @@ const PageLoadingFallback = () => (
   </div>
 );
 
-const App = () => (
-  <QueryClientProvider client={queryClient}>
-    <TooltipProvider>
-      <Toaster />
-      <Sonner />
-      <BrowserRouter>
-        <ScrollToTop />
-        <Routes>
-          <Route path="/" element={<Layout />}>
-            {/* Eager loaded critical pages */}
-            <Route index element={<Index />} />
-            <Route path="about" element={<About />} />
-            <Route path="destinations" element={<Destinations />} />
-            
-            {/* Lazy loaded secondary pages with suspense */}
-            <Route path="team" element={
-              <Suspense fallback={<PageLoadingFallback />}>
-                <Team />
-              </Suspense>
-            } />
-            <Route path="news" element={
-              <Suspense fallback={<PageLoadingFallback />}>
-                <News />
-              </Suspense>
-            } />
-            <Route path="gallery" element={
-              <Suspense fallback={<PageLoadingFallback />}>
-                <Gallery />
-              </Suspense>
-            } />
-            <Route path="contact" element={
-              <Suspense fallback={<PageLoadingFallback />}>
-                <Contact />
-              </Suspense>
-            } />
-            
-            {/* Destination pages - lazy loaded */}
-            <Route path="destinations/al-maha-island" element={
-              <Suspense fallback={<PageLoadingFallback />}>
-                <AlMahaIsland />
-              </Suspense>
-            } />
-            <Route path="destinations/katara-hills-lxr" element={
-              <Suspense fallback={<PageLoadingFallback />}>
-                <KataraHillsLXR />
-              </Suspense>
-            } />
-            <Route path="destinations/maysan-doha-lxr" element={
-              <Suspense fallback={<PageLoadingFallback />}>
-                <MaysanDohaLXR />
-              </Suspense>
-            } />
-            <Route path="destinations/rosewood-maldives" element={
-              <Suspense fallback={<PageLoadingFallback />}>
-                <RosewoodMaldives />
-              </Suspense>
-            } />
-            <Route path="destinations/rixos-baghdad" element={
-              <Suspense fallback={<PageLoadingFallback />}>
-                <RixosBaghdad />
-              </Suspense>
-            } />
-          </Route>
-          
-          {/* 404 page */}
-          <Route path="*" element={
-            <Suspense fallback={<PageLoadingFallback />}>
-              <NotFound />
-            </Suspense>
-          } />
-        </Routes>
-      </BrowserRouter>
-    </TooltipProvider>
-  </QueryClientProvider>
-);
+const App = () => {
+  console.log('App.tsx: App component initializing');
+  
+  return (
+    <ErrorBoundary>
+      <QueryClientProvider client={queryClient}>
+        <TooltipProvider>
+          <Toaster />
+          <Sonner />
+          <BrowserRouter>
+            <ScrollToTop />
+            <ErrorBoundary>
+              <Routes>
+                <Route path="/" element={<Layout />}>
+                  {/* Eager loaded critical pages */}
+                  <Route index element={
+                    <ErrorBoundary>
+                      <Index />
+                    </ErrorBoundary>
+                  } />
+                  <Route path="about" element={
+                    <ErrorBoundary>
+                      <About />
+                    </ErrorBoundary>
+                  } />
+                  <Route path="destinations" element={
+                    <ErrorBoundary>
+                      <Destinations />
+                    </ErrorBoundary>
+                  } />
+                  
+                  {/* Lazy loaded secondary pages with suspense */}
+                  <Route path="team" element={
+                    <ErrorBoundary>
+                      <Suspense fallback={<PageLoadingFallback />}>
+                        <Team />
+                      </Suspense>
+                    </ErrorBoundary>
+                  } />
+                  <Route path="news" element={
+                    <ErrorBoundary>
+                      <Suspense fallback={<PageLoadingFallback />}>
+                        <News />
+                      </Suspense>
+                    </ErrorBoundary>
+                  } />
+                  <Route path="gallery" element={
+                    <ErrorBoundary>
+                      <Suspense fallback={<PageLoadingFallback />}>
+                        <Gallery />
+                      </Suspense>
+                    </ErrorBoundary>
+                  } />
+                  <Route path="contact" element={
+                    <ErrorBoundary>
+                      <Suspense fallback={<PageLoadingFallback />}>
+                        <Contact />
+                      </Suspense>
+                    </ErrorBoundary>
+                  } />
+                  
+                  {/* Destination pages - lazy loaded */}
+                  <Route path="destinations/al-maha-island" element={
+                    <ErrorBoundary>
+                      <Suspense fallback={<PageLoadingFallback />}>
+                        <AlMahaIsland />
+                      </Suspense>
+                    </ErrorBoundary>
+                  } />
+                  <Route path="destinations/katara-hills-lxr" element={
+                    <ErrorBoundary>
+                      <Suspense fallback={<PageLoadingFallback />}>
+                        <KataraHillsLXR />
+                      </Suspense>
+                    </ErrorBoundary>
+                  } />
+                  <Route path="destinations/maysan-doha-lxr" element={
+                    <ErrorBoundary>
+                      <Suspense fallback={<PageLoadingFallback />}>
+                        <MaysanDohaLXR />
+                      </Suspense>
+                    </ErrorBoundary>
+                  } />
+                  <Route path="destinations/rosewood-maldives" element={
+                    <ErrorBoundary>
+                      <Suspense fallback={<PageLoadingFallback />}>
+                        <RosewoodMaldives />
+                      </Suspense>
+                    </ErrorBoundary>
+                  } />
+                  <Route path="destinations/rixos-baghdad" element={
+                    <ErrorBoundary>
+                      <Suspense fallback={<PageLoadingFallback />}>
+                        <RixosBaghdad />
+                      </Suspense>
+                    </ErrorBoundary>
+                  } />
+                </Route>
+                
+                {/* 404 page */}
+                <Route path="*" element={
+                  <ErrorBoundary>
+                    <Suspense fallback={<PageLoadingFallback />}>
+                      <NotFound />
+                    </Suspense>
+                  </ErrorBoundary>
+                } />
+              </Routes>
+            </ErrorBoundary>
+          </BrowserRouter>
+        </TooltipProvider>
+      </QueryClientProvider>
+    </ErrorBoundary>
+  );
+};
 
 export default App;
