@@ -1,12 +1,71 @@
 import { Link } from "react-router-dom";
 import { CorporateButton } from "@/components/ui/corporate-button";
 import { Building2, Settings, TrendingUp } from "lucide-react";
+import { useState, useEffect } from "react";
 import heroImage from "@/assets/hero-image.jpg";
 import alMahaImage from "@/assets/al-maha-island.jpg";
 const kataraHillsImage = "/lovable-uploads/2279181b-8e3e-4789-a205-88d461bcde4f.png";
 const maysanDohaImage = "/lovable-uploads/4bda99b4-4bdc-402f-bd4c-8d87a987ace2.png";
 import rosewoodMaldivesImage from "@/assets/rosewood-maldives.jpg";
 import rixosBaghdadImage from "@/assets/rixos-baghdad.jpg";
+
+const AnimatedCounter = ({ end, duration = 2000, suffix = "", useCommas = true }: { end: number; duration?: number; suffix?: string; useCommas?: boolean }) => {
+  const [count, setCount] = useState(0);
+  const [isVisible, setIsVisible] = useState(false);
+
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        if (entry.isIntersecting) {
+          setIsVisible(true);
+          observer.disconnect();
+        }
+      },
+      { threshold: 0.1 }
+    );
+
+    const element = document.querySelector(`[data-counter="${end}"]`);
+    if (element) {
+      observer.observe(element);
+    }
+
+    return () => observer.disconnect();
+  }, [end]);
+
+  useEffect(() => {
+    if (!isVisible) return;
+
+    let startTime: number;
+    const startValue = 0;
+
+    const animate = (currentTime: number) => {
+      if (!startTime) startTime = currentTime;
+      const progress = Math.min((currentTime - startTime) / duration, 1);
+      
+      const easeOutCubic = 1 - Math.pow(1 - progress, 3);
+      const current = startValue + (end - startValue) * easeOutCubic;
+      
+      setCount(Math.floor(current));
+
+      if (progress < 1) {
+        requestAnimationFrame(animate);
+      }
+    };
+
+    requestAnimationFrame(animate);
+  }, [isVisible, end, duration]);
+
+  const formatNumber = (num: number) => {
+    if (!useCommas) return num.toString();
+    return num.toLocaleString();
+  };
+
+  return (
+    <span data-counter={end}>
+      {formatNumber(count)}{suffix}
+    </span>
+  );
+};
 
 const Index = () => {
   return (
@@ -43,19 +102,27 @@ const Index = () => {
           {/* Key Figures */}
           <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
             <div className="bg-white/10 backdrop-blur-sm border border-white/20 p-6">
-              <div className="text-3xl font-gotham-bold text-white mb-1">105+</div>
+              <div className="text-3xl font-gotham-bold text-white mb-1">
+                <AnimatedCounter end={105} suffix="+" duration={2500} />
+              </div>
               <div className="text-sm font-gotham text-white/80">Companies</div>
             </div>
             <div className="bg-white/10 backdrop-blur-sm border border-white/20 p-6">
-              <div className="text-3xl font-gotham-bold text-white mb-1">8</div>
+              <div className="text-3xl font-gotham-bold text-white mb-1">
+                <AnimatedCounter end={8} duration={1500} useCommas={false} />
+              </div>
               <div className="text-sm font-gotham text-white/80">Countries</div>
             </div>
             <div className="bg-white/10 backdrop-blur-sm border border-white/20 p-6">
-              <div className="text-3xl font-gotham-bold text-white mb-1">28,000+</div>
+              <div className="text-3xl font-gotham-bold text-white mb-1">
+                <AnimatedCounter end={28000} suffix="+" duration={3000} />
+              </div>
               <div className="text-sm font-gotham text-white/80">Team Members</div>
             </div>
             <div className="bg-white/10 backdrop-blur-sm border border-white/20 p-6">
-              <div className="text-3xl font-gotham-bold text-white mb-1">1.5M+</div>
+              <div className="text-3xl font-gotham-bold text-white mb-1">
+                <AnimatedCounter end={1500000} suffix="+" duration={3500} />
+              </div>
               <div className="text-sm font-gotham text-white/80">Visitors Served Annually</div>
             </div>
           </div>
