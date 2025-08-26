@@ -124,6 +124,25 @@ All colors MUST be HSL.
 
   body {
     @apply bg-background text-foreground font-gotham;
+    scroll-behavior: smooth;
+    line-height: 1.6;
+  }
+
+  /* Responsive image optimization */
+  img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+  }
+
+  /* Enhanced accessibility */
+  .sr-only {
+    @apply absolute w-px h-px p-0 -m-px overflow-hidden whitespace-nowrap border-0;
+  }
+
+  /* Performance optimizations */
+  .corporate-transition {
+    will-change: transform, opacity, color;
   }
 
   /* Gotham Font Stack - Corporate Typography */

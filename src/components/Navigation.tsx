@@ -12,8 +12,19 @@ const destinations = [
   { name: "Rixos Baghdad", path: "/destinations/rixos-baghdad" },
 ];
 
+const mediaItems = [
+  { name: "News & Events", path: "/news" },
+  { name: "Social Media / Gallery", path: "/gallery" },
+];
+
+const aboutItems = [
+  { name: "Executive Team", path: "/team" },
+];
+
 export const Navigation = () => {
   const [isDestinationsOpen, setIsDestinationsOpen] = useState(false);
+  const [isMediaOpen, setIsMediaOpen] = useState(false);
+  const [isAboutOpen, setIsAboutOpen] = useState(false);
   const location = useLocation();
 
   const isActive = (path: string) => location.pathname === path;
@@ -44,16 +55,6 @@ export const Navigation = () => {
             >
               Home
             </Link>
-            
-            <Link
-              to="/about"
-              className={cn(
-                "text-sm font-gotham-medium corporate-transition hover:text-primary",
-                isActive("/about") ? "text-primary" : "text-foreground"
-              )}
-            >
-              About Us
-            </Link>
 
             {/* Destinations Dropdown */}
             <div
@@ -67,12 +68,12 @@ export const Navigation = () => {
                   location.pathname.startsWith("/destinations") ? "text-primary" : "text-foreground"
                 )}
               >
-                Destinations
+                Destination
                 <ChevronDown className="ml-1 h-3 w-3" />
               </button>
               
               {isDestinationsOpen && (
-                <div className="absolute top-full left-0 mt-1 w-56 bg-background border border-border shadow-lg">
+                <div className="absolute top-full left-0 mt-1 w-56 bg-background border border-border shadow-lg z-50">
                   {destinations.map((destination) => (
                     <Link
                       key={destination.path}
@@ -86,35 +87,73 @@ export const Navigation = () => {
               )}
             </div>
 
-            <Link
-              to="/team"
-              className={cn(
-                "text-sm font-gotham-medium corporate-transition hover:text-primary",
-                isActive("/team") ? "text-primary" : "text-foreground"
-              )}
+            {/* Media Dropdown */}
+            <div
+              className="relative"
+              onMouseEnter={() => setIsMediaOpen(true)}
+              onMouseLeave={() => setIsMediaOpen(false)}
             >
-              Executive Team
-            </Link>
+              <button
+                className={cn(
+                  "flex items-center text-sm font-gotham-medium corporate-transition hover:text-primary",
+                  (location.pathname === "/news" || location.pathname === "/gallery") ? "text-primary" : "text-foreground"
+                )}
+              >
+                Media
+                <ChevronDown className="ml-1 h-3 w-3" />
+              </button>
+              
+              {isMediaOpen && (
+                <div className="absolute top-full left-0 mt-1 w-56 bg-background border border-border shadow-lg z-50">
+                  {mediaItems.map((item) => (
+                    <Link
+                      key={item.path}
+                      to={item.path}
+                      className="block px-4 py-3 text-sm font-gotham corporate-transition hover:bg-muted hover:text-primary"
+                    >
+                      {item.name}
+                    </Link>
+                  ))}
+                </div>
+              )}
+            </div>
 
-            <Link
-              to="/news"
-              className={cn(
-                "text-sm font-gotham-medium corporate-transition hover:text-primary",
-                isActive("/news") ? "text-primary" : "text-foreground"
-              )}
+            {/* About Us Dropdown */}
+            <div
+              className="relative"
+              onMouseEnter={() => setIsAboutOpen(true)}
+              onMouseLeave={() => setIsAboutOpen(false)}
             >
-              News & Events
-            </Link>
-
-            <Link
-              to="/gallery"
-              className={cn(
-                "text-sm font-gotham-medium corporate-transition hover:text-primary",
-                isActive("/gallery") ? "text-primary" : "text-foreground"
+              <button
+                className={cn(
+                  "flex items-center text-sm font-gotham-medium corporate-transition hover:text-primary",
+                  (location.pathname === "/about" || location.pathname === "/team") ? "text-primary" : "text-foreground"
+                )}
+              >
+                About Us
+                <ChevronDown className="ml-1 h-3 w-3" />
+              </button>
+              
+              {isAboutOpen && (
+                <div className="absolute top-full left-0 mt-1 w-56 bg-background border border-border shadow-lg z-50">
+                  <Link
+                    to="/about"
+                    className="block px-4 py-3 text-sm font-gotham corporate-transition hover:bg-muted hover:text-primary"
+                  >
+                    Our Company
+                  </Link>
+                  {aboutItems.map((item) => (
+                    <Link
+                      key={item.path}
+                      to={item.path}
+                      className="block px-4 py-3 text-sm font-gotham corporate-transition hover:bg-muted hover:text-primary"
+                    >
+                      {item.name}
+                    </Link>
+                  ))}
+                </div>
               )}
-            >
-              Social Media / Gallery
-            </Link>
+            </div>
 
             <Link
               to="/contact"

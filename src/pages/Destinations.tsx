@@ -11,31 +11,31 @@ const destinations = [
     name: "Al Maha Island",
     path: "/destinations/al-maha-island",
     image: alMahaImage,
-    description: "Qatar's premier leisure hub—dining, entertainment, and signature events at scale."
+    description: "Qatar's premier leisure destination featuring world-class dining, entertainment venues, and signature cultural events enhancing the nation's tourism offering."
   },
   {
     name: "Katara Hills LXR",
     path: "/destinations/katara-hills-lxr",
     image: kataraHillsImage,
-    description: "Elevated villa living overlooking Doha's cultural heart."
+    description: "Luxury villa accommodations with panoramic views of Doha's prestigious Katara Cultural Village, offering elevated hospitality in Qatar's cultural district."
   },
   {
     name: "Maysan Doha LXR",
     path: "/destinations/maysan-doha-lxr",
     image: maysanDohaImage,
-    description: "A private sanctuary where Arabian heritage meets modern well-being."
+    description: "An exclusive wellness retreat harmoniously blending traditional Arabian hospitality with contemporary luxury amenities in the heart of Doha."
   },
   {
     name: "Rosewood Maldives",
     path: "/destinations/rosewood-maldives",
     image: rosewoodMaldivesImage,
-    description: "Ultra-luxury island living, reimagined."
+    description: "An ultra-luxury resort development in the Maldives, showcasing Estithmar Ventures' commitment to creating exceptional hospitality experiences beyond Qatar's borders."
   },
   {
     name: "Rixos Baghdad",
     path: "/destinations/rixos-baghdad",
     image: rixosBaghdadImage,
-    description: "Contemporary hospitality anchored in a storied capital."
+    description: "A flagship hospitality destination in Baghdad, demonstrating our regional expansion strategy and commitment to developing luxury accommodations across key Middle Eastern markets."
   }
 ];
 
@@ -47,11 +47,10 @@ const Destinations = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="max-w-4xl mx-auto text-center">
             <h1 className="text-5xl font-gotham-bold text-foreground mb-8">
-              Destinations with a Point of View
+              Premier Luxury Hospitality Destinations in Qatar
             </h1>
             <p className="text-lg font-gotham text-muted-foreground leading-relaxed">
-              Each property in our portfolio is crafted to evoke a clear feeling—energy, serenity, 
-              renewal, pride, or escape—while meeting the highest standards of performance and design.
+              Discover Estithmar Ventures' award-winning portfolio of luxury hospitality destinations across Qatar and the region. Each property delivers exceptional guest experiences while supporting Qatar's strategic tourism development goals and economic diversification initiatives.
             </p>
           </div>
         </div>

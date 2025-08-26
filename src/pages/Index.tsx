@@ -84,11 +84,11 @@ const Index = () => {
         
         <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h1 className="text-5xl md:text-7xl font-gotham-bold text-white mb-6 leading-tight">
-            Where Vision Meets Luxury
+            Redefining Luxury Hospitality in Qatar
           </h1>
           
           <p className="text-xl md:text-2xl font-gotham text-white/90 mb-12 max-w-4xl mx-auto leading-relaxed">
-            Estithmar Ventures creates destinations that are more than places — they are experiences designed to inspire, connect, and endure.
+            As a subsidiary of Estithmar Holding, Estithmar Ventures develops and operates world-class destinations across Qatar and beyond, setting new standards for luxury hospitality and creating experiences that inspire and endure.
           </p>
           
           <div className="flex flex-col sm:flex-row gap-4 justify-center mb-16">
@@ -136,7 +136,10 @@ const Index = () => {
       <section className="py-24 bg-background">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <h2 className="text-4xl font-gotham-bold text-foreground mb-6">What We Do</h2>
+            <h2 className="text-4xl font-gotham-bold text-foreground mb-6">Hospitality Excellence Through Strategic Investment</h2>
+            <p className="text-lg font-gotham text-muted-foreground max-w-3xl mx-auto leading-relaxed">
+              Backed by Estithmar Holding's expertise and Qatar's vision for diversified economic growth, we deliver transformative hospitality destinations that drive tourism and create lasting value.
+            </p>
           </div>
           
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
@@ -145,9 +148,9 @@ const Index = () => {
               <div className="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-6">
                 <Building2 className="w-6 h-6 text-primary" />
               </div>
-              <h3 className="text-xl font-gotham-bold text-foreground mb-4">Develop</h3>
+              <h3 className="text-xl font-gotham-bold text-foreground mb-4">Strategic Development</h3>
               <p className="font-gotham text-muted-foreground leading-relaxed">
-                From concept to launch, we deliver destinations that set new standards for luxury and reliability.
+                From innovative concept to successful launch, we develop luxury hospitality destinations that enhance Qatar's tourism landscape and deliver exceptional guest experiences.
               </p>
             </div>
             
@@ -156,9 +159,9 @@ const Index = () => {
               <div className="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-6">
                 <Settings className="w-6 h-6 text-primary" />
               </div>
-              <h3 className="text-xl font-gotham-bold text-foreground mb-4">Operate</h3>
+              <h3 className="text-xl font-gotham-bold text-foreground mb-4">Operational Excellence</h3>
               <p className="font-gotham text-muted-foreground leading-relaxed">
-                We partner with leading brands to ensure excellence in guest experience and performance.
+                Through partnerships with world-renowned hospitality brands, we ensure operational excellence and deliver consistently superior guest experiences across all properties.
               </p>
             </div>
             
@@ -167,9 +170,9 @@ const Index = () => {
               <div className="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-6">
                 <TrendingUp className="w-6 h-6 text-primary" />
               </div>
-              <h3 className="text-xl font-gotham-bold text-foreground mb-4">Scale</h3>
+              <h3 className="text-xl font-gotham-bold text-foreground mb-4">Investment Scale</h3>
               <p className="font-gotham text-muted-foreground leading-relaxed">
-                With the backing of Estithmar Holding, we execute at speed and at global scale.
+                Leveraging Estithmar Holding's robust investment platform, we execute large-scale hospitality projects with proven financial strength and strategic vision for Qatar's tourism sector.
               </p>
             </div>
           </div>
@@ -180,7 +183,10 @@ const Index = () => {
       <section className="py-24 bg-muted">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <h2 className="text-4xl font-gotham-bold text-foreground mb-6">Featured Destinations</h2>
+            <h2 className="text-4xl font-gotham-bold text-foreground mb-6">Premier Hospitality Destinations</h2>
+            <p className="text-lg font-gotham text-muted-foreground max-w-3xl mx-auto leading-relaxed">
+              Discover our portfolio of luxury destinations, each thoughtfully developed to elevate Qatar's hospitality landscape and provide unforgettable experiences for discerning travelers.
+            </p>
           </div>
           
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -201,7 +207,7 @@ const Index = () => {
                 <div className="p-8">
                   <h3 className="text-xl font-gotham-bold text-foreground mb-3 group-hover:text-primary corporate-transition">Al Maha Island</h3>
                   <p className="font-gotham text-muted-foreground text-sm leading-relaxed">
-                    Qatar's premier leisure hub—dining, entertainment, and signature events at scale.
+                    Qatar's premier leisure destination featuring world-class dining, entertainment venues, and signature cultural events that enhance the nation's tourism offering.
                   </p>
                   <div className="mt-4 w-12 h-0.5 bg-primary transform scale-x-0 group-hover:scale-x-100 corporate-transition origin-left"></div>
                 </div>
@@ -225,7 +231,7 @@ const Index = () => {
                 <div className="p-8">
                   <h3 className="text-xl font-gotham-bold text-foreground mb-3 group-hover:text-primary corporate-transition">Katara Hills LXR</h3>
                   <p className="font-gotham text-muted-foreground text-sm leading-relaxed">
-                    Elevated villa living overlooking Doha's cultural heart.
+                    Luxury villa accommodations with panoramic views of Doha's prestigious Katara Cultural Village, offering an elevated hospitality experience in Qatar's cultural district.
                   </p>
                   <div className="mt-4 w-12 h-0.5 bg-primary transform scale-x-0 group-hover:scale-x-100 corporate-transition origin-left"></div>
                 </div>
@@ -249,7 +255,7 @@ const Index = () => {
                 <div className="p-8">
                   <h3 className="text-xl font-gotham-bold text-foreground mb-3 group-hover:text-primary corporate-transition">Maysan Doha LXR</h3>
                   <p className="font-gotham text-muted-foreground text-sm leading-relaxed">
-                    A private sanctuary where Arabian heritage meets modern well-being.
+                    An exclusive wellness retreat that harmoniously blends traditional Arabian hospitality with contemporary luxury amenities in the heart of Doha.
                   </p>
                   <div className="mt-4 w-12 h-0.5 bg-primary transform scale-x-0 group-hover:scale-x-100 corporate-transition origin-left"></div>
                 </div>
@@ -273,7 +279,7 @@ const Index = () => {
                 <div className="p-8">
                   <h3 className="text-xl font-gotham-bold text-foreground mb-3 group-hover:text-primary corporate-transition">Rosewood Maldives</h3>
                   <p className="font-gotham text-muted-foreground text-sm leading-relaxed">
-                    Ultra-luxury island living, reimagined.
+                    An ultra-luxury resort development in the Maldives, showcasing Estithmar Ventures' commitment to creating exceptional hospitality experiences beyond Qatar's borders.
                   </p>
                   <div className="mt-4 w-12 h-0.5 bg-primary transform scale-x-0 group-hover:scale-x-100 corporate-transition origin-left"></div>
                 </div>
@@ -297,7 +303,7 @@ const Index = () => {
                 <div className="p-8">
                   <h3 className="text-xl font-gotham-bold text-foreground mb-3 group-hover:text-primary corporate-transition">Rixos Baghdad</h3>
                   <p className="font-gotham text-muted-foreground text-sm leading-relaxed">
-                    Contemporary hospitality anchored in a storied capital.
+                    A flagship hospitality destination in Baghdad, demonstrating our regional expansion strategy and commitment to developing luxury accommodations across key Middle Eastern markets.
                   </p>
                   <div className="mt-4 w-12 h-0.5 bg-primary transform scale-x-0 group-hover:scale-x-100 corporate-transition origin-left"></div>
                 </div>
@@ -310,9 +316,9 @@ const Index = () => {
       {/* Partnerships */}
       <section className="py-24 bg-background">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h2 className="text-4xl font-gotham-bold text-foreground mb-6">Partnerships</h2>
+          <h2 className="text-4xl font-gotham-bold text-foreground mb-6">Strategic Partnerships</h2>
           <p className="text-lg font-gotham text-muted-foreground max-w-4xl mx-auto leading-relaxed mb-12">
-            We collaborate with global leaders—including tourism authorities, hospitality brands, and event innovators—to bring ambitious projects to life.
+            Through strategic alliances with internationally acclaimed hospitality brands, government tourism entities, and industry leaders, we deliver world-class destinations that strengthen Qatar's position as a premier travel destination.
           </p>
           
           {/* Logo Carousel */}

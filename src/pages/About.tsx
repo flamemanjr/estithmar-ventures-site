@@ -9,14 +9,10 @@ const About = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="max-w-4xl mx-auto text-center">
             <h1 className="text-5xl font-gotham-bold text-foreground mb-8">
-              A Clear Standard for Excellence
+              Leading Qatar's Hospitality Investment Evolution
             </h1>
             <p className="text-lg font-gotham text-muted-foreground leading-relaxed">
-              Estithmar Ventures is a leader in luxury hospitality and entertainment development. 
-              From Doha to the Indian Ocean, we turn vision into destinations that people remember. 
-              Backed by Estithmar Holding, we combine the strength of a diversified group with the 
-              precision of boutique execution. The result: projects delivered on time, with rigor, 
-              and with care.
+              As a subsidiary of Estithmar Holding, Estithmar Ventures spearheads luxury hospitality development across Qatar and the wider region. We transform innovative concepts into world-class destinations that strengthen Qatar's tourism ecosystem and deliver exceptional returns for stakeholders. Our portfolio spans from Doha's cultural districts to international markets, combining strategic investment expertise with operational excellence to create lasting value in the hospitality sector.
             </p>
           </div>
         </div>
@@ -27,36 +23,39 @@ const About = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-4xl font-gotham-bold text-foreground mb-6">
-              Built on Trust. Driven by Outcomes.
+              Our Investment Philosophy: Qatar's Tourism Vision
             </h2>
+            <p className="text-lg font-gotham text-muted-foreground max-w-3xl mx-auto leading-relaxed mb-12">
+              Aligned with Qatar National Vision 2030, we develop hospitality assets that diversify the economy, enhance the nation's tourism appeal, and create sustainable value through strategic partnerships with global hospitality leaders.
+            </p>
           </div>
           
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
             <div className="text-center">
-              <h3 className="text-xl font-gotham-bold text-foreground mb-4">Integrity</h3>
+              <h3 className="text-xl font-gotham-bold text-foreground mb-4">Strategic Investment</h3>
               <p className="font-gotham text-muted-foreground leading-relaxed">
-                Partnerships that last begin with clarity, transparency, and accountability.
+                Every hospitality investment decision supports Qatar's economic diversification goals while delivering measurable returns and operational excellence.
               </p>
             </div>
             
             <div className="text-center">
-              <h3 className="text-xl font-gotham-bold text-foreground mb-4">Innovation</h3>
+              <h3 className="text-xl font-gotham-bold text-foreground mb-4">Global Standards</h3>
               <p className="font-gotham text-muted-foreground leading-relaxed">
-                We anticipate tomorrow's needs and design for them today.
+                We partner with internationally recognized hospitality brands to establish Qatar as a premier luxury travel destination in the Middle East.
               </p>
             </div>
             
             <div className="text-center">
-              <h3 className="text-xl font-gotham-bold text-foreground mb-4">Consistency</h3>
+              <h3 className="text-xl font-gotham-bold text-foreground mb-4">Market Leadership</h3>
               <p className="font-gotham text-muted-foreground leading-relaxed">
-                Excellence is a habit—reflected in every detail, every market.
+                As part of Estithmar Holding's diversified portfolio, we lead hospitality development projects that position Qatar competitively in global tourism markets.
               </p>
             </div>
             
             <div className="text-center">
-              <h3 className="text-xl font-gotham-bold text-foreground mb-4">Experience</h3>
+              <h3 className="text-xl font-gotham-bold text-foreground mb-4">Operational Excellence</h3>
               <p className="font-gotham text-muted-foreground leading-relaxed">
-                True luxury is lived. We engineer the conditions for memorable moments.
+                Through proven partnerships and rigorous operational oversight, we ensure each destination delivers exceptional guest experiences and sustainable financial performance.
               </p>
             </div>
           </div>
@@ -68,35 +67,35 @@ const About = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="max-w-4xl mx-auto">
             <h2 className="text-4xl font-gotham-bold text-foreground mb-12 text-center">
-              What Sets Us Apart
+              Competitive Advantages in Qatar's Hospitality Market
             </h2>
             
             <div className="space-y-6">
               <div className="flex items-center">
                 <div className="w-2 h-2 bg-primary mr-4 flex-shrink-0"></div>
                 <p className="font-gotham text-foreground">
-                  Proven delivery in complex markets
+                  <strong>Estithmar Holding backing:</strong> Robust financial foundation for large-scale hospitality investments across Qatar and the region
                 </p>
               </div>
               
               <div className="flex items-center">
                 <div className="w-2 h-2 bg-primary mr-4 flex-shrink-0"></div>
                 <p className="font-gotham text-foreground">
-                  Operational partnerships with elite brands
+                  <strong>International brand partnerships:</strong> Strategic alliances with LXR Hotels & Resorts, Rixos, and other premium hospitality operators
                 </p>
               </div>
               
               <div className="flex items-center">
                 <div className="w-2 h-2 bg-primary mr-4 flex-shrink-0"></div>
                 <p className="font-gotham text-foreground">
-                  Stakeholder-first governance and reporting
+                  <strong>Qatar tourism alignment:</strong> Development projects that enhance the nation's hospitality infrastructure and visitor appeal
                 </p>
               </div>
               
               <div className="flex items-center">
                 <div className="w-2 h-2 bg-primary mr-4 flex-shrink-0"></div>
                 <p className="font-gotham text-foreground">
-                  Calm, precise design and execution standards
+                  <strong>Proven track record:</strong> Successful delivery of complex hospitality projects from concept through operational excellence
                 </p>
               </div>
             </div>

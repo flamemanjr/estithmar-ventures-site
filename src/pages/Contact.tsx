@@ -27,9 +27,9 @@ const Contact = () => {
       <section className="py-24 bg-muted">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="max-w-4xl mx-auto text-center">
-            <h1 className="text-5xl font-gotham-bold text-foreground mb-8">Contact Us</h1>
+            <h1 className="text-5xl font-gotham-bold text-foreground mb-8">Contact Estithmar Ventures</h1>
             <p className="text-lg font-gotham text-muted-foreground leading-relaxed">
-              For investment inquiries, partnerships, or media, please use the form below.
+              Connect with Qatar's leading hospitality investment team. For partnership opportunities, investor relations, or media inquiries regarding our luxury destination portfolio, reach out through the secure form below.
             </p>
           </div>
         </div>
