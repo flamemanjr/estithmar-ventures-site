@@ -32,15 +32,15 @@ export const Navigation = () => {
   return (
     <header className="sticky top-0 z-50 bg-background/95 backdrop-blur-sm border-b border-border">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex items-center justify-between h-16">
+        <div className="flex items-center justify-between h-20">
           {/* Logo */}
-          <Link to="/" className="flex-shrink-0">
+          <Link to="/" className="flex-shrink-0 mr-auto">
             <LazyImage
               src="/lovable-uploads/eaf0d3be-5c3e-463b-82ab-abc84fac666c.png"
               alt="Estithmar Ventures"
-              className="h-24 w-auto"
+              className="h-32 w-auto"
               loading="eager"
-              containerClassName="h-24"
+              containerClassName="h-32"
             />
           </Link>
 
