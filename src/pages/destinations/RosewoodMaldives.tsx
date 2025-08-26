@@ -24,7 +24,7 @@ const RosewoodMaldives = () => {
         <div className="relative z-10 h-full flex items-center">
           <div className="max-w-[1240px] mx-auto px-6 lg:px-8 w-full">
             <div className={`max-w-[560px] transition-all duration-1000 ease-out ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
-              <p className="rosewood-small font-gotham text-white/80 mb-4 tracking-[0.4px] uppercase">South Male Atoll, Maldives • Opening Soon</p>
+              <p className="rosewood-small font-gotham text-white/80 mb-4 tracking-[0.4px] uppercase">South Male Atoll, Maldives • Opening 2027</p>
               <h1 className="rosewood-h1 font-gotham-bold text-white mb-6 leading-[54px]">Rosewood Ranfaru</h1>
               <p className="rosewood-body font-gotham text-white/90 mb-6 leading-[26px] max-w-[70ch]">
                 Stretched across a striking chain of private islands around a pristine lagoon, offering truly restorative getaways in luxury.
