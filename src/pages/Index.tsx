@@ -189,126 +189,136 @@ const Index = () => {
             </p>
           </div>
           
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            <Link to="/destinations/al-maha-island" className="group">
-              <div className="bg-card border border-border overflow-hidden corporate-transition group-hover:shadow-xl group-hover:-translate-y-1 relative">
-                <div className="relative overflow-hidden">
-                  <LazyImage 
-                    src={alMahaImage} 
-                    alt="Al Maha Island"
-                    className="w-full h-64 object-cover group-hover:scale-105 corporate-transition"
-                    loading="lazy"
-                  />
-                  <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent opacity-0 group-hover:opacity-100 corporate-transition"></div>
-                  <div className="absolute bottom-4 left-4 text-white opacity-0 group-hover:opacity-100 corporate-transition">
-                    <span className="text-sm font-gotham-medium">Explore →</span>
+          <div className="space-y-8">
+            {/* Top row - 2 cards */}
+            <div className="flex justify-center">
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl">
+                <Link to="/destinations/al-maha-island" className="group">
+                  <div className="bg-card border border-border overflow-hidden corporate-transition group-hover:shadow-xl group-hover:-translate-y-1 relative">
+                    <div className="relative overflow-hidden">
+                      <LazyImage 
+                        src={alMahaImage} 
+                        alt="Al Maha Island"
+                        className="w-full h-64 object-cover group-hover:scale-105 corporate-transition"
+                        loading="lazy"
+                      />
+                      <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent opacity-0 group-hover:opacity-100 corporate-transition"></div>
+                      <div className="absolute bottom-4 left-4 text-white opacity-0 group-hover:opacity-100 corporate-transition">
+                        <span className="text-sm font-gotham-medium">Explore →</span>
+                      </div>
+                    </div>
+                    <div className="p-8">
+                      <h3 className="text-xl font-gotham-bold text-foreground mb-3 group-hover:text-primary corporate-transition">Al Maha Island</h3>
+                      <p className="font-gotham text-muted-foreground text-sm leading-relaxed">
+                        Qatar's premier leisure destination featuring world-class dining, entertainment venues, and signature cultural events that enhance the nation's tourism offering.
+                      </p>
+                      <div className="mt-4 w-12 h-0.5 bg-primary transform scale-x-0 group-hover:scale-x-100 corporate-transition origin-left"></div>
+                    </div>
                   </div>
-                </div>
-                <div className="p-8">
-                  <h3 className="text-xl font-gotham-bold text-foreground mb-3 group-hover:text-primary corporate-transition">Al Maha Island</h3>
-                  <p className="font-gotham text-muted-foreground text-sm leading-relaxed">
-                    Qatar's premier leisure destination featuring world-class dining, entertainment venues, and signature cultural events that enhance the nation's tourism offering.
-                  </p>
-                  <div className="mt-4 w-12 h-0.5 bg-primary transform scale-x-0 group-hover:scale-x-100 corporate-transition origin-left"></div>
-                </div>
-              </div>
-            </Link>
+                </Link>
 
-            <Link to="/destinations/rixos-baghdad" className="group">
-              <div className="bg-card border border-border overflow-hidden corporate-transition group-hover:shadow-xl group-hover:-translate-y-1 relative" style={{ marginTop: '2rem' }}>
-                <div className="relative overflow-hidden">
-                  <LazyImage 
-                    src={rixosBaghdadImage} 
-                    alt="Rixos Baghdad"
-                    className="w-full h-64 object-cover group-hover:scale-105 corporate-transition"
-                    loading="lazy"
-                  />
-                  <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent opacity-0 group-hover:opacity-100 corporate-transition"></div>
-                  <div className="absolute bottom-4 left-4 text-white opacity-0 group-hover:opacity-100 corporate-transition">
-                    <span className="text-sm font-gotham-medium">Explore →</span>
+                <Link to="/destinations/rixos-baghdad" className="group">
+                  <div className="bg-card border border-border overflow-hidden corporate-transition group-hover:shadow-xl group-hover:-translate-y-1 relative">
+                    <div className="relative overflow-hidden">
+                      <LazyImage 
+                        src={rixosBaghdadImage} 
+                        alt="Rixos Baghdad"
+                        className="w-full h-64 object-cover group-hover:scale-105 corporate-transition"
+                        loading="lazy"
+                      />
+                      <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent opacity-0 group-hover:opacity-100 corporate-transition"></div>
+                      <div className="absolute bottom-4 left-4 text-white opacity-0 group-hover:opacity-100 corporate-transition">
+                        <span className="text-sm font-gotham-medium">Explore →</span>
+                      </div>
+                    </div>
+                    <div className="p-8">
+                      <h3 className="text-xl font-gotham-bold text-foreground mb-3 group-hover:text-primary corporate-transition">Rixos Baghdad</h3>
+                      <p className="font-gotham text-muted-foreground text-sm leading-relaxed">
+                        A flagship hospitality destination in Baghdad, demonstrating our regional expansion strategy and commitment to developing luxury accommodations across key Middle Eastern markets.
+                      </p>
+                      <div className="mt-4 w-12 h-0.5 bg-primary transform scale-x-0 group-hover:scale-x-100 corporate-transition origin-left"></div>
+                    </div>
                   </div>
-                </div>
-                <div className="p-8">
-                  <h3 className="text-xl font-gotham-bold text-foreground mb-3 group-hover:text-primary corporate-transition">Rixos Baghdad</h3>
-                  <p className="font-gotham text-muted-foreground text-sm leading-relaxed">
-                    A flagship hospitality destination in Baghdad, demonstrating our regional expansion strategy and commitment to developing luxury accommodations across key Middle Eastern markets.
-                  </p>
-                  <div className="mt-4 w-12 h-0.5 bg-primary transform scale-x-0 group-hover:scale-x-100 corporate-transition origin-left"></div>
-                </div>
+                </Link>
               </div>
-            </Link>
+            </div>
 
-            <Link to="/destinations/rosewood-maldives" className="group">
-              <div className="bg-card border border-border overflow-hidden corporate-transition group-hover:shadow-xl group-hover:-translate-y-1 relative">
-                <div className="relative overflow-hidden">
-                  <LazyImage 
-                    src={rosewoodMaldivesImage} 
-                    alt="Rosewood Maldives"
-                    className="w-full h-64 object-cover group-hover:scale-105 corporate-transition"
-                    loading="lazy"
-                  />
-                  <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent opacity-0 group-hover:opacity-100 corporate-transition"></div>
-                  <div className="absolute bottom-4 left-4 text-white opacity-0 group-hover:opacity-100 corporate-transition">
-                    <span className="text-sm font-gotham-medium">Explore →</span>
+            {/* Bottom row - 3 cards */}
+            <div className="flex justify-center">
+              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl">
+                <Link to="/destinations/rosewood-maldives" className="group">
+                  <div className="bg-card border border-border overflow-hidden corporate-transition group-hover:shadow-xl group-hover:-translate-y-1 relative">
+                    <div className="relative overflow-hidden">
+                      <LazyImage 
+                        src={rosewoodMaldivesImage} 
+                        alt="Rosewood Maldives"
+                        className="w-full h-64 object-cover group-hover:scale-105 corporate-transition"
+                        loading="lazy"
+                      />
+                      <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent opacity-0 group-hover:opacity-100 corporate-transition"></div>
+                      <div className="absolute bottom-4 left-4 text-white opacity-0 group-hover:opacity-100 corporate-transition">
+                        <span className="text-sm font-gotham-medium">Explore →</span>
+                      </div>
+                    </div>
+                    <div className="p-8">
+                      <h3 className="text-xl font-gotham-bold text-foreground mb-3 group-hover:text-primary corporate-transition">Rosewood Maldives</h3>
+                      <p className="font-gotham text-muted-foreground text-sm leading-relaxed">
+                        An ultra-luxury resort development in the Maldives, showcasing Estithmar Ventures' commitment to creating exceptional hospitality experiences beyond Qatar's borders.
+                      </p>
+                      <div className="mt-4 w-12 h-0.5 bg-primary transform scale-x-0 group-hover:scale-x-100 corporate-transition origin-left"></div>
+                    </div>
                   </div>
-                </div>
-                <div className="p-8">
-                  <h3 className="text-xl font-gotham-bold text-foreground mb-3 group-hover:text-primary corporate-transition">Rosewood Maldives</h3>
-                  <p className="font-gotham text-muted-foreground text-sm leading-relaxed">
-                    An ultra-luxury resort development in the Maldives, showcasing Estithmar Ventures' commitment to creating exceptional hospitality experiences beyond Qatar's borders.
-                  </p>
-                  <div className="mt-4 w-12 h-0.5 bg-primary transform scale-x-0 group-hover:scale-x-100 corporate-transition origin-left"></div>
-                </div>
-              </div>
-            </Link>
+                </Link>
 
-            <Link to="/destinations/katara-hills-lxr" className="group">
-              <div className="bg-card border border-border overflow-hidden corporate-transition group-hover:shadow-xl group-hover:-translate-y-1 relative">
-                <div className="relative overflow-hidden">
-                  <LazyImage 
-                    src={kataraHillsImage} 
-                    alt="Katara Hills LXR"
-                    className="w-full h-64 object-cover group-hover:scale-105 corporate-transition"
-                    loading="lazy"
-                  />
-                  <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent opacity-0 group-hover:opacity-100 corporate-transition"></div>
-                  <div className="absolute bottom-4 left-4 text-white opacity-0 group-hover:opacity-100 corporate-transition">
-                    <span className="text-sm font-gotham-medium">Explore →</span>
+                <Link to="/destinations/katara-hills-lxr" className="group">
+                  <div className="bg-card border border-border overflow-hidden corporate-transition group-hover:shadow-xl group-hover:-translate-y-1 relative">
+                    <div className="relative overflow-hidden">
+                      <LazyImage 
+                        src={kataraHillsImage} 
+                        alt="Katara Hills LXR"
+                        className="w-full h-64 object-cover group-hover:scale-105 corporate-transition"
+                        loading="lazy"
+                      />
+                      <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent opacity-0 group-hover:opacity-100 corporate-transition"></div>
+                      <div className="absolute bottom-4 left-4 text-white opacity-0 group-hover:opacity-100 corporate-transition">
+                        <span className="text-sm font-gotham-medium">Explore →</span>
+                      </div>
+                    </div>
+                    <div className="p-8">
+                      <h3 className="text-xl font-gotham-bold text-foreground mb-3 group-hover:text-primary corporate-transition">Katara Hills LXR</h3>
+                      <p className="font-gotham text-muted-foreground text-sm leading-relaxed">
+                        Luxury villa accommodations with panoramic views of Doha's prestigious Katara Cultural Village, offering an elevated hospitality experience in Qatar's cultural district.
+                      </p>
+                      <div className="mt-4 w-12 h-0.5 bg-primary transform scale-x-0 group-hover:scale-x-100 corporate-transition origin-left"></div>
+                    </div>
                   </div>
-                </div>
-                <div className="p-8">
-                  <h3 className="text-xl font-gotham-bold text-foreground mb-3 group-hover:text-primary corporate-transition">Katara Hills LXR</h3>
-                  <p className="font-gotham text-muted-foreground text-sm leading-relaxed">
-                    Luxury villa accommodations with panoramic views of Doha's prestigious Katara Cultural Village, offering an elevated hospitality experience in Qatar's cultural district.
-                  </p>
-                  <div className="mt-4 w-12 h-0.5 bg-primary transform scale-x-0 group-hover:scale-x-100 corporate-transition origin-left"></div>
-                </div>
-              </div>
-            </Link>
+                </Link>
 
-            <Link to="/destinations/maysan-doha-lxr" className="group">
-              <div className="bg-card border border-border overflow-hidden corporate-transition group-hover:shadow-xl group-hover:-translate-y-1 relative">
-                <div className="relative overflow-hidden">
-                  <LazyImage 
-                    src={maysanDohaImage} 
-                    alt="Maysan Doha LXR"
-                    className="w-full h-64 object-cover group-hover:scale-105 corporate-transition"
-                    loading="lazy"
-                  />
-                  <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent opacity-0 group-hover:opacity-100 corporate-transition"></div>
-                  <div className="absolute bottom-4 left-4 text-white opacity-0 group-hover:opacity-100 corporate-transition">
-                    <span className="text-sm font-gotham-medium">Explore →</span>
+                <Link to="/destinations/maysan-doha-lxr" className="group">
+                  <div className="bg-card border border-border overflow-hidden corporate-transition group-hover:shadow-xl group-hover:-translate-y-1 relative">
+                    <div className="relative overflow-hidden">
+                      <LazyImage 
+                        src={maysanDohaImage} 
+                        alt="Maysan Doha LXR"
+                        className="w-full h-64 object-cover group-hover:scale-105 corporate-transition"
+                        loading="lazy"
+                      />
+                      <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent opacity-0 group-hover:opacity-100 corporate-transition"></div>
+                      <div className="absolute bottom-4 left-4 text-white opacity-0 group-hover:opacity-100 corporate-transition">
+                        <span className="text-sm font-gotham-medium">Explore →</span>
+                      </div>
+                    </div>
+                    <div className="p-8">
+                      <h3 className="text-xl font-gotham-bold text-foreground mb-3 group-hover:text-primary corporate-transition">Maysan Doha LXR</h3>
+                      <p className="font-gotham text-muted-foreground text-sm leading-relaxed">
+                        An exclusive wellness retreat that harmoniously blends traditional Arabian hospitality with contemporary luxury amenities in the heart of Doha.
+                      </p>
+                      <div className="mt-4 w-12 h-0.5 bg-primary transform scale-x-0 group-hover:scale-x-100 corporate-transition origin-left"></div>
+                    </div>
                   </div>
-                </div>
-                <div className="p-8">
-                  <h3 className="text-xl font-gotham-bold text-foreground mb-3 group-hover:text-primary corporate-transition">Maysan Doha LXR</h3>
-                  <p className="font-gotham text-muted-foreground text-sm leading-relaxed">
-                    An exclusive wellness retreat that harmoniously blends traditional Arabian hospitality with contemporary luxury amenities in the heart of Doha.
-                  </p>
-                  <div className="mt-4 w-12 h-0.5 bg-primary transform scale-x-0 group-hover:scale-x-100 corporate-transition origin-left"></div>
-                </div>
+                </Link>
               </div>
-            </Link>
+            </div>
           </div>
         </div>
       </section>
