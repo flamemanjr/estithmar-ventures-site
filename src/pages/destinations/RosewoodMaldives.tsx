@@ -24,26 +24,26 @@ const RosewoodMaldives = () => {
         <div className="relative z-10 h-full flex items-center">
           <div className="max-w-[1240px] mx-auto px-6 lg:px-8 w-full">
             <div className={`max-w-[560px] transition-all duration-1000 ease-out ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
-              <p className="rosewood-small font-gotham text-white/80 mb-4 tracking-[0.4px] uppercase">Atoll, Maldives</p>
+              <p className="rosewood-small font-gotham text-white/80 mb-4 tracking-[0.4px] uppercase">Atoll, Maldives • Opening 2027</p>
               <h1 className="rosewood-h1 font-gotham-bold text-white mb-6 leading-[54px]">Rosewood Maldives</h1>
               <p className="rosewood-body font-gotham text-white/90 mb-6 leading-[26px] max-w-[70ch]">
-                Ultra-luxury island living, refined to its essence.
+                Ultra-luxury island living, refined to its essence. Currently in development.
               </p>
               <p className="rosewood-small font-gotham text-white/70 mb-8 tracking-[0.4px]">
-                3°12'N, 73°22'E • 25 min seaplane transfer
+                3°12'N, 73°22'E • Expected opening 2027
               </p>
               <div className="flex gap-4">
                 <CorporateButton 
                   variant="primary" 
                   className="bg-[hsl(var(--brand-orange))] hover:bg-[hsl(var(--brand-orange))]/90 hover:scale-105 text-white transition-all duration-300 ease-out focus:ring-2 focus:ring-[hsl(var(--brand-orange))] focus:ring-offset-2 focus:ring-offset-black px-8 py-3 shadow-lg hover:shadow-xl"
                 >
-                  Explore Resort
+                  Learn More
                 </CorporateButton>
                 <CorporateButton 
                   variant="outline" 
                   className="border-white text-white hover:bg-white hover:text-black hover:scale-105 transition-all duration-300 ease-out focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-black px-8 py-3 backdrop-blur-sm"
                 >
-                  View Gallery
+                  View Development Progress
                 </CorporateButton>
               </div>
             </div>
@@ -58,10 +58,10 @@ const RosewoodMaldives = () => {
             {/* Left Column - Narrative */}
             <div className="lg:col-span-3 animate-fade-in [animation-delay:200ms]">
               <p className="rosewood-body font-gotham text-[hsl(var(--ink))] leading-[26px] max-w-[70ch]">
-                In the Maldives, simplicity becomes sophistication. Rosewood Maldives pairs 
+                In the Maldives, simplicity will become sophistication. Rosewood Maldives will pair 
                 architecture attuned to the ocean with service that feels natural, intuitive, 
-                and deeply personal. Every detail reflects our commitment to privacy, precision, 
-                and the endless rhythm of the Indian Ocean.
+                and deeply personal. Every detail will reflect our commitment to privacy, precision, 
+                and the endless rhythm of the Indian Ocean. Opening in 2027.
               </p>
             </div>
             
@@ -116,7 +116,7 @@ const RosewoodMaldives = () => {
       {/* Signature Experiences */}
       <section className="py-20 bg-background">
         <div className="max-w-[1240px] mx-auto px-6 lg:px-8">
-          <h2 className="rosewood-h2 font-gotham-bold text-[hsl(var(--ink))] mb-12 text-center leading-[38px]">Signature Experiences</h2>
+          <h2 className="rosewood-h2 font-gotham-bold text-[hsl(var(--ink))] mb-12 text-center leading-[38px]">Planned Signature Experiences</h2>
           
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             <div 
@@ -220,7 +220,7 @@ const RosewoodMaldives = () => {
           <div className="bg-white border border-[hsl(var(--line))] p-8 rounded-[4px] max-w-2xl mx-auto text-center animate-fade-in [animation-delay:200ms] hover:shadow-lg transition-all duration-500">
             <h3 className="rosewood-h3 font-gotham-bold text-[hsl(var(--ink))] mb-4 leading-[30px]">Location & Access</h3>
             <p className="rosewood-body font-gotham text-[hsl(var(--muted-foreground))] mb-6 max-w-[60ch] mx-auto leading-[26px]">
-              Private island sanctuary in the pristine waters of the South Ari Atoll, accessible by scenic seaplane transfer.
+              Private island sanctuary in development in the pristine waters of the South Ari Atoll, future access by scenic seaplane transfer.
             </p>
             <div className="flex flex-wrap justify-center gap-6 text-center">
               <span className="rosewood-small font-gotham text-[hsl(var(--muted))] leading-[22px]">Reef access</span>
@@ -259,9 +259,9 @@ const RosewoodMaldives = () => {
         
         <div className="relative z-10 text-center animate-fade-in [animation-delay:200ms]">
           <div className="max-w-[1240px] mx-auto px-6 lg:px-8">
-            <h2 className="rosewood-h2 font-gotham-bold text-white mb-8 leading-[38px]">Experience Rosewood Maldives</h2>
+            <h2 className="rosewood-h2 font-gotham-bold text-white mb-8 leading-[38px]">Coming 2027: Rosewood Maldives</h2>
             <CorporateButton className="bg-[hsl(var(--brand-orange))] hover:bg-[hsl(var(--brand-orange))]/90 hover:scale-105 text-white transition-all duration-300 ease-out focus:ring-2 focus:ring-[hsl(var(--brand-orange))] focus:ring-offset-2 focus:ring-offset-black px-8 py-3 shadow-lg hover:shadow-xl">
-              Visit Official Website
+              Stay Updated on Development
             </CorporateButton>
           </div>
         </div>
