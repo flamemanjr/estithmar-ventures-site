@@ -225,7 +225,7 @@ const AlMahaIsland = () => {
               <div className="lg:col-span-1">
                 <div className="flex justify-center">
                   <div className="group hover:scale-105 corporate-transition">
-                    <div className="bg-white p-8 rounded-xl shadow-sm hover:shadow-md corporate-transition flex items-center justify-center h-40 w-64">
+                    <div className="bg-white p-8 rounded-xl shadow-sm hover:shadow-md corporate-transition flex items-center justify-center h-48 w-80">
                       <img 
                         src="/lovable-uploads/2699f67a-0f95-46e6-8e10-716ba89ff67c.png" 
                         alt="Lusail Winter Wonderland" 
