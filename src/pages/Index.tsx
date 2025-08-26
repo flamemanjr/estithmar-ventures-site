@@ -287,7 +287,7 @@ const Index = () => {
             </Link>
 
             <Link to="/destinations/rixos-baghdad" className="group">
-              <div className="bg-card border border-border overflow-hidden corporate-transition group-hover:shadow-xl group-hover:-translate-y-1 relative mt-16">
+              <div className="bg-card border border-border overflow-hidden corporate-transition group-hover:shadow-xl group-hover:-translate-y-1 relative" style={{ marginTop: '2rem' }}>
                 <div className="relative overflow-hidden">
                   <LazyImage 
                     src={rixosBaghdadImage} 
@@ -323,7 +323,16 @@ const Index = () => {
           
           {/* Logo Carousel */}
           <div className="relative overflow-hidden">
-            <div className="flex animate-scroll-left space-x-16 items-center">
+            <div className="flex animate-scroll-left space-x-16 items-center will-change-transform">
+              <style>{`
+                @keyframes scroll-left-smooth {
+                  0% { transform: translateX(0); }
+                  100% { transform: translateX(-50%); }
+                }
+                .animate-scroll-left {
+                  animation: scroll-left-smooth 30s linear infinite;
+                }
+              `}</style>
               {/* First set of partner logos */}
               <div className="flex-shrink-0 w-40 h-20 flex items-center justify-center pt-6">
                 <LazyImage 
