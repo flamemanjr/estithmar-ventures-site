@@ -17,8 +17,7 @@ const corporateButtonVariants = cva(
         default: "h-12 px-6 py-3",
         sm: "h-10 px-4 py-2",
         lg: "h-14 px-8 py-4",
-        square: "h-16 w-16 rounded-2xl",
-        "square-lg": "h-20 w-20 rounded-3xl",
+        "rounded-lg": "h-14 px-8 py-4 rounded-2xl",
       },
     },
     defaultVariants: {

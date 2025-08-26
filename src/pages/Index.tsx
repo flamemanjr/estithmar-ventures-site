@@ -92,10 +92,10 @@ const Index = () => {
           </p>
           
           <div className="flex flex-col sm:flex-row gap-4 justify-center mb-16">
-            <CorporateButton asChild size="square-lg">
+            <CorporateButton asChild size="rounded-lg">
               <Link to="/destinations">Explore Our Destinations</Link>
             </CorporateButton>
-            <CorporateButton variant="outline" size="square-lg" asChild>
+            <CorporateButton variant="outline" size="rounded-lg" asChild>
               <Link to="/about" className="text-white border-white hover:bg-white hover:text-black">
                 About Estithmar Ventures
               </Link>
