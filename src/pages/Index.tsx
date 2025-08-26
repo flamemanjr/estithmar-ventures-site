@@ -325,7 +325,7 @@ const Index = () => {
           <div className="relative overflow-hidden">
             <div className="flex animate-scroll-left space-x-16 items-center">
               {/* First set of partner logos */}
-              <div className="flex-shrink-0 w-40 h-20 flex items-center justify-center pt-4">
+              <div className="flex-shrink-0 w-40 h-20 flex items-center justify-center pt-6">
                 <LazyImage 
                   src="/lovable-uploads/2317e58c-3b32-4aa0-a42e-29ee723632a5.png" 
                   alt="Rixos Hotels" 
