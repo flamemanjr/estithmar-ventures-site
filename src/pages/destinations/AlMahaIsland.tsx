@@ -291,62 +291,75 @@ const AlMahaIsland = () => {
       <section className="py-16 bg-background">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="text-3xl font-gotham-bold text-foreground mb-8">Partners & Recognition</h2>
-          <Carousel className="w-full max-w-5xl mx-auto" opts={{ align: "start", loop: true }}>
-            <CarouselContent className="-ml-2 md:-ml-4">
-              <CarouselItem className="pl-2 md:pl-4 basis-1/2 md:basis-1/3 lg:basis-1/4">
-                <div className="h-16 flex items-center justify-center">
-                  <img src={pepsiLogo} alt="Pepsi" className="max-h-full max-w-full object-contain opacity-60 hover:opacity-100 corporate-transition" />
-                </div>
-              </CarouselItem>
-              <CarouselItem className="pl-2 md:pl-4 basis-1/2 md:basis-1/3 lg:basis-1/4">
-                <div className="h-16 flex items-center justify-center">
-                  <img src={qatarAirwaysLogo} alt="Qatar Airways" className="max-h-full max-w-full object-contain opacity-60 hover:opacity-100 corporate-transition" />
-                </div>
-              </CarouselItem>
-              <CarouselItem className="pl-2 md:pl-4 basis-1/2 md:basis-1/3 lg:basis-1/4">
-                <div className="h-16 flex items-center justify-center">
-                  <img src={qatariDiarLogo} alt="Qatari Diar" className="max-h-full max-w-full object-contain opacity-60 hover:opacity-100 corporate-transition" />
-                </div>
-              </CarouselItem>
-              <CarouselItem className="pl-2 md:pl-4 basis-1/2 md:basis-1/3 lg:basis-1/4">
-                <div className="h-16 flex items-center justify-center">
-                  <img src={rafeeqLogo} alt="Rafeeq" className="max-h-full max-w-full object-contain opacity-60 hover:opacity-100 corporate-transition" />
-                </div>
-              </CarouselItem>
-              <CarouselItem className="pl-2 md:pl-4 basis-1/2 md:basis-1/3 lg:basis-1/4">
-                <div className="h-16 flex items-center justify-center">
-                  <img src={visitQatarLogo} alt="Visit Qatar" className="max-h-full max-w-full object-contain opacity-60 hover:opacity-100 corporate-transition" />
-                </div>
-              </CarouselItem>
-              <CarouselItem className="pl-2 md:pl-4 basis-1/2 md:basis-1/3 lg:basis-1/4">
-                <div className="h-16 flex items-center justify-center">
-                  <img src={alRayanLogo} alt="Al Rayan Bank" className="max-h-full max-w-full object-contain opacity-60 hover:opacity-100 corporate-transition" />
-                </div>
-              </CarouselItem>
-              <CarouselItem className="pl-2 md:pl-4 basis-1/2 md:basis-1/3 lg:basis-1/4">
-                <div className="h-16 flex items-center justify-center">
-                  <img src={dohaBankLogo} alt="Doha Bank" className="max-h-full max-w-full object-contain opacity-60 hover:opacity-100 corporate-transition brightness-0" />
-                </div>
-              </CarouselItem>
-              <CarouselItem className="pl-2 md:pl-4 basis-1/2 md:basis-1/3 lg:basis-1/4">
-                <div className="h-16 flex items-center justify-center">
-                  <img src={karwaLogo} alt="Karwa" className="max-h-full max-w-full object-contain opacity-60 hover:opacity-100 corporate-transition" />
-                </div>
-              </CarouselItem>
-              <CarouselItem className="pl-2 md:pl-4 basis-1/2 md:basis-1/3 lg:basis-1/4">
-                <div className="h-16 flex items-center justify-center">
-                  <img src={qnbLogo} alt="QNB" className="max-h-full max-w-full object-contain opacity-60 hover:opacity-100 corporate-transition" />
-                </div>
-              </CarouselItem>
-              <CarouselItem className="pl-2 md:pl-4 basis-1/2 md:basis-1/3 lg:basis-1/4">
-                <div className="h-16 flex items-center justify-center">
-                  <img src={ooredooLogo} alt="Ooredoo" className="max-h-full max-w-full object-contain opacity-60 hover:opacity-100 corporate-transition" />
-                </div>
-              </CarouselItem>
-            </CarouselContent>
-            <CarouselPrevious className="text-muted-foreground hover:text-primary" />
-            <CarouselNext className="text-muted-foreground hover:text-primary" />
-          </Carousel>
+          
+          {/* Logo Scroll */}
+          <div className="relative overflow-hidden">
+            <div className="flex animate-scroll-right space-x-16 items-center">
+              {/* First set of partner logos */}
+              <div className="flex-shrink-0 w-40 h-16 flex items-center justify-center">
+                <img src={pepsiLogo} alt="Pepsi" className="max-h-full max-w-full object-contain opacity-60 hover:opacity-100 corporate-transition" />
+              </div>
+              <div className="flex-shrink-0 w-40 h-16 flex items-center justify-center">
+                <img src={qatarAirwaysLogo} alt="Qatar Airways" className="max-h-full max-w-full object-contain opacity-60 hover:opacity-100 corporate-transition" />
+              </div>
+              <div className="flex-shrink-0 w-40 h-16 flex items-center justify-center">
+                <img src={qatariDiarLogo} alt="Qatari Diar" className="max-h-full max-w-full object-contain opacity-60 hover:opacity-100 corporate-transition" />
+              </div>
+              <div className="flex-shrink-0 w-40 h-16 flex items-center justify-center">
+                <img src={rafeeqLogo} alt="Rafeeq" className="max-h-full max-w-full object-contain opacity-60 hover:opacity-100 corporate-transition" />
+              </div>
+              <div className="flex-shrink-0 w-40 h-16 flex items-center justify-center">
+                <img src={visitQatarLogo} alt="Visit Qatar" className="max-h-full max-w-full object-contain opacity-60 hover:opacity-100 corporate-transition" />
+              </div>
+              <div className="flex-shrink-0 w-40 h-16 flex items-center justify-center">
+                <img src={alRayanLogo} alt="Al Rayan Bank" className="max-h-full max-w-full object-contain opacity-60 hover:opacity-100 corporate-transition" />
+              </div>
+              <div className="flex-shrink-0 w-40 h-16 flex items-center justify-center">
+                <img src={dohaBankLogo} alt="Doha Bank" className="max-h-full max-w-full object-contain opacity-60 hover:opacity-100 corporate-transition brightness-0" />
+              </div>
+              <div className="flex-shrink-0 w-40 h-16 flex items-center justify-center">
+                <img src={karwaLogo} alt="Karwa" className="max-h-full max-w-full object-contain opacity-60 hover:opacity-100 corporate-transition" />
+              </div>
+              <div className="flex-shrink-0 w-40 h-16 flex items-center justify-center">
+                <img src={qnbLogo} alt="QNB" className="max-h-full max-w-full object-contain opacity-60 hover:opacity-100 corporate-transition" />
+              </div>
+              <div className="flex-shrink-0 w-40 h-16 flex items-center justify-center">
+                <img src={ooredooLogo} alt="Ooredoo" className="max-h-full max-w-full object-contain opacity-60 hover:opacity-100 corporate-transition" />
+              </div>
+              
+              {/* Second set for seamless loop */}
+              <div className="flex-shrink-0 w-40 h-16 flex items-center justify-center">
+                <img src={pepsiLogo} alt="Pepsi" className="max-h-full max-w-full object-contain opacity-60 hover:opacity-100 corporate-transition" />
+              </div>
+              <div className="flex-shrink-0 w-40 h-16 flex items-center justify-center">
+                <img src={qatarAirwaysLogo} alt="Qatar Airways" className="max-h-full max-w-full object-contain opacity-60 hover:opacity-100 corporate-transition" />
+              </div>
+              <div className="flex-shrink-0 w-40 h-16 flex items-center justify-center">
+                <img src={qatariDiarLogo} alt="Qatari Diar" className="max-h-full max-w-full object-contain opacity-60 hover:opacity-100 corporate-transition" />
+              </div>
+              <div className="flex-shrink-0 w-40 h-16 flex items-center justify-center">
+                <img src={rafeeqLogo} alt="Rafeeq" className="max-h-full max-w-full object-contain opacity-60 hover:opacity-100 corporate-transition" />
+              </div>
+              <div className="flex-shrink-0 w-40 h-16 flex items-center justify-center">
+                <img src={visitQatarLogo} alt="Visit Qatar" className="max-h-full max-w-full object-contain opacity-60 hover:opacity-100 corporate-transition" />
+              </div>
+              <div className="flex-shrink-0 w-40 h-16 flex items-center justify-center">
+                <img src={alRayanLogo} alt="Al Rayan Bank" className="max-h-full max-w-full object-contain opacity-60 hover:opacity-100 corporate-transition" />
+              </div>
+              <div className="flex-shrink-0 w-40 h-16 flex items-center justify-center">
+                <img src={dohaBankLogo} alt="Doha Bank" className="max-h-full max-w-full object-contain opacity-60 hover:opacity-100 corporate-transition brightness-0" />
+              </div>
+              <div className="flex-shrink-0 w-40 h-16 flex items-center justify-center">
+                <img src={karwaLogo} alt="Karwa" className="max-h-full max-w-full object-contain opacity-60 hover:opacity-100 corporate-transition" />
+              </div>
+              <div className="flex-shrink-0 w-40 h-16 flex items-center justify-center">
+                <img src={qnbLogo} alt="QNB" className="max-h-full max-w-full object-contain opacity-60 hover:opacity-100 corporate-transition" />
+              </div>
+              <div className="flex-shrink-0 w-40 h-16 flex items-center justify-center">
+                <img src={ooredooLogo} alt="Ooredoo" className="max-h-full max-w-full object-contain opacity-60 hover:opacity-100 corporate-transition" />
+              </div>
+            </div>
+          </div>
           <p className="text-sm font-gotham text-muted-foreground">
             Recognized for excellence in hospitality and entertainment design.
           </p>
