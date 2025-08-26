@@ -104,25 +104,25 @@ const Index = () => {
 
           {/* Key Figures */}
           <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
-            <div className="bg-white/10 backdrop-blur-sm border border-white/20 p-6">
+            <div className="bg-white/10 backdrop-blur-sm border border-white/20 p-6 transition-all duration-300 hover:bg-white/20 hover:scale-105 hover:shadow-lg cursor-pointer">
               <div className="text-3xl font-gotham-bold text-white mb-1">
                 <AnimatedCounter end={1} duration={1500} useCommas={false} />
               </div>
               <div className="text-sm font-gotham text-white/80">Theme Park</div>
             </div>
-            <div className="bg-white/10 backdrop-blur-sm border border-white/20 p-6">
+            <div className="bg-white/10 backdrop-blur-sm border border-white/20 p-6 transition-all duration-300 hover:bg-white/20 hover:scale-105 hover:shadow-lg cursor-pointer">
               <div className="text-3xl font-gotham-bold text-white mb-1">
                 <AnimatedCounter end={40} suffix="+" duration={2000} useCommas={false} />
               </div>
               <div className="text-sm font-gotham text-white/80">Restaurants</div>
             </div>
-            <div className="bg-white/10 backdrop-blur-sm border border-white/20 p-6">
+            <div className="bg-white/10 backdrop-blur-sm border border-white/20 p-6 transition-all duration-300 hover:bg-white/20 hover:scale-105 hover:shadow-lg cursor-pointer">
               <div className="text-3xl font-gotham-bold text-white mb-1">
                 <AnimatedCounter end={4} duration={1500} useCommas={false} />
               </div>
               <div className="text-sm font-gotham text-white/80">Hotels and Resorts</div>
             </div>
-            <div className="bg-white/10 backdrop-blur-sm border border-white/20 p-6">
+            <div className="bg-white/10 backdrop-blur-sm border border-white/20 p-6 transition-all duration-300 hover:bg-white/20 hover:scale-105 hover:shadow-lg cursor-pointer">
               <div className="text-3xl font-gotham-bold text-white mb-1">
                 <AnimatedCounter end={1500000} suffix="+" duration={3500} />
               </div>
