@@ -372,7 +372,7 @@ const Index = () => {
                   src="/lovable-uploads/e5c48a09-5d0b-4737-a622-121e8ac87c28.png" 
                   alt="LXR Hotels & Resorts" 
                   className="max-w-full max-h-full object-contain filter grayscale hover:grayscale-0 corporate-transition"
-                  containerClassName="w-full h-full"
+                  containerClassName="w-full h-full flex items-center justify-center"
                 />
               </div>
               <div className="flex-shrink-0 w-40 h-20 flex items-center justify-center">
