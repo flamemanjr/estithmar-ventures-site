@@ -150,13 +150,13 @@ const RixosBaghdad = () => {
             <Breadcrumb>
               <BreadcrumbList>
                 <BreadcrumbItem>
-                  <BreadcrumbLink href="/" className="font-gotham text-sm text-[hsl(var(--muted-foreground))] hover:text-[hsl(var(--rixos-orange))] rixos-transition">
+                  <BreadcrumbLink href="/" className="interactive-link font-gotham text-sm text-[hsl(var(--muted-foreground))] hover:text-[hsl(var(--rixos-orange))]">
                     Home
                   </BreadcrumbLink>
                 </BreadcrumbItem>
                 <BreadcrumbSeparator />
                 <BreadcrumbItem>
-                  <BreadcrumbLink href="/destinations" className="font-gotham text-sm text-[hsl(var(--muted-foreground))] hover:text-[hsl(var(--rixos-orange))] rixos-transition">
+                  <BreadcrumbLink href="/destinations" className="interactive-link font-gotham text-sm text-[hsl(var(--muted-foreground))] hover:text-[hsl(var(--rixos-orange))]">
                     Destinations
                   </BreadcrumbLink>
                 </BreadcrumbItem>
@@ -210,9 +210,9 @@ const RixosBaghdad = () => {
                 </Button>
                 
                 <Button 
-                  variant="outline"
+                  variant="ghost-dark"
                   onClick={scrollToExperiences}
-                  className="border-[hsl(var(--rixos-white))] text-[hsl(var(--rixos-white))] hover:bg-[hsl(var(--rixos-white))] hover:text-[hsl(var(--rixos-black))] rixos-transition font-gotham-medium px-8 py-3 h-auto"
+                  className="font-gotham-medium px-8 py-3 h-auto"
                 >
                   Explore Business & Events
                 </Button>
@@ -351,8 +351,8 @@ const RixosBaghdad = () => {
               <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
                 {galleryImages.map((image, index) => (
                   <div 
-                    key={index}
-                    className="aspect-[4/3] cursor-pointer group"
+                     key={index}
+                    className="aspect-[4/3] cursor-pointer group transition-all duration-200 ease-out focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary/40 focus-visible:ring-offset-2"
                     onClick={() => setLightboxImage(image.url)}
                     role="button"
                     tabIndex={0}
@@ -364,7 +364,7 @@ const RixosBaghdad = () => {
                     }}
                     aria-label={`View larger image: ${image.alt}`}
                   >
-                    <div className="w-full h-full bg-[hsl(var(--muted))] rounded-md overflow-hidden group-hover:opacity-90 rixos-transition">
+                    <div className="w-full h-full bg-[hsl(var(--muted))] rounded-md overflow-hidden group-hover:opacity-90 group-hover:shadow-md group-active:scale-[0.99] transition-all duration-200 ease-out">
                       <div className="w-full h-full flex items-center justify-center">
                         <span className="text-[hsl(var(--muted-foreground))] font-gotham text-sm">
                           {image.alt}
