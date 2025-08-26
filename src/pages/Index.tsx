@@ -1,5 +1,7 @@
 import { Link } from "react-router-dom";
 import { CorporateButton } from "@/components/ui/corporate-button";
+import { LazyImage } from "@/components/ui/lazy-image";
+import { ImagePreloader, criticalImages } from "@/components/ui/image-preloader";
 import { Building2, Settings, TrendingUp } from "lucide-react";
 import { useState, useEffect } from "react";
 import heroImage from "@/assets/hero-image.jpg";
@@ -70,6 +72,7 @@ const AnimatedCounter = ({ end, duration = 2000, suffix = "", useCommas = true }
 const Index = () => {
   return (
     <div className="bg-background">
+      <ImagePreloader images={criticalImages} />
       {/* Hero Section */}
       <section className="relative min-h-screen flex items-center justify-center bg-black">
         <div 
@@ -184,10 +187,11 @@ const Index = () => {
             <Link to="/destinations/al-maha-island" className="group">
               <div className="bg-card border border-border overflow-hidden corporate-transition group-hover:shadow-xl group-hover:-translate-y-1 relative">
                 <div className="relative overflow-hidden">
-                  <img 
+                  <LazyImage 
                     src={alMahaImage} 
                     alt="Al Maha Island"
                     className="w-full h-64 object-cover group-hover:scale-105 corporate-transition"
+                    loading="lazy"
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent opacity-0 group-hover:opacity-100 corporate-transition"></div>
                   <div className="absolute bottom-4 left-4 text-white opacity-0 group-hover:opacity-100 corporate-transition">
@@ -207,10 +211,11 @@ const Index = () => {
             <Link to="/destinations/katara-hills-lxr" className="group">
               <div className="bg-card border border-border overflow-hidden corporate-transition group-hover:shadow-xl group-hover:-translate-y-1 relative">
                 <div className="relative overflow-hidden">
-                  <img 
+                  <LazyImage 
                     src={kataraHillsImage} 
                     alt="Katara Hills LXR"
                     className="w-full h-64 object-cover group-hover:scale-105 corporate-transition"
+                    loading="lazy"
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent opacity-0 group-hover:opacity-100 corporate-transition"></div>
                   <div className="absolute bottom-4 left-4 text-white opacity-0 group-hover:opacity-100 corporate-transition">
@@ -230,10 +235,11 @@ const Index = () => {
             <Link to="/destinations/maysan-doha-lxr" className="group">
               <div className="bg-card border border-border overflow-hidden corporate-transition group-hover:shadow-xl group-hover:-translate-y-1 relative">
                 <div className="relative overflow-hidden">
-                  <img 
+                  <LazyImage 
                     src={maysanDohaImage} 
                     alt="Maysan Doha LXR"
                     className="w-full h-64 object-cover group-hover:scale-105 corporate-transition"
+                    loading="lazy"
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent opacity-0 group-hover:opacity-100 corporate-transition"></div>
                   <div className="absolute bottom-4 left-4 text-white opacity-0 group-hover:opacity-100 corporate-transition">
@@ -253,10 +259,11 @@ const Index = () => {
             <Link to="/destinations/rosewood-maldives" className="group">
               <div className="bg-card border border-border overflow-hidden corporate-transition group-hover:shadow-xl group-hover:-translate-y-1 relative">
                 <div className="relative overflow-hidden">
-                  <img 
+                  <LazyImage 
                     src={rosewoodMaldivesImage} 
                     alt="Rosewood Maldives"
                     className="w-full h-64 object-cover group-hover:scale-105 corporate-transition"
+                    loading="lazy"
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent opacity-0 group-hover:opacity-100 corporate-transition"></div>
                   <div className="absolute bottom-4 left-4 text-white opacity-0 group-hover:opacity-100 corporate-transition">
@@ -276,10 +283,11 @@ const Index = () => {
             <Link to="/destinations/rixos-baghdad" className="group">
               <div className="bg-card border border-border overflow-hidden corporate-transition group-hover:shadow-xl group-hover:-translate-y-1 relative">
                 <div className="relative overflow-hidden">
-                  <img 
+                  <LazyImage 
                     src={rixosBaghdadImage} 
                     alt="Rixos Baghdad"
                     className="w-full h-64 object-cover group-hover:scale-105 corporate-transition"
+                    loading="lazy"
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent opacity-0 group-hover:opacity-100 corporate-transition"></div>
                   <div className="absolute bottom-4 left-4 text-white opacity-0 group-hover:opacity-100 corporate-transition">
@@ -312,61 +320,69 @@ const Index = () => {
             <div className="flex animate-scroll-left space-x-16 items-center">
               {/* First set of partner logos */}
               <div className="flex-shrink-0 w-40 h-20 flex items-center justify-center">
-                <img 
+                <LazyImage 
                   src="/lovable-uploads/2317e58c-3b32-4aa0-a42e-29ee723632a5.png" 
                   alt="Rixos Hotels" 
                   className="max-w-full max-h-full object-contain filter grayscale hover:grayscale-0 corporate-transition"
+                  containerClassName="w-full h-full"
                 />
               </div>
               <div className="flex-shrink-0 w-40 h-20 flex items-center justify-center">
-                <img 
+                <LazyImage 
                   src="/lovable-uploads/e5c48a09-5d0b-4737-a622-121e8ac87c28.png" 
                   alt="LXR Hotels & Resorts" 
                   className="max-w-full max-h-full object-contain filter grayscale hover:grayscale-0 corporate-transition"
+                  containerClassName="w-full h-full"
                 />
               </div>
               <div className="flex-shrink-0 w-40 h-20 flex items-center justify-center">
-                <img 
+                <LazyImage 
                   src="/lovable-uploads/13076e8c-b2b1-4033-9936-795f6cdd8eee.png" 
                   alt="Qatar Tourism" 
                   className="max-w-full max-h-full object-contain filter grayscale hover:grayscale-0 corporate-transition"
+                  containerClassName="w-full h-full"
                 />
               </div>
               <div className="flex-shrink-0 w-40 h-20 flex items-center justify-center">
-                <img 
+                <LazyImage 
                   src="/lovable-uploads/6b9cc736-1983-4b57-bcb2-80c5e1467cb1.png" 
                   alt="Qatari Diar" 
                   className="max-w-full max-h-full object-contain filter grayscale hover:grayscale-0 corporate-transition"
+                  containerClassName="w-full h-full"
                 />
               </div>
               
               {/* Second set for seamless loop */}
               <div className="flex-shrink-0 w-40 h-20 flex items-center justify-center">
-                <img 
+                <LazyImage 
                   src="/lovable-uploads/2317e58c-3b32-4aa0-a42e-29ee723632a5.png" 
                   alt="Rixos Hotels" 
                   className="max-w-full max-h-full object-contain filter grayscale hover:grayscale-0 corporate-transition"
+                  containerClassName="w-full h-full"
                 />
               </div>
               <div className="flex-shrink-0 w-40 h-20 flex items-center justify-center">
-                <img 
+                <LazyImage 
                   src="/lovable-uploads/e5c48a09-5d0b-4737-a622-121e8ac87c28.png" 
                   alt="LXR Hotels & Resorts" 
                   className="max-w-full max-h-full object-contain filter grayscale hover:grayscale-0 corporate-transition"
+                  containerClassName="w-full h-full"
                 />
               </div>
               <div className="flex-shrink-0 w-40 h-20 flex items-center justify-center">
-                <img 
+                <LazyImage 
                   src="/lovable-uploads/13076e8c-b2b1-4033-9936-795f6cdd8eee.png" 
                   alt="Qatar Tourism" 
                   className="max-w-full max-h-full object-contain filter grayscale hover:grayscale-0 corporate-transition"
+                  containerClassName="w-full h-full"
                 />
               </div>
               <div className="flex-shrink-0 w-40 h-20 flex items-center justify-center">
-                <img 
+                <LazyImage 
                   src="/lovable-uploads/6b9cc736-1983-4b57-bcb2-80c5e1467cb1.png" 
                   alt="Qatari Diar" 
                   className="max-w-full max-h-full object-contain filter grayscale hover:grayscale-0 corporate-transition"
+                  containerClassName="w-full h-full"
                 />
               </div>
             </div>

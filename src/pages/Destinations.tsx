@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import { LazyImage } from "@/components/ui/lazy-image";
 import alMahaImage from "@/assets/al-maha-island.jpg";
 const kataraHillsImage = "/lovable-uploads/e42bd7a3-7a5f-4be6-99db-e2eda2171a36.png";
 import maysanDohaImage from "@/assets/maysan-doha.jpg";
@@ -63,10 +64,11 @@ const Destinations = () => {
             {destinations.map((destination) => (
               <Link key={destination.path} to={destination.path} className="group">
                 <div className="bg-card border border-border overflow-hidden corporate-transition group-hover:shadow-lg">
-                  <img 
+                  <LazyImage 
                     src={destination.image} 
                     alt={destination.name}
                     className="w-full h-64 object-cover"
+                    loading="lazy"
                   />
                   <div className="p-8">
                     <h3 className="text-xl font-gotham-bold text-foreground mb-4">

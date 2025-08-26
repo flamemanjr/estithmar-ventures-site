@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { Link, useLocation } from "react-router-dom";
 import { ChevronDown } from "lucide-react";
+import { LazyImage } from "@/components/ui/lazy-image";
 import { cn } from "@/lib/utils";
 
 const destinations = [
@@ -23,10 +24,12 @@ export const Navigation = () => {
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
           <Link to="/" className="flex-shrink-0">
-            <img
+            <LazyImage
               src="/lovable-uploads/eaf0d3be-5c3e-463b-82ab-abc84fac666c.png"
               alt="Estithmar Ventures"
               className="h-24 w-auto"
+              loading="eager"
+              containerClassName="h-24"
             />
           </Link>
 
